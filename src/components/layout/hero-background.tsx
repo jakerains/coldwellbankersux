@@ -3,10 +3,16 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
+// Actual listing photos from current inventory
 const heroImages = [
-  "/hero/hero-1.jpg",
-  "/hero/hero-2.jpg",
-  "/hero/hero-3.jpg",
+  // 33154 Hickory Avenue - $739k luxury home on 3.5 acres
+  "https://i12.moxi.onl/img-pr-002190/nwi/05ec7fa501b40a484f6453a7be4bb97c8c0942e5/1_10_full.jpg",
+  // 905 Willow Circle, Dakota Dunes - $445k luxury home
+  "https://i9.moxi.onl/img-pr-002188/nwi/53450ad0ceda7685f9315485e1c388785698da3f/1_5_full.jpg",
+  // 514 Ascot Street - $329k Woodbury Heights Ranch
+  "https://i16.moxi.onl/img-pr-002154/nwi/dc173afc7c2590e0def64c6078992d7291d749c0/1_5_full.jpg",
+  // 1304 46th St - $299,900 family home
+  "https://i7.moxi.onl/img-pr-002206/nwi/29813731aa0b71feca9b671d427ea8cb63f9990e/1_4_full.jpg",
 ];
 
 export function HeroBackground() {

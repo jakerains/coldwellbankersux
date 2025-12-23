@@ -96,7 +96,8 @@ export function StatsSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage: `url('/hero/hero-3.jpg')`,
+          // 919 28th Street - Fully updated 2-story home
+          backgroundImage: `url('https://i5.moxi.onl/img-pr-002181/nwi/b8e6698883ec0bb41f74b0e29bbc699804e541b8/1_5_full.jpg')`,
         }}
       />
       {/* Dark Overlay */}

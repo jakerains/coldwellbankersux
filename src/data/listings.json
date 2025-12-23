@@ -2,7 +2,7 @@
   "source": "Coldwell Banker Associated Brokers Realty, Inc.",
   "location": "Sioux City, IA",
   "scraped_date": "2025-12-23",
-  "total_listings": 20,
+  "total_listings": 57,
   "listings": [
     {
       "id": "830863",
@@ -140,9 +140,10 @@
         "Full basement"
       ],
       "images": [
-        "https://i15.moxi.onl/img-pr-002124/nwi/08a0ac6a3fc276215f6c3ea5ebcd28e27117b3c6/1_4_full.jpg",
-        "https://i16.moxi.onl/img-pr-002124/nwi/08a0ac6a3fc276215f6c3ea5ebcd28e27117b3c6/2_4_full.jpg",
-        "https://i1.moxi.onl/img-pr-002124/nwi/08a0ac6a3fc276215f6c3ea5ebcd28e27117b3c6/3_4_full.jpg"
+        "https://i15.moxi.onl/img-pr-002124/nwi/08a0ac6a3fc276215f6c3ea5ebcd28e27117b3c6/35_4_full.jpg",
+        "https://i16.moxi.onl/img-pr-002124/nwi/08a0ac6a3fc276215f6c3ea5ebcd28e27117b3c6/36_4_full.jpg",
+        "https://i1.moxi.onl/img-pr-002124/nwi/08a0ac6a3fc276215f6c3ea5ebcd28e27117b3c6/37_4_full.jpg",
+        "https://i2.moxi.onl/img-pr-002124/nwi/08a0ac6a3fc276215f6c3ea5ebcd28e27117b3c6/38_4_full.jpg"
       ],
       "agent": {
         "name": "Kylee Hombs",
@@ -743,6 +744,1253 @@
         "company": "Century 21 Prolink"
       },
       "listing_url": "https://coldwellbankerabr.com/listing/IA/Sioux-City/1409-Rustin-51105/213557083"
+    },
+    {
+      "id": "new-mjj1aw2m",
+      "mls_number": "new-mjj1aw2m",
+      "address": {
+        "street": "3980 Fieldcrest Dr",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51103"
+      },
+      "price": 334900,
+      "status": "Active",
+      "property_type": "Single Family",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "square_feet": 2680,
+      "lot_size": "1,116 square foot lot",
+      "year_built": 1997,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/f5705c0781c49b4ad5f8051cdb5e7decl-m831716782rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/f5705c0781c49b4ad5f8051cdb5e7decl-m524193542rd-w480_h360.webp",
+        "https://ap.rdcpix.com/f5705c0781c49b4ad5f8051cdb5e7decl-m3016976802rd-w480_h360.webp",
+        "https://ap.rdcpix.com/f5705c0781c49b4ad5f8051cdb5e7decl-m812471497rd-w480_h360.webp"
+      ],
+      "agent": {
+        "name": "Madison Zeller",
+        "title": "Real Estate Salesperson",
+        "company": "CENTURY 21 ProLink"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw2n",
+      "mls_number": "new-mjj1aw2n",
+      "address": {
+        "street": "2403 E Solway St",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 339000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "square_feet": 3226,
+      "lot_size": "0.3 acre lot",
+      "year_built": 1922,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/3b55d84d8512e9905b7b407b59abc9b0l-m2903225776rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/3b55d84d8512e9905b7b407b59abc9b0l-m2136169245rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/3b55d84d8512e9905b7b407b59abc9b0l-m3722741820rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/3b55d84d8512e9905b7b407b59abc9b0l-m2136169245rd-w480_h360.webp",
+        "https://ap.rdcpix.com/3b55d84d8512e9905b7b407b59abc9b0l-m3722741820rd-w480_h360.webp",
+        "https://ap.rdcpix.com/3b55d84d8512e9905b7b407b59abc9b0l-m1054968040rd-w480_h360.webp",
+        "https://ap.rdcpix.com/3b55d84d8512e9905b7b407b59abc9b0l-m2903225776rd-w960_h720.webp"
+      ],
+      "agent": {
+        "name": "Greg Gregerson",
+        "title": "Real Estate Salesperson",
+        "company": "Keller Williams Siouxland"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw2o",
+      "mls_number": "new-mjj1aw2o",
+      "address": {
+        "street": "2527 S Lemon St",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51106"
+      },
+      "price": 244950,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "square_feet": 1528,
+      "lot_size": "5,200sqft lot",
+      "year_built": 1920,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/c5ca204539b65563b1446525917f2482l-m2809496409rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/c5ca204539b65563b1446525917f2482l-m2156696646rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/c5ca204539b65563b1446525917f2482l-m3557181515rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/c5ca204539b65563b1446525917f2482l-m1202914297rd-w480_h360.webp",
+        "https://ap.rdcpix.com/c5ca204539b65563b1446525917f2482l-m1738404721rd-w480_h360.webp",
+        "https://ap.rdcpix.com/c5ca204539b65563b1446525917f2482l-m3897515604rd-w480_h360.webp",
+        "https://ap.rdcpix.com/c5ca204539b65563b1446525917f2482l-m2809496409rd-w960_h720.webp"
+      ],
+      "agent": {
+        "name": "Kristie Drent",
+        "title": "Real Estate Salesperson",
+        "company": "Keller Williams Siouxland"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw2p",
+      "mls_number": "new-mjj1aw2p",
+      "address": {
+        "street": "2600 Rebecca St",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51103"
+      },
+      "price": 179900,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "square_feet": 1834,
+      "lot_size": "8,712sqft lot",
+      "year_built": 1900,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/6f6eb33f11c68b0f4ce9966ac81930bbl-m2991331548rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/6f6eb33f11c68b0f4ce9966ac81930bbl-m2935796715rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/6f6eb33f11c68b0f4ce9966ac81930bbl-m3864710184rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/6f6eb33f11c68b0f4ce9966ac81930bbl-m155989848rd-w480_h360.webp",
+        "https://ap.rdcpix.com/6f6eb33f11c68b0f4ce9966ac81930bbl-m825415998rd-w480_h360.webp",
+        "https://ap.rdcpix.com/6f6eb33f11c68b0f4ce9966ac81930bbl-m3329031734rd-w480_h360.webp"
+      ],
+      "agent": {
+        "name": "Amy Kakacek",
+        "title": "Real Estate Salesperson",
+        "company": "LPT Realty, LLC"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw2q",
+      "mls_number": "new-mjj1aw2q",
+      "address": {
+        "street": "4000 W 4th St",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51103"
+      },
+      "price": 280000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "square_feet": 2600,
+      "lot_size": "0.44 acre lot",
+      "year_built": 1950,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/20ab6e4bd15dc38620155325deda1e3al-b4161457690rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/20ab6e4bd15dc38620155325deda1e3al-b1215187848rd-w480_h360.webp",
+        "https://ap.rdcpix.com/20ab6e4bd15dc38620155325deda1e3al-b25807760rd-w480_h360.webp",
+        "https://ap.rdcpix.com/20ab6e4bd15dc38620155325deda1e3al-b175332399rd-w480_h360.webp"
+      ],
+      "agent": {
+        "name": "Chon Plascencia",
+        "title": "Real Estate Salesperson",
+        "company": "CENTURY 21 ProLink"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw2r",
+      "mls_number": "new-mjj1aw2r",
+      "address": {
+        "street": "1516 Aztec Cir",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 350000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "square_feet": 2500,
+      "lot_size": "7,973sqft lot",
+      "year_built": 1978,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/4190dd0945236444d28343bd2945a2e8l-m2852064862rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/4190dd0945236444d28343bd2945a2e8l-m785095590rd-w480_h360.webp",
+        "https://ap.rdcpix.com/4190dd0945236444d28343bd2945a2e8l-m2320919823rd-w480_h360.webp",
+        "https://ap.rdcpix.com/4190dd0945236444d28343bd2945a2e8l-m4073055076rd-w480_h360.webp"
+      ],
+      "agent": {
+        "name": "Alex Imming",
+        "title": "Real Estate Salesperson",
+        "company": "Keller Williams Siouxland"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw2s",
+      "mls_number": "new-mjj1aw2s",
+      "address": {
+        "street": "313 30th St",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 200000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "square_feet": 1536,
+      "lot_size": "9,900sqft lot",
+      "year_built": 1949,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/edac71bd098203842af2e5ea111bc39bl-m3425379835rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/edac71bd098203842af2e5ea111bc39bl-m2350603653rd-w480_h360.webp",
+        "https://ap.rdcpix.com/edac71bd098203842af2e5ea111bc39bl-m3642881835rd-w480_h360.webp",
+        "https://ap.rdcpix.com/edac71bd098203842af2e5ea111bc39bl-m648933670rd-w480_h360.webp"
+      ],
+      "agent": {
+        "name": "Jamie Friedel",
+        "title": "Real Estate Salesperson",
+        "company": "Plains Asset Group"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw2v",
+      "mls_number": "new-mjj1aw2v",
+      "address": {
+        "street": "2036 S Royce St",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51106"
+      },
+      "price": 175000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "square_feet": 1268,
+      "lot_size": "6,250sqft lot",
+      "year_built": 1951,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/5114bbe0fb3b3847fcb963368437edddl-m3006479472rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/5114bbe0fb3b3847fcb963368437edddl-m2988387734rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/5114bbe0fb3b3847fcb963368437edddl-m647065864rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/5114bbe0fb3b3847fcb963368437edddl-m237564620rd-w480_h360.webp",
+        "https://ap.rdcpix.com/5114bbe0fb3b3847fcb963368437edddl-m3412560389rd-w480_h360.webp",
+        "https://ap.rdcpix.com/5114bbe0fb3b3847fcb963368437edddl-m277239549rd-w480_h360.webp",
+        "https://ap.rdcpix.com/5114bbe0fb3b3847fcb963368437edddl-m3006479472rd-w960_h720.webp"
+      ],
+      "agent": {
+        "name": "LaNay Welch, Broker",
+        "title": "Real Estate Salesperson",
+        "company": "Keller Williams Siouxland"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw2w",
+      "mls_number": "new-mjj1aw2w",
+      "address": {
+        "street": "11 Blackstone Ave",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 280000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "square_feet": 2369,
+      "lot_size": "6,880sqft lot",
+      "year_built": 1925,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/ce32f0a5bbcf62b6bbf0b33f6689fd23l-m1718467788rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/ce32f0a5bbcf62b6bbf0b33f6689fd23l-m979086383rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/ce32f0a5bbcf62b6bbf0b33f6689fd23l-m2332515562rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/ce32f0a5bbcf62b6bbf0b33f6689fd23l-m3995661084rd-w480_h360.webp",
+        "https://ap.rdcpix.com/ce32f0a5bbcf62b6bbf0b33f6689fd23l-m347247214rd-w480_h360.webp",
+        "https://ap.rdcpix.com/ce32f0a5bbcf62b6bbf0b33f6689fd23l-m3260634812rd-w480_h360.webp"
+      ],
+      "agent": {
+        "name": "Sheryl Ford",
+        "title": "Real Estate Salesperson",
+        "company": "United Real Estate Solutions"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw2x",
+      "mls_number": "new-mjj1aw2x",
+      "address": {
+        "street": "5811 Lorraine Ave",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51106"
+      },
+      "price": 309500,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "square_feet": 2303,
+      "lot_size": "0.24 acre lot",
+      "year_built": 1978,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/86123f31d1f171dba8218642bee8b19fl-m3661431061rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/86123f31d1f171dba8218642bee8b19fl-m554182935rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/86123f31d1f171dba8218642bee8b19fl-m2461108359rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/86123f31d1f171dba8218642bee8b19fl-m554182935rd-w480_h360.webp",
+        "https://ap.rdcpix.com/86123f31d1f171dba8218642bee8b19fl-m1412062460rd-w480_h360.webp",
+        "https://ap.rdcpix.com/86123f31d1f171dba8218642bee8b19fl-m2461108359rd-w480_h360.webp",
+        "https://ap.rdcpix.com/86123f31d1f171dba8218642bee8b19fl-m3661431061rd-w960_h720.webp"
+      ],
+      "agent": {
+        "name": "Julie Stevenson-Fischer",
+        "title": "Real Estate Salesperson",
+        "company": "Premier Realty Group"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw2y",
+      "mls_number": "new-mjj1aw2y",
+      "address": {
+        "street": "3003 Viking Dr",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 160000,
+      "status": "Active",
+      "property_type": "Condo",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "square_feet": 947,
+      "lot_size": "5,227sqft lot",
+      "year_built": 1973,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/bdf7b66e446877afaf52a1078849873al-m3596139401rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/bdf7b66e446877afaf52a1078849873al-m1221916511rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/bdf7b66e446877afaf52a1078849873al-m1081744958rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/bdf7b66e446877afaf52a1078849873al-m1221916511rd-w480_h360.webp",
+        "https://ap.rdcpix.com/bdf7b66e446877afaf52a1078849873al-m1951227866rd-w480_h360.webp",
+        "https://ap.rdcpix.com/bdf7b66e446877afaf52a1078849873al-m3415656621rd-w480_h360.webp"
+      ],
+      "agent": {
+        "name": "Sue Stanek",
+        "title": "Real Estate Salesperson",
+        "company": "Keller Williams Siouxland"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw2z",
+      "mls_number": "new-mjj1aw2z",
+      "address": {
+        "street": "3200 Grandview Blvd",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 225000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "square_feet": 1212,
+      "lot_size": "0.26 acre lot",
+      "year_built": 1950,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/2564daff1ab365e9bca448a955c25202l-m3135076796rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/2564daff1ab365e9bca448a955c25202l-m3037277643rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/2564daff1ab365e9bca448a955c25202l-m3473896763rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/2564daff1ab365e9bca448a955c25202l-m3029764706rd-w480_h360.webp",
+        "https://ap.rdcpix.com/2564daff1ab365e9bca448a955c25202l-m3953279541rd-w480_h360.webp",
+        "https://ap.rdcpix.com/2564daff1ab365e9bca448a955c25202l-m781331267rd-w480_h360.webp"
+      ],
+      "agent": {
+        "name": "PEGGY LA",
+        "title": "Real Estate Salesperson",
+        "company": "LPT Realty, LLC"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw30",
+      "mls_number": "new-mjj1aw30",
+      "address": {
+        "street": "2415 S Cypress St",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51106"
+      },
+      "price": 268000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "square_feet": 1728,
+      "lot_size": "9,148sqft lot",
+      "year_built": 1952,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/414795c89fd224763238d7bbc273a6d8l-m672358684rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/414795c89fd224763238d7bbc273a6d8l-m104619293rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/414795c89fd224763238d7bbc273a6d8l-m3005262677rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/414795c89fd224763238d7bbc273a6d8l-m104619293rd-w480_h360.webp",
+        "https://ap.rdcpix.com/414795c89fd224763238d7bbc273a6d8l-m2003560469rd-w480_h360.webp",
+        "https://ap.rdcpix.com/414795c89fd224763238d7bbc273a6d8l-m672358684rd-w960_h720.webp"
+      ],
+      "agent": {
+        "name": "Alexandra Krotz",
+        "title": "Real Estate Salesperson",
+        "company": "Keller Williams Siouxland"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw31",
+      "mls_number": "new-mjj1aw31",
+      "address": {
+        "street": "4113 Hickory Ln",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51106"
+      },
+      "price": 324950,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "square_feet": 2230,
+      "lot_size": "0.25 acre lot",
+      "year_built": 1981,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/e05b132f6a819345784bcb5fd66a6aa7l-m2472052644rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/e05b132f6a819345784bcb5fd66a6aa7l-m2602914210rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/e05b132f6a819345784bcb5fd66a6aa7l-m2947094509rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/e05b132f6a819345784bcb5fd66a6aa7l-m4204898851rd-w480_h360.webp",
+        "https://ap.rdcpix.com/e05b132f6a819345784bcb5fd66a6aa7l-m1172848576rd-w480_h360.webp",
+        "https://ap.rdcpix.com/e05b132f6a819345784bcb5fd66a6aa7l-m4062439509rd-w480_h360.webp"
+      ],
+      "agent": {
+        "name": "Jeff Nelson",
+        "title": "Real Estate Salesperson",
+        "company": "United Real Estate Solutions"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw32",
+      "mls_number": "new-mjj1aw32",
+      "address": {
+        "street": "3012 S Cornelia St",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51106"
+      },
+      "price": 228000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "square_feet": 1620,
+      "lot_size": "1,070sqft lot",
+      "year_built": 1956,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/0ed9d267fb8e1ffd8c05b936b4181140l-b144623457rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/0ed9d267fb8e1ffd8c05b936b4181140l-b19233918rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/0ed9d267fb8e1ffd8c05b936b4181140l-b1682077927rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/0ed9d267fb8e1ffd8c05b936b4181140l-b1874193636rd-w480_h360.webp",
+        "https://ap.rdcpix.com/0ed9d267fb8e1ffd8c05b936b4181140l-b2818454390rd-w480_h360.webp",
+        "https://ap.rdcpix.com/0ed9d267fb8e1ffd8c05b936b4181140l-b829711238rd-w480_h360.webp"
+      ],
+      "agent": {
+        "name": "Jeff Carlson",
+        "title": "Real Estate Salesperson",
+        "company": "RE MAX Experience"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw33",
+      "mls_number": "new-mjj1aw33",
+      "address": {
+        "street": "4001 Cheyenne Blvd",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 369900,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "square_feet": 2874,
+      "lot_size": "0.72 acre lot",
+      "year_built": 1970,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/254424165309ff5690767bd521c1c722l-m3485244320rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/254424165309ff5690767bd521c1c722l-m113788536rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/254424165309ff5690767bd521c1c722l-m4085409454rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/254424165309ff5690767bd521c1c722l-m2423739535rd-w480_h360.webp",
+        "https://ap.rdcpix.com/254424165309ff5690767bd521c1c722l-m2781558469rd-w480_h360.webp",
+        "https://ap.rdcpix.com/254424165309ff5690767bd521c1c722l-m1467075687rd-w480_h360.webp",
+        "https://ap.rdcpix.com/254424165309ff5690767bd521c1c722l-m3485244320rd-w960_h720.webp"
+      ],
+      "agent": {
+        "name": "Toni Delfs",
+        "title": "Real Estate Salesperson",
+        "company": "Keller Williams Siouxland"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw34",
+      "mls_number": "new-mjj1aw34",
+      "address": {
+        "street": "3301 Morgan St",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 317500,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "square_feet": 2262,
+      "lot_size": "0.32 acre lot",
+      "year_built": 1993,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/dbd2f36affe5d3cf8b18cd6236d6a5f2l-m861682652rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/dbd2f36affe5d3cf8b18cd6236d6a5f2l-m4033502366rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/dbd2f36affe5d3cf8b18cd6236d6a5f2l-m1446075706rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/dbd2f36affe5d3cf8b18cd6236d6a5f2l-m711611463rd-w480_h360.webp",
+        "https://ap.rdcpix.com/dbd2f36affe5d3cf8b18cd6236d6a5f2l-m3154626458rd-w480_h360.webp",
+        "https://ap.rdcpix.com/dbd2f36affe5d3cf8b18cd6236d6a5f2l-m597206342rd-w480_h360.webp",
+        "https://ap.rdcpix.com/dbd2f36affe5d3cf8b18cd6236d6a5f2l-m861682652rd-w960_h720.webp"
+      ],
+      "agent": {
+        "name": "Stephanie Dattolico",
+        "title": "Real Estate Salesperson",
+        "company": "Gateway Real Estate Advisors"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw36",
+      "mls_number": "new-mjj1aw36",
+      "address": {
+        "street": "757 Buckwalter Dr",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51108"
+      },
+      "price": 549900,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "square_feet": 6368,
+      "lot_size": "13 acre lot",
+      "year_built": 1975,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/3a47854e739255fdd0e662b463c68981l-m915992634rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/3a47854e739255fdd0e662b463c68981l-m3761544550rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/3a47854e739255fdd0e662b463c68981l-m2703609834rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/3a47854e739255fdd0e662b463c68981l-m3761544550rd-w480_h360.webp",
+        "https://ap.rdcpix.com/3a47854e739255fdd0e662b463c68981l-m3258236819rd-w480_h360.webp",
+        "https://ap.rdcpix.com/3a47854e739255fdd0e662b463c68981l-m4162052085rd-w480_h360.webp",
+        "https://ap.rdcpix.com/3a47854e739255fdd0e662b463c68981l-m915992634rd-w960_h720.webp"
+      ],
+      "agent": {
+        "name": "Julie Stevenson-Fischer",
+        "title": "Real Estate Salesperson",
+        "company": "Premier Realty Group"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw37",
+      "mls_number": "new-mjj1aw37",
+      "address": {
+        "street": "3131 S Oleander St",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51106"
+      },
+      "price": 292000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "square_feet": 1994,
+      "lot_size": "7,293sqft lot",
+      "year_built": 1970,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/40a5ac486e21109f765cc67cc78f29dcl-b3677367270rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/40a5ac486e21109f765cc67cc78f29dcl-b470143434rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/40a5ac486e21109f765cc67cc78f29dcl-b224665818rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/40a5ac486e21109f765cc67cc78f29dcl-b1902193596rd-w480_h360.webp",
+        "https://ap.rdcpix.com/40a5ac486e21109f765cc67cc78f29dcl-b3980230042rd-w480_h360.webp"
+      ],
+      "agent": {
+        "name": "Misty Szczech",
+        "title": "Real Estate Salesperson",
+        "company": "EXIT REALTY MIDWEST"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw38",
+      "mls_number": "new-mjj1aw38",
+      "address": {
+        "street": "1922 Heights Ave",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 215000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 4,
+      "bathrooms": 1,
+      "square_feet": 1848,
+      "lot_size": "5,663sqft lot",
+      "year_built": 1900,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/f2896cb28e30dd0f64b73f592d5969d9l-m2698951697rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/f2896cb28e30dd0f64b73f592d5969d9l-m2135885443rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/f2896cb28e30dd0f64b73f592d5969d9l-m1084401593rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/f2896cb28e30dd0f64b73f592d5969d9l-m1528681029rd-w480_h360.webp",
+        "https://ap.rdcpix.com/f2896cb28e30dd0f64b73f592d5969d9l-m3323571999rd-w480_h360.webp",
+        "https://ap.rdcpix.com/f2896cb28e30dd0f64b73f592d5969d9l-m1187219911rd-w480_h360.webp",
+        "https://ap.rdcpix.com/f2896cb28e30dd0f64b73f592d5969d9l-m2698951697rd-w960_h720.webp"
+      ],
+      "agent": {
+        "name": "Aaron Tyler",
+        "title": "Real Estate Salesperson",
+        "company": "Keller Williams Siouxland"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw39",
+      "mls_number": "new-mjj1aw39",
+      "address": {
+        "street": "408 Hampden Ct",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 289000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "square_feet": 2328,
+      "lot_size": "9,920sqft lot",
+      "year_built": 1960,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/9bc40c7e0901ec1d42d2b64321b25affl-b3516708184rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/9bc40c7e0901ec1d42d2b64321b25affl-b1526662018rd-w1280_h960.webp"
+      ],
+      "agent": {
+        "name": "Michelle White",
+        "title": "Real Estate Salesperson",
+        "company": "CENTURY 21 ProLink"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw3a",
+      "mls_number": "new-mjj1aw3a",
+      "address": {
+        "street": "3711 Martins Yard",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 469000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 5,
+      "bathrooms": 5,
+      "square_feet": 3316,
+      "lot_size": "0.66 acre lot",
+      "year_built": 1979,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/d93351dd8f55025a7bc4c756f4f8def7l-m3716076273rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/d93351dd8f55025a7bc4c756f4f8def7l-m3570383272rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/d93351dd8f55025a7bc4c756f4f8def7l-m4087917359rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/d93351dd8f55025a7bc4c756f4f8def7l-m261224021rd-w480_h360.webp",
+        "https://ap.rdcpix.com/d93351dd8f55025a7bc4c756f4f8def7l-m3758271680rd-w480_h360.webp",
+        "https://ap.rdcpix.com/d93351dd8f55025a7bc4c756f4f8def7l-m959674418rd-w480_h360.webp"
+      ],
+      "agent": {
+        "name": "CHERI S. BRACHT",
+        "title": "Real Estate Salesperson",
+        "company": "Cardinal City Realty, Inc."
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw3b",
+      "mls_number": "new-mjj1aw3b",
+      "address": {
+        "street": "21122 320th St",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51108"
+      },
+      "price": 1895000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 4,
+      "bathrooms": 5,
+      "square_feet": 5769,
+      "lot_size": "34.33 acre lot",
+      "year_built": 1999,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/bc7d09195a92ec364c35590cd660a9e8l-m3528406171rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/bc7d09195a92ec364c35590cd660a9e8l-m2986247672rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/bc7d09195a92ec364c35590cd660a9e8l-m2717720498rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/bc7d09195a92ec364c35590cd660a9e8l-m3978550539rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/bc7d09195a92ec364c35590cd660a9e8l-m1084157382rd-w1280_h960.webp"
+      ],
+      "agent": {
+        "name": "Joe Krage",
+        "title": "Real Estate Salesperson",
+        "company": "United Real Estate Solutions"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw3c",
+      "mls_number": "new-mjj1aw3c",
+      "address": {
+        "street": "4640 Perry Way",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 800000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 4,
+      "bathrooms": 5,
+      "square_feet": 7098,
+      "lot_size": "4.64 acre lot",
+      "year_built": 1992,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/79d0c657362174abd2a4d763c86c9443l-b588997201rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/79d0c657362174abd2a4d763c86c9443l-b620830752rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/79d0c657362174abd2a4d763c86c9443l-b1654607806rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/79d0c657362174abd2a4d763c86c9443l-b3299959291rd-w480_h360.webp",
+        "https://ap.rdcpix.com/79d0c657362174abd2a4d763c86c9443l-b3489105365rd-w480_h360.webp",
+        "https://ap.rdcpix.com/79d0c657362174abd2a4d763c86c9443l-b588997201rd-w960_h720.webp"
+      ],
+      "agent": {
+        "name": "Barb Maxon",
+        "title": "Real Estate Salesperson",
+        "company": "CENTURY 21 ProLink"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw3d",
+      "mls_number": "new-mjj1aw3d",
+      "address": {
+        "street": "4912 Evergreen Ln",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51106"
+      },
+      "price": 354400,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "square_feet": 2131,
+      "lot_size": "9,815sqft lot",
+      "year_built": 1974,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/18711e5170cdb329874d7f030abdd81al-m1843542025rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/18711e5170cdb329874d7f030abdd81al-m3930351911rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/18711e5170cdb329874d7f030abdd81al-m1087845922rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/18711e5170cdb329874d7f030abdd81al-m266113592rd-w480_h360.webp",
+        "https://ap.rdcpix.com/18711e5170cdb329874d7f030abdd81al-m3879066735rd-w480_h360.webp",
+        "https://ap.rdcpix.com/18711e5170cdb329874d7f030abdd81al-m305605122rd-w480_h360.webp"
+      ],
+      "agent": {
+        "name": "Tricia Keleher",
+        "title": "Real Estate Salesperson",
+        "company": "Keller Williams Siouxland"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw3e",
+      "mls_number": "new-mjj1aw3e",
+      "address": {
+        "street": "3700 Stone Ave",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51106"
+      },
+      "price": 185000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "square_feet": 1128,
+      "lot_size": "7,405sqft lot",
+      "year_built": 1918,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/34297004db8e45ba3b4cf5b5a179c045l-m2235858036rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/34297004db8e45ba3b4cf5b5a179c045l-m2358501472rd-w480_h360.webp",
+        "https://ap.rdcpix.com/34297004db8e45ba3b4cf5b5a179c045l-m1940340765rd-w480_h360.webp",
+        "https://ap.rdcpix.com/34297004db8e45ba3b4cf5b5a179c045l-m1816233045rd-w480_h360.webp"
+      ],
+      "agent": {
+        "name": "Amy Kakacek",
+        "title": "Real Estate Salesperson",
+        "company": "LPT Realty, LLC"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw3f",
+      "mls_number": "new-mjj1aw3f",
+      "address": {
+        "street": "701 S Paxton St",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51106"
+      },
+      "price": 210000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 4,
+      "bathrooms": 1,
+      "square_feet": 1557,
+      "lot_size": "5,663sqft lot",
+      "year_built": 1917,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/76839c8255ebee387d12382967fad8e4l-m2083561703rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/76839c8255ebee387d12382967fad8e4l-m2501386946rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/76839c8255ebee387d12382967fad8e4l-m3358695994rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/76839c8255ebee387d12382967fad8e4l-m1276642914rd-w480_h360.webp",
+        "https://ap.rdcpix.com/76839c8255ebee387d12382967fad8e4l-m3165649484rd-w480_h360.webp",
+        "https://ap.rdcpix.com/76839c8255ebee387d12382967fad8e4l-m1608556667rd-w480_h360.webp",
+        "https://ap.rdcpix.com/76839c8255ebee387d12382967fad8e4l-m2083561703rd-w960_h720.webp"
+      ],
+      "agent": {
+        "name": "LaNay Welch, Broker",
+        "title": "Real Estate Salesperson",
+        "company": "Keller Williams Siouxland"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw3g",
+      "mls_number": "new-mjj1aw3g",
+      "address": {
+        "street": "1913 George St",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51103"
+      },
+      "price": 170000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 5,
+      "bathrooms": 2,
+      "square_feet": 1703,
+      "lot_size": "3,650sqft lot",
+      "year_built": 1890,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/599618edf7c8daaf6bb8181a3e6f17a7l-b887945767rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/599618edf7c8daaf6bb8181a3e6f17a7l-b339533256rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/599618edf7c8daaf6bb8181a3e6f17a7l-b1256072703rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/599618edf7c8daaf6bb8181a3e6f17a7l-b2839727500rd-w480_h360.webp",
+        "https://ap.rdcpix.com/599618edf7c8daaf6bb8181a3e6f17a7l-b2913007063rd-w480_h360.webp",
+        "https://ap.rdcpix.com/599618edf7c8daaf6bb8181a3e6f17a7l-b2187574919rd-w480_h360.webp"
+      ],
+      "agent": {
+        "name": "Lisa Sissel",
+        "title": "Real Estate Salesperson",
+        "company": "CENTURY 21 ProLink"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw3h",
+      "mls_number": "new-mjj1aw3h",
+      "address": {
+        "street": "3000 S Lakeport St",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51106"
+      },
+      "price": 164950,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "square_feet": 1798,
+      "lot_size": "0.37 acre lot",
+      "year_built": 1940,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/0138cb3e6d94f918624fc6d3b0e02afel-m147190871rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/0138cb3e6d94f918624fc6d3b0e02afel-m486684529rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/0138cb3e6d94f918624fc6d3b0e02afel-m621538239rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/0138cb3e6d94f918624fc6d3b0e02afel-m3392282844rd-w480_h360.webp",
+        "https://ap.rdcpix.com/0138cb3e6d94f918624fc6d3b0e02afel-m2359621615rd-w480_h360.webp",
+        "https://ap.rdcpix.com/0138cb3e6d94f918624fc6d3b0e02afel-m2236868809rd-w480_h360.webp",
+        "https://ap.rdcpix.com/0138cb3e6d94f918624fc6d3b0e02afel-m147190871rd-w960_h720.webp"
+      ],
+      "agent": {
+        "name": "Norma Karnes",
+        "title": "Real Estate Salesperson",
+        "company": "LPT Realty, LLC"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw3i",
+      "mls_number": "new-mjj1aw3i",
+      "address": {
+        "street": "306 Pelletier Dr",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 375000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 7,
+      "bathrooms": 4,
+      "square_feet": 3380,
+      "lot_size": "0.55 acre lot",
+      "year_built": 1961,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/e769df59ff5eaa354242d79864b37da1l-b25579762rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/e769df59ff5eaa354242d79864b37da1l-b3419893898rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/e769df59ff5eaa354242d79864b37da1l-b772718587rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/e769df59ff5eaa354242d79864b37da1l-b1703148604rd-w480_h360.webp",
+        "https://ap.rdcpix.com/e769df59ff5eaa354242d79864b37da1l-b1923336516rd-w480_h360.webp",
+        "https://ap.rdcpix.com/e769df59ff5eaa354242d79864b37da1l-b2299988199rd-w480_h360.webp",
+        "https://ap.rdcpix.com/e769df59ff5eaa354242d79864b37da1l-b25579762rd-w960_h720.webp"
+      ],
+      "agent": {
+        "name": "Tiffany Pech-williams",
+        "title": "Real Estate Salesperson",
+        "company": "CENTURY 21 ProLink"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw3j",
+      "mls_number": "new-mjj1aw3j",
+      "address": {
+        "street": "3611 Cheyenne Blvd",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 299999,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "square_feet": 2498,
+      "lot_size": "9,148sqft lot",
+      "year_built": 1960,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/01f77bb1a5a5cff2ce8e5ed86ac0ca9cl-m3178344458rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/01f77bb1a5a5cff2ce8e5ed86ac0ca9cl-m843754551rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/01f77bb1a5a5cff2ce8e5ed86ac0ca9cl-m3990521647rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/01f77bb1a5a5cff2ce8e5ed86ac0ca9cl-m843754551rd-w480_h360.webp",
+        "https://ap.rdcpix.com/01f77bb1a5a5cff2ce8e5ed86ac0ca9cl-m3772384940rd-w480_h360.webp",
+        "https://ap.rdcpix.com/01f77bb1a5a5cff2ce8e5ed86ac0ca9cl-m973605425rd-w480_h360.webp",
+        "https://ap.rdcpix.com/01f77bb1a5a5cff2ce8e5ed86ac0ca9cl-m3178344458rd-w960_h720.webp"
+      ],
+      "agent": {
+        "name": "Veronica Boogerd",
+        "title": "Real Estate Salesperson",
+        "company": "Keller Williams Siouxland"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw3k",
+      "mls_number": "new-mjj1aw3k",
+      "address": {
+        "street": "3607 Juniper Ct",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51106"
+      },
+      "price": 329950,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "square_feet": 2484,
+      "lot_size": "9,583sqft lot",
+      "year_built": 1980,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/6ececb76432aff44e20d5b9433a3341cl-m3615501190rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/6ececb76432aff44e20d5b9433a3341cl-m3165184136rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/6ececb76432aff44e20d5b9433a3341cl-m3223430845rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/6ececb76432aff44e20d5b9433a3341cl-m490705057rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/6ececb76432aff44e20d5b9433a3341cl-m1930012998rd-w1280_h960.webp"
+      ],
+      "agent": {
+        "name": "Jeff Nelson",
+        "title": "Real Estate Salesperson",
+        "company": "United Real Estate Solutions"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw3l",
+      "mls_number": "new-mjj1aw3l",
+      "address": {
+        "street": "2126 Kennedy Dr",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 129999,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "square_feet": 1008,
+      "lot_size": "6,970sqft lot",
+      "year_built": 1925,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/b04daea776f1f69958d58fcb34552338l-m2920960366rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/b04daea776f1f69958d58fcb34552338l-m2330569488rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/b04daea776f1f69958d58fcb34552338l-m3781626578rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/b04daea776f1f69958d58fcb34552338l-m2533095049rd-w480_h360.webp",
+        "https://ap.rdcpix.com/b04daea776f1f69958d58fcb34552338l-m3269843185rd-w480_h360.webp"
+      ],
+      "agent": {
+        "name": "Kathie Pfaffle",
+        "title": "Real Estate Salesperson",
+        "company": "Haus of Home"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw3m",
+      "mls_number": "new-mjj1aw3m",
+      "address": {
+        "street": "1621 Plum Creek Rd",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51103"
+      },
+      "price": 650000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "square_feet": 4852,
+      "lot_size": "4.42 acre lot",
+      "year_built": 1983,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/b3d35d01fe0fdf8ca3b80a5c90aa883al-m3699806977rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/b3d35d01fe0fdf8ca3b80a5c90aa883al-m2182664915rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/b3d35d01fe0fdf8ca3b80a5c90aa883al-m211809394rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/b3d35d01fe0fdf8ca3b80a5c90aa883al-m2295740594rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/b3d35d01fe0fdf8ca3b80a5c90aa883al-m608312628rd-w1280_h960.webp"
+      ],
+      "agent": {
+        "name": "Joe Krage",
+        "title": "Real Estate Salesperson",
+        "company": "United Real Estate Solutions"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw3n",
+      "mls_number": "new-mjj1aw3n",
+      "address": {
+        "street": "4419 Cheyenne Blvd",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 364900,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "square_feet": 3045,
+      "lot_size": "0.35 acre lot",
+      "year_built": 1984,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/8fec9d5fd3e004dc56ebc5fec9570bccl-m1590932882rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/8fec9d5fd3e004dc56ebc5fec9570bccl-m3315411314rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/8fec9d5fd3e004dc56ebc5fec9570bccl-m3839259911rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/8fec9d5fd3e004dc56ebc5fec9570bccl-m2262970481rd-w480_h360.webp",
+        "https://ap.rdcpix.com/8fec9d5fd3e004dc56ebc5fec9570bccl-m4247620862rd-w480_h360.webp",
+        "https://ap.rdcpix.com/8fec9d5fd3e004dc56ebc5fec9570bccl-m1590932882rd-w960_h720.webp"
+      ],
+      "agent": {
+        "name": "Aaron Bircher",
+        "title": "Real Estate Salesperson",
+        "company": "Keller Williams Siouxland"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw3o",
+      "mls_number": "new-mjj1aw3o",
+      "address": {
+        "street": "4005 Ridge Ave",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51106"
+      },
+      "price": 159950,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "square_feet": 816,
+      "lot_size": "7,500sqft lot",
+      "year_built": 1953,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/5f3a596d2b15d04593de732f751ac5ddl-m2454859353rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/5f3a596d2b15d04593de732f751ac5ddl-m3828750164rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/5f3a596d2b15d04593de732f751ac5ddl-m2063742491rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/5f3a596d2b15d04593de732f751ac5ddl-m1149155587rd-w480_h360.webp"
+      ],
+      "agent": {
+        "name": "Mark Vos",
+        "title": "Real Estate Salesperson",
+        "company": "Keller Williams Siouxland"
+      },
+      "listing_url": ""
+    },
+    {
+      "id": "new-mjj1aw3p",
+      "mls_number": "new-mjj1aw3p",
+      "address": {
+        "street": "31847 W Loop Rd",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51108"
+      },
+      "price": 650000,
+      "status": "Active",
+      "property_type": "Single family",
+      "bedrooms": 3,
+      "bathrooms": 4,
+      "square_feet": 4044,
+      "lot_size": "4.14 acre lot",
+      "year_built": 1984,
+      "description": "",
+      "features": [],
+      "images": [
+        "https://ap.rdcpix.com/c9a4a683ff487e649c9725eeb41b51f3l-m1158067137rd-w1280_h960.webp",
+        "https://ap.rdcpix.com/c9a4a683ff487e649c9725eeb41b51f3l-m2979893820rd-w480_h360.webp",
+        "https://ap.rdcpix.com/c9a4a683ff487e649c9725eeb41b51f3l-m983061769rd-w480_h360.webp",
+        "https://ap.rdcpix.com/c9a4a683ff487e649c9725eeb41b51f3l-m3716736236rd-w480_h360.webp"
+      ],
+      "agent": {
+        "name": "Mark Vos",
+        "title": "Real Estate Salesperson",
+        "company": "Keller Williams Siouxland"
+      },
+      "listing_url": ""
     }
   ],
   "brokerage": {

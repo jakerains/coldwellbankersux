@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { PropertyGrid } from "@/components/property";
 import { HeroBackground } from "@/components/layout";
 import {
+  AboutBrokerage,
   StatsSection,
   WorkWithUsCTA,
   NeighborhoodsGrid,
@@ -86,6 +87,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* About Brokerage Section */}
+      <AboutBrokerage />
 
       {/* Stats Section */}
       <StatsSection />

@@ -1,0 +1,1273 @@
+{
+  "listings": [
+    {
+      "property_details": {
+        "price": 334900,
+        "square_footage": 2680,
+        "property_type": "Single Family",
+        "cover_image_url": "https://ap.rdcpix.com/f5705c0781c49b4ad5f8051cdb5e7decl-m831716782rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/f5705c0781c49b4ad5f8051cdb5e7decl-m831716782rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/f5705c0781c49b4ad5f8051cdb5e7decl-m524193542rd-w480_h360.webp",
+          "https://ap.rdcpix.com/f5705c0781c49b4ad5f8051cdb5e7decl-m3016976802rd-w480_h360.webp",
+          "https://ap.rdcpix.com/f5705c0781c49b4ad5f8051cdb5e7decl-m812471497rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 4,
+          "bathrooms": 3,
+          "lot_size": "1,116 square foot lot",
+          "year_built": 1997,
+          "address": "3980 Fieldcrest Dr, Sioux City, IA 51103",
+          "garage": "2 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Madison Zeller",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "CENTURY 21 ProLink",
+        "brokerage_phone": "No brokerage phone available"
+      }
+    },
+    {
+      "property_details": {
+        "price": 339000,
+        "square_footage": 3226,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/3b55d84d8512e9905b7b407b59abc9b0l-m2903225776rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/3b55d84d8512e9905b7b407b59abc9b0l-m2903225776rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/3b55d84d8512e9905b7b407b59abc9b0l-m2136169245rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/3b55d84d8512e9905b7b407b59abc9b0l-m3722741820rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/3b55d84d8512e9905b7b407b59abc9b0l-m2136169245rd-w480_h360.webp",
+          "https://ap.rdcpix.com/3b55d84d8512e9905b7b407b59abc9b0l-m3722741820rd-w480_h360.webp",
+          "https://ap.rdcpix.com/3b55d84d8512e9905b7b407b59abc9b0l-m1054968040rd-w480_h360.webp",
+          "https://ap.rdcpix.com/3b55d84d8512e9905b7b407b59abc9b0l-m2903225776rd-w960_h720.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 4,
+          "bathrooms": 3,
+          "lot_size": "0.3 acre lot",
+          "year_built": 1922,
+          "address": "2403 E Solway St, Sioux City, IA 51104",
+          "garage": "2 Cars",
+          "heating_cooling": "high-efficiency Munchkin boiler",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Greg Gregerson",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Keller Williams Siouxland",
+        "brokerage_phone": "(712) 226-1900"
+      }
+    },
+    {
+      "property_details": {
+        "price": 244950,
+        "square_footage": 1528,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/c5ca204539b65563b1446525917f2482l-m2809496409rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/c5ca204539b65563b1446525917f2482l-m2809496409rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/c5ca204539b65563b1446525917f2482l-m2156696646rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/c5ca204539b65563b1446525917f2482l-m3557181515rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/c5ca204539b65563b1446525917f2482l-m1202914297rd-w480_h360.webp",
+          "https://ap.rdcpix.com/c5ca204539b65563b1446525917f2482l-m1738404721rd-w480_h360.webp",
+          "https://ap.rdcpix.com/c5ca204539b65563b1446525917f2482l-m3897515604rd-w480_h360.webp",
+          "https://ap.rdcpix.com/c5ca204539b65563b1446525917f2482l-m2809496409rd-w960_h720.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 3,
+          "bathrooms": 2,
+          "lot_size": "5,200sqft lot",
+          "year_built": 1920,
+          "address": "2527 S Lemon St, Sioux City, IA 51106",
+          "garage": "2 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "utility sink"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Kristie Drent",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Keller Williams Siouxland",
+        "brokerage_phone": "(712) 226-1900"
+      }
+    },
+    {
+      "property_details": {
+        "price": 179900,
+        "square_footage": 1834,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/6f6eb33f11c68b0f4ce9966ac81930bbl-m2991331548rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/6f6eb33f11c68b0f4ce9966ac81930bbl-m2991331548rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/6f6eb33f11c68b0f4ce9966ac81930bbl-m2935796715rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/6f6eb33f11c68b0f4ce9966ac81930bbl-m3864710184rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/6f6eb33f11c68b0f4ce9966ac81930bbl-m155989848rd-w480_h360.webp",
+          "https://ap.rdcpix.com/6f6eb33f11c68b0f4ce9966ac81930bbl-m825415998rd-w480_h360.webp",
+          "https://ap.rdcpix.com/6f6eb33f11c68b0f4ce9966ac81930bbl-m3329031734rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 3,
+          "bathrooms": 1,
+          "lot_size": "8,712sqft lot",
+          "year_built": 1900,
+          "address": "2600 Rebecca St, Sioux City, IA 51103",
+          "garage": "No garage information available",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Amy Kakacek",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "LPT Realty, LLC",
+        "brokerage_phone": "No brokerage phone available"
+      }
+    },
+    {
+      "property_details": {
+        "price": 280000,
+        "square_footage": 2600,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/20ab6e4bd15dc38620155325deda1e3al-b4161457690rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/20ab6e4bd15dc38620155325deda1e3al-b4161457690rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/20ab6e4bd15dc38620155325deda1e3al-b1215187848rd-w480_h360.webp",
+          "https://ap.rdcpix.com/20ab6e4bd15dc38620155325deda1e3al-b25807760rd-w480_h360.webp",
+          "https://ap.rdcpix.com/20ab6e4bd15dc38620155325deda1e3al-b175332399rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 3,
+          "bathrooms": 3,
+          "lot_size": "0.44 acre lot",
+          "year_built": 1950,
+          "address": "4000 W 4th St, Sioux City, IA 51103",
+          "garage": "2 Cars",
+          "heating_cooling": "Central air, Forced air",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Chon Plascencia",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "CENTURY 21 ProLink",
+        "brokerage_phone": "No brokerage phone available"
+      }
+    },
+    {
+      "property_details": {
+        "price": 350000,
+        "square_footage": 2500,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/4190dd0945236444d28343bd2945a2e8l-m2852064862rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/4190dd0945236444d28343bd2945a2e8l-m2852064862rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/4190dd0945236444d28343bd2945a2e8l-m785095590rd-w480_h360.webp",
+          "https://ap.rdcpix.com/4190dd0945236444d28343bd2945a2e8l-m2320919823rd-w480_h360.webp",
+          "https://ap.rdcpix.com/4190dd0945236444d28343bd2945a2e8l-m4073055076rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 3,
+          "bathrooms": 3,
+          "lot_size": "7,973sqft lot",
+          "year_built": 1978,
+          "address": "1516 Aztec Cir, Sioux City, IA 51104",
+          "garage": "2 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Alex Imming",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Keller Williams Siouxland",
+        "brokerage_phone": "No brokerage phone available"
+      }
+    },
+    {
+      "property_details": {
+        "price": 200000,
+        "square_footage": 1536,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/edac71bd098203842af2e5ea111bc39bl-m3425379835rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/edac71bd098203842af2e5ea111bc39bl-m3425379835rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/edac71bd098203842af2e5ea111bc39bl-m2350603653rd-w480_h360.webp",
+          "https://ap.rdcpix.com/edac71bd098203842af2e5ea111bc39bl-m3642881835rd-w480_h360.webp",
+          "https://ap.rdcpix.com/edac71bd098203842af2e5ea111bc39bl-m648933670rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 2,
+          "bathrooms": 2,
+          "lot_size": "9,900sqft lot",
+          "year_built": 1949,
+          "address": "313 30th St, Sioux City, IA 51104",
+          "garage": "2 Cars",
+          "heating_cooling": "Central air, Forced air",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Jamie Friedel",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Plains Asset Group",
+        "brokerage_phone": "No brokerage phone available"
+      }
+    },
+    {
+      "property_details": {
+        "price": 200000,
+        "square_footage": 1454,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/7d927f5235500626748c5e62930a0f41l-m1847585562rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/7d927f5235500626748c5e62930a0f41l-m1847585562rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/7d927f5235500626748c5e62930a0f41l-m709610425rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/7d927f5235500626748c5e62930a0f41l-m2715466302rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/7d927f5235500626748c5e62930a0f41l-m3289042580rd-w480_h360.webp",
+          "https://ap.rdcpix.com/7d927f5235500626748c5e62930a0f41l-m2437753380rd-w480_h360.webp",
+          "https://ap.rdcpix.com/7d927f5235500626748c5e62930a0f41l-m2715466302rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 3,
+          "bathrooms": 2,
+          "lot_size": "6,880sqft lot",
+          "year_built": 1925,
+          "address": "1335 21st St, Sioux City, IA 51104",
+          "garage": "7 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Audrey Hoekstra",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Gateway Real Estate Advisors",
+        "brokerage_phone": "No brokerage phone available"
+      }
+    },
+    {
+      "property_details": {
+        "price": 299900,
+        "square_footage": 3226,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/4cf898e2ac865fd20d3774370447b917l-m2850838487rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/4cf898e2ac865fd20d3774370447b917l-m2850838487rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/4cf898e2ac865fd20d3774370447b917l-m4256106996rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/4cf898e2ac865fd20d3774370447b917l-m1476521954rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/4cf898e2ac865fd20d3774370447b917l-m2891401821rd-w480_h360.webp",
+          "https://ap.rdcpix.com/4cf898e2ac865fd20d3774370447b917l-m3929788806rd-w480_h360.webp",
+          "https://ap.rdcpix.com/4cf898e2ac865fd20d3774370447b917l-m4269095581rd-w480_h360.webp",
+          "https://ap.rdcpix.com/4cf898e2ac865fd20d3774370447b917l-m2850838487rd-w960_h720.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 5,
+          "bathrooms": 4,
+          "lot_size": "0.31 acre lot",
+          "year_built": 1991,
+          "address": "1304 46th St, Sioux City, IA 51104",
+          "garage": "2 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Bkr As., Rochelle Lundy",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Coldwell Banker Associated Brokers Realty",
+        "brokerage_phone": "(888) 913-7653"
+      }
+    },
+    {
+      "property_details": {
+        "price": 175000,
+        "square_footage": 1268,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/5114bbe0fb3b3847fcb963368437edddl-m3006479472rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/5114bbe0fb3b3847fcb963368437edddl-m3006479472rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/5114bbe0fb3b3847fcb963368437edddl-m2988387734rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/5114bbe0fb3b3847fcb963368437edddl-m647065864rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/5114bbe0fb3b3847fcb963368437edddl-m237564620rd-w480_h360.webp",
+          "https://ap.rdcpix.com/5114bbe0fb3b3847fcb963368437edddl-m3412560389rd-w480_h360.webp",
+          "https://ap.rdcpix.com/5114bbe0fb3b3847fcb963368437edddl-m277239549rd-w480_h360.webp",
+          "https://ap.rdcpix.com/5114bbe0fb3b3847fcb963368437edddl-m3006479472rd-w960_h720.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 2,
+          "bathrooms": 1,
+          "lot_size": "6,250sqft lot",
+          "year_built": 1951,
+          "address": "2036 S Royce St, Sioux City, IA 51106",
+          "garage": "1 Car",
+          "heating_cooling": "central air",
+          "appliances": "All appliances to stay with the home"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "LaNay Welch, Broker",
+        "phone": "(712) 251-7742",
+        "brokerage": "Keller Williams Siouxland",
+        "brokerage_phone": "(712) 226-1900"
+      }
+    },
+    {
+      "property_details": {
+        "price": 280000,
+        "square_footage": 2369,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/ce32f0a5bbcf62b6bbf0b33f6689fd23l-m1718467788rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/ce32f0a5bbcf62b6bbf0b33f6689fd23l-m1718467788rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/ce32f0a5bbcf62b6bbf0b33f6689fd23l-m979086383rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/ce32f0a5bbcf62b6bbf0b33f6689fd23l-m2332515562rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/ce32f0a5bbcf62b6bbf0b33f6689fd23l-m3995661084rd-w480_h360.webp",
+          "https://ap.rdcpix.com/ce32f0a5bbcf62b6bbf0b33f6689fd23l-m347247214rd-w480_h360.webp",
+          "https://ap.rdcpix.com/ce32f0a5bbcf62b6bbf0b33f6689fd23l-m3260634812rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 3,
+          "bathrooms": 2,
+          "lot_size": "6,880sqft lot",
+          "year_built": 1925,
+          "address": "11 Blackstone Ave, Sioux City, IA 51104",
+          "garage": "1 Car",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Sheryl Ford",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "United Real Estate Solutions",
+        "brokerage_phone": "(712) 226-6000"
+      }
+    },
+    {
+      "property_details": {
+        "price": 309500,
+        "square_footage": 2303,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/86123f31d1f171dba8218642bee8b19fl-m3661431061rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/86123f31d1f171dba8218642bee8b19fl-m3661431061rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/86123f31d1f171dba8218642bee8b19fl-m554182935rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/86123f31d1f171dba8218642bee8b19fl-m2461108359rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/86123f31d1f171dba8218642bee8b19fl-m554182935rd-w480_h360.webp",
+          "https://ap.rdcpix.com/86123f31d1f171dba8218642bee8b19fl-m1412062460rd-w480_h360.webp",
+          "https://ap.rdcpix.com/86123f31d1f171dba8218642bee8b19fl-m2461108359rd-w480_h360.webp",
+          "https://ap.rdcpix.com/86123f31d1f171dba8218642bee8b19fl-m3661431061rd-w960_h720.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 4,
+          "bathrooms": 3,
+          "lot_size": "0.24 acre lot",
+          "year_built": 1978,
+          "address": "5811 Lorraine Ave, Sioux City, IA 51106",
+          "garage": "2 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "fridge"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Julie Stevenson-Fischer",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Premier Realty Group",
+        "brokerage_phone": "(888) 880-4517"
+      }
+    },
+    {
+      "property_details": {
+        "price": 160000,
+        "square_footage": 947,
+        "property_type": "Condo",
+        "cover_image_url": "https://ap.rdcpix.com/bdf7b66e446877afaf52a1078849873al-m3596139401rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/bdf7b66e446877afaf52a1078849873al-m3596139401rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/bdf7b66e446877afaf52a1078849873al-m1221916511rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/bdf7b66e446877afaf52a1078849873al-m1081744958rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/bdf7b66e446877afaf52a1078849873al-m1221916511rd-w480_h360.webp",
+          "https://ap.rdcpix.com/bdf7b66e446877afaf52a1078849873al-m1951227866rd-w480_h360.webp",
+          "https://ap.rdcpix.com/bdf7b66e446877afaf52a1078849873al-m3415656621rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 2,
+          "bathrooms": 2,
+          "lot_size": "5,227sqft lot",
+          "year_built": 1973,
+          "address": "3003 Viking Dr, Sioux City, IA 51104",
+          "garage": "1 Car",
+          "heating_cooling": "Central air",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Sue Stanek",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Keller Williams Siouxland",
+        "brokerage_phone": "No brokerage phone available"
+      }
+    },
+    {
+      "property_details": {
+        "price": 225000,
+        "square_footage": 1212,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/2564daff1ab365e9bca448a955c25202l-m3135076796rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/2564daff1ab365e9bca448a955c25202l-m3135076796rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/2564daff1ab365e9bca448a955c25202l-m3037277643rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/2564daff1ab365e9bca448a955c25202l-m3473896763rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/2564daff1ab365e9bca448a955c25202l-m3029764706rd-w480_h360.webp",
+          "https://ap.rdcpix.com/2564daff1ab365e9bca448a955c25202l-m3953279541rd-w480_h360.webp",
+          "https://ap.rdcpix.com/2564daff1ab365e9bca448a955c25202l-m781331267rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 3,
+          "bathrooms": 2,
+          "lot_size": "0.26 acre lot",
+          "year_built": 1950,
+          "address": "3200 Grandview Blvd, Sioux City, IA 51104",
+          "garage": "1 Car",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "PEGGY LA",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "LPT Realty, LLC",
+        "brokerage_phone": "No brokerage phone available"
+      }
+    },
+    {
+      "property_details": {
+        "price": 268000,
+        "square_footage": 1728,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/414795c89fd224763238d7bbc273a6d8l-m672358684rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/414795c89fd224763238d7bbc273a6d8l-m672358684rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/414795c89fd224763238d7bbc273a6d8l-m104619293rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/414795c89fd224763238d7bbc273a6d8l-m3005262677rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/414795c89fd224763238d7bbc273a6d8l-m104619293rd-w480_h360.webp",
+          "https://ap.rdcpix.com/414795c89fd224763238d7bbc273a6d8l-m2003560469rd-w480_h360.webp",
+          "https://ap.rdcpix.com/414795c89fd224763238d7bbc273a6d8l-m672358684rd-w960_h720.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 4,
+          "bathrooms": 2,
+          "lot_size": "9,148sqft lot",
+          "year_built": 1952,
+          "address": "2415 S Cypress St, Sioux City, IA 51106",
+          "garage": "1 Car (1-stall garage up front with additional 2 car parking in back)",
+          "heating_cooling": "Central air, Forced air",
+          "appliances": "Dishwasher"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Alexandra Krotz",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Keller Williams Siouxland",
+        "brokerage_phone": "(712) 226-1900"
+      }
+    },
+    {
+      "property_details": {
+        "price": 324950,
+        "square_footage": 2230,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/e05b132f6a819345784bcb5fd66a6aa7l-m2472052644rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/e05b132f6a819345784bcb5fd66a6aa7l-m2472052644rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/e05b132f6a819345784bcb5fd66a6aa7l-m2602914210rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/e05b132f6a819345784bcb5fd66a6aa7l-m2947094509rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/e05b132f6a819345784bcb5fd66a6aa7l-m4204898851rd-w480_h360.webp",
+          "https://ap.rdcpix.com/e05b132f6a819345784bcb5fd66a6aa7l-m1172848576rd-w480_h360.webp",
+          "https://ap.rdcpix.com/e05b132f6a819345784bcb5fd66a6aa7l-m4062439509rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 3,
+          "bathrooms": 3,
+          "lot_size": "0.25 acre lot",
+          "year_built": 1981,
+          "address": "4113 Hickory Ln, Sioux City, IA 51106",
+          "garage": "2 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Jeff Nelson",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "United Real Estate Solutions",
+        "brokerage_phone": "(712) 226-6000"
+      }
+    },
+    {
+      "property_details": {
+        "price": 228000,
+        "square_footage": 1620,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/0ed9d267fb8e1ffd8c05b936b4181140l-b144623457rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/0ed9d267fb8e1ffd8c05b936b4181140l-b144623457rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/0ed9d267fb8e1ffd8c05b936b4181140l-b19233918rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/0ed9d267fb8e1ffd8c05b936b4181140l-b1682077927rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/0ed9d267fb8e1ffd8c05b936b4181140l-b1874193636rd-w480_h360.webp",
+          "https://ap.rdcpix.com/0ed9d267fb8e1ffd8c05b936b4181140l-b2818454390rd-w480_h360.webp",
+          "https://ap.rdcpix.com/0ed9d267fb8e1ffd8c05b936b4181140l-b829711238rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 4,
+          "bathrooms": 2,
+          "lot_size": "1,070sqft lot",
+          "year_built": 1956,
+          "address": "3012 S Cornelia St, Sioux City, IA 51106",
+          "garage": "1 Car",
+          "heating_cooling": "Central air, Forced air",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Jeff Carlson",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "RE MAX Experience",
+        "brokerage_phone": "No brokerage phone available"
+      }
+    },
+    {
+      "property_details": {
+        "price": 369900,
+        "square_footage": 2874,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/254424165309ff5690767bd521c1c722l-m3485244320rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/254424165309ff5690767bd521c1c722l-m3485244320rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/254424165309ff5690767bd521c1c722l-m113788536rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/254424165309ff5690767bd521c1c722l-m4085409454rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/254424165309ff5690767bd521c1c722l-m2423739535rd-w480_h360.webp",
+          "https://ap.rdcpix.com/254424165309ff5690767bd521c1c722l-m2781558469rd-w480_h360.webp",
+          "https://ap.rdcpix.com/254424165309ff5690767bd521c1c722l-m1467075687rd-w480_h360.webp",
+          "https://ap.rdcpix.com/254424165309ff5690767bd521c1c722l-m3485244320rd-w960_h720.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 4,
+          "bathrooms": 3,
+          "lot_size": "0.72 acre lot",
+          "year_built": 1970,
+          "address": "4001 Cheyenne Blvd, Sioux City, IA 51104",
+          "garage": "2 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "Dishwasher"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Toni Delfs",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Keller Williams Siouxland",
+        "brokerage_phone": "(712) 226-1900"
+      }
+    },
+    {
+      "property_details": {
+        "price": 317500,
+        "square_footage": 2262,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/dbd2f36affe5d3cf8b18cd6236d6a5f2l-m861682652rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/dbd2f36affe5d3cf8b18cd6236d6a5f2l-m861682652rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/dbd2f36affe5d3cf8b18cd6236d6a5f2l-m4033502366rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/dbd2f36affe5d3cf8b18cd6236d6a5f2l-m1446075706rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/dbd2f36affe5d3cf8b18cd6236d6a5f2l-m711611463rd-w480_h360.webp",
+          "https://ap.rdcpix.com/dbd2f36affe5d3cf8b18cd6236d6a5f2l-m3154626458rd-w480_h360.webp",
+          "https://ap.rdcpix.com/dbd2f36affe5d3cf8b18cd6236d6a5f2l-m597206342rd-w480_h360.webp",
+          "https://ap.rdcpix.com/dbd2f36affe5d3cf8b18cd6236d6a5f2l-m861682652rd-w960_h720.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 4,
+          "bathrooms": 3,
+          "lot_size": "0.32 acre lot",
+          "year_built": 1993,
+          "address": "3301 Morgan St, Sioux City, IA 51104",
+          "garage": "2 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Stephanie Dattolico",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Gateway Real Estate Advisors",
+        "brokerage_phone": "No brokerage phone available"
+      }
+    },
+    {
+      "property_details": {
+        "price": 195000,
+        "square_footage": 1224,
+        "property_type": "Condo",
+        "cover_image_url": "https://ap.rdcpix.com/8df0a91208bf1e83e9f426b4b6c1635fl-m2057595787rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/8df0a91208bf1e83e9f426b4b6c1635fl-m2057595787rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/8df0a91208bf1e83e9f426b4b6c1635fl-m4137680450rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/8df0a91208bf1e83e9f426b4b6c1635fl-m3067861896rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/8df0a91208bf1e83e9f426b4b6c1635fl-m222428614rd-w480_h360.webp",
+          "https://ap.rdcpix.com/8df0a91208bf1e83e9f426b4b6c1635fl-m3357116196rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 2,
+          "bathrooms": 2,
+          "lot_size": "5,612sqft lot",
+          "year_built": 1973,
+          "address": "1839 Indian Hills Dr, Sioux City, IA 51104",
+          "garage": "2 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Kylee Hombs",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Coldwell Banker Associated Brokers Realty",
+        "brokerage_phone": "(888) 913-7653"
+      }
+    },
+    {
+      "property_details": {
+        "price": 549900,
+        "square_footage": 6368,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/3a47854e739255fdd0e662b463c68981l-m915992634rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/3a47854e739255fdd0e662b463c68981l-m915992634rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/3a47854e739255fdd0e662b463c68981l-m3761544550rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/3a47854e739255fdd0e662b463c68981l-m2703609834rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/3a47854e739255fdd0e662b463c68981l-m3761544550rd-w480_h360.webp",
+          "https://ap.rdcpix.com/3a47854e739255fdd0e662b463c68981l-m3258236819rd-w480_h360.webp",
+          "https://ap.rdcpix.com/3a47854e739255fdd0e662b463c68981l-m4162052085rd-w480_h360.webp",
+          "https://ap.rdcpix.com/3a47854e739255fdd0e662b463c68981l-m915992634rd-w960_h720.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 3,
+          "bathrooms": 3,
+          "lot_size": "13 acre lot",
+          "year_built": 1975,
+          "address": "757 Buckwalter Dr, Sioux City, IA 51108",
+          "garage": "3 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Julie Stevenson-Fischer",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Premier Realty Group",
+        "brokerage_phone": "(888) 880-4517"
+      }
+    },
+    {
+      "property_details": {
+        "price": 292000,
+        "square_footage": 1994,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/40a5ac486e21109f765cc67cc78f29dcl-b3677367270rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/40a5ac486e21109f765cc67cc78f29dcl-b3677367270rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/40a5ac486e21109f765cc67cc78f29dcl-b470143434rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/40a5ac486e21109f765cc67cc78f29dcl-b224665818rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/40a5ac486e21109f765cc67cc78f29dcl-b1902193596rd-w480_h360.webp",
+          "https://ap.rdcpix.com/40a5ac486e21109f765cc67cc78f29dcl-b3980230042rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 3,
+          "bathrooms": 3,
+          "lot_size": "7,293sqft lot",
+          "year_built": 1970,
+          "address": "3131 S Oleander St, Sioux City, IA 51106",
+          "garage": "2 Cars",
+          "heating_cooling": "Central air, Forced air, HVAC (2019)",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Misty Szczech",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "EXIT REALTY MIDWEST",
+        "brokerage_phone": "(712) 546-4011"
+      }
+    },
+    {
+      "property_details": {
+        "price": 215000,
+        "square_footage": 1848,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/f2896cb28e30dd0f64b73f592d5969d9l-m2698951697rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/f2896cb28e30dd0f64b73f592d5969d9l-m2698951697rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/f2896cb28e30dd0f64b73f592d5969d9l-m2135885443rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/f2896cb28e30dd0f64b73f592d5969d9l-m1084401593rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/f2896cb28e30dd0f64b73f592d5969d9l-m1528681029rd-w480_h360.webp",
+          "https://ap.rdcpix.com/f2896cb28e30dd0f64b73f592d5969d9l-m3323571999rd-w480_h360.webp",
+          "https://ap.rdcpix.com/f2896cb28e30dd0f64b73f592d5969d9l-m1187219911rd-w480_h360.webp",
+          "https://ap.rdcpix.com/f2896cb28e30dd0f64b73f592d5969d9l-m2698951697rd-w960_h720.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 4,
+          "bathrooms": 1,
+          "lot_size": "5,663sqft lot",
+          "year_built": 1900,
+          "address": "1922 Heights Ave, Sioux City, IA 51104",
+          "garage": "1 Car",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Aaron Tyler",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Keller Williams Siouxland",
+        "brokerage_phone": "(712) 226-1900"
+      }
+    },
+    {
+      "property_details": {
+        "price": 289000,
+        "square_footage": 2328,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/9bc40c7e0901ec1d42d2b64321b25affl-b3516708184rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/9bc40c7e0901ec1d42d2b64321b25affl-b3516708184rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/9bc40c7e0901ec1d42d2b64321b25affl-b1526662018rd-w1280_h960.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 4,
+          "bathrooms": 3,
+          "lot_size": "9,920sqft lot",
+          "year_built": 1960,
+          "address": "408 Hampden Ct, Sioux City, IA 51104",
+          "garage": "2 Cars",
+          "heating_cooling": "Central air, Forced air",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Michelle White",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "CENTURY 21 ProLink",
+        "brokerage_phone": "(712) 224-2300"
+      }
+    },
+    {
+      "property_details": {
+        "price": 469000,
+        "square_footage": 3316,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/d93351dd8f55025a7bc4c756f4f8def7l-m3716076273rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/d93351dd8f55025a7bc4c756f4f8def7l-m3716076273rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/d93351dd8f55025a7bc4c756f4f8def7l-m3570383272rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/d93351dd8f55025a7bc4c756f4f8def7l-m4087917359rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/d93351dd8f55025a7bc4c756f4f8def7l-m261224021rd-w480_h360.webp",
+          "https://ap.rdcpix.com/d93351dd8f55025a7bc4c756f4f8def7l-m3758271680rd-w480_h360.webp",
+          "https://ap.rdcpix.com/d93351dd8f55025a7bc4c756f4f8def7l-m959674418rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 5,
+          "bathrooms": 5,
+          "lot_size": "0.66 acre lot",
+          "year_built": 1979,
+          "address": "3711 Martins Yard, Sioux City, IA 51104",
+          "garage": "2 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "Gourmet kitchen"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "CHERI S. BRACHT",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Cardinal City Realty, Inc.",
+        "brokerage_phone": "No brokerage phone available"
+      }
+    },
+    {
+      "property_details": {
+        "price": 1895000,
+        "square_footage": 5769,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/bc7d09195a92ec364c35590cd660a9e8l-m3528406171rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/bc7d09195a92ec364c35590cd660a9e8l-m3528406171rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/bc7d09195a92ec364c35590cd660a9e8l-m2986247672rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/bc7d09195a92ec364c35590cd660a9e8l-m2717720498rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/bc7d09195a92ec364c35590cd660a9e8l-m3978550539rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/bc7d09195a92ec364c35590cd660a9e8l-m1084157382rd-w1280_h960.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 4,
+          "bathrooms": 5,
+          "lot_size": "34.33 acre lot",
+          "year_built": 1999,
+          "address": "21122 320th St, Sioux City, IA 51108",
+          "garage": "6 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Joe Krage",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "United Real Estate Solutions",
+        "brokerage_phone": "(712) 226-6000"
+      }
+    },
+    {
+      "property_details": {
+        "price": 800000,
+        "square_footage": 7098,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/79d0c657362174abd2a4d763c86c9443l-b588997201rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/79d0c657362174abd2a4d763c86c9443l-b588997201rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/79d0c657362174abd2a4d763c86c9443l-b620830752rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/79d0c657362174abd2a4d763c86c9443l-b1654607806rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/79d0c657362174abd2a4d763c86c9443l-b3299959291rd-w480_h360.webp",
+          "https://ap.rdcpix.com/79d0c657362174abd2a4d763c86c9443l-b3489105365rd-w480_h360.webp",
+          "https://ap.rdcpix.com/79d0c657362174abd2a4d763c86c9443l-b588997201rd-w960_h720.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 4,
+          "bathrooms": 5,
+          "lot_size": "4.64 acre lot",
+          "year_built": 1992,
+          "address": "4640 Perry Way, Sioux City, IA 51104",
+          "garage": "3 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Barb Maxon",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "CENTURY 21 ProLink",
+        "brokerage_phone": "(712) 224-2300"
+      }
+    },
+    {
+      "property_details": {
+        "price": 354400,
+        "square_footage": 2131,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/18711e5170cdb329874d7f030abdd81al-m1843542025rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/18711e5170cdb329874d7f030abdd81al-m1843542025rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/18711e5170cdb329874d7f030abdd81al-m3930351911rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/18711e5170cdb329874d7f030abdd81al-m1087845922rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/18711e5170cdb329874d7f030abdd81al-m266113592rd-w480_h360.webp",
+          "https://ap.rdcpix.com/18711e5170cdb329874d7f030abdd81al-m3879066735rd-w480_h360.webp",
+          "https://ap.rdcpix.com/18711e5170cdb329874d7f030abdd81al-m305605122rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 3,
+          "bathrooms": 3,
+          "lot_size": "9,815sqft lot",
+          "year_built": 1974,
+          "address": "4912 Evergreen Ln, Sioux City, IA 51106",
+          "garage": "2 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Tricia Keleher",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Keller Williams Siouxland",
+        "brokerage_phone": "(712) 226-1900"
+      }
+    },
+    {
+      "property_details": {
+        "price": 185000,
+        "square_footage": 1128,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/34297004db8e45ba3b4cf5b5a179c045l-m2235858036rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/34297004db8e45ba3b4cf5b5a179c045l-m2235858036rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/34297004db8e45ba3b4cf5b5a179c045l-m2358501472rd-w480_h360.webp",
+          "https://ap.rdcpix.com/34297004db8e45ba3b4cf5b5a179c045l-m1940340765rd-w480_h360.webp",
+          "https://ap.rdcpix.com/34297004db8e45ba3b4cf5b5a179c045l-m1816233045rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 3,
+          "bathrooms": 2,
+          "lot_size": "7,405sqft lot",
+          "year_built": 1918,
+          "address": "3700 Stone Ave, Sioux City, IA 51106",
+          "garage": "1 Car",
+          "heating_cooling": "Central air",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Amy Kakacek",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "LPT Realty, LLC",
+        "brokerage_phone": "No brokerage phone available"
+      }
+    },
+    {
+      "property_details": {
+        "price": 210000,
+        "square_footage": 1557,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/76839c8255ebee387d12382967fad8e4l-m2083561703rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/76839c8255ebee387d12382967fad8e4l-m2083561703rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/76839c8255ebee387d12382967fad8e4l-m2501386946rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/76839c8255ebee387d12382967fad8e4l-m3358695994rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/76839c8255ebee387d12382967fad8e4l-m1276642914rd-w480_h360.webp",
+          "https://ap.rdcpix.com/76839c8255ebee387d12382967fad8e4l-m3165649484rd-w480_h360.webp",
+          "https://ap.rdcpix.com/76839c8255ebee387d12382967fad8e4l-m1608556667rd-w480_h360.webp",
+          "https://ap.rdcpix.com/76839c8255ebee387d12382967fad8e4l-m2083561703rd-w960_h720.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 4,
+          "bathrooms": 1,
+          "lot_size": "5,663sqft lot",
+          "year_built": 1917,
+          "address": "701 S Paxton St, Sioux City, IA 51106",
+          "garage": "1 Car",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "Dishwasher"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "LaNay Welch, Broker",
+        "phone": "(712) 251-7742",
+        "brokerage": "Keller Williams Siouxland",
+        "brokerage_phone": "(712) 226-1900"
+      }
+    },
+    {
+      "property_details": {
+        "price": 170000,
+        "square_footage": 1703,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/599618edf7c8daaf6bb8181a3e6f17a7l-b887945767rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/599618edf7c8daaf6bb8181a3e6f17a7l-b887945767rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/599618edf7c8daaf6bb8181a3e6f17a7l-b339533256rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/599618edf7c8daaf6bb8181a3e6f17a7l-b1256072703rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/599618edf7c8daaf6bb8181a3e6f17a7l-b2839727500rd-w480_h360.webp",
+          "https://ap.rdcpix.com/599618edf7c8daaf6bb8181a3e6f17a7l-b2913007063rd-w480_h360.webp",
+          "https://ap.rdcpix.com/599618edf7c8daaf6bb8181a3e6f17a7l-b2187574919rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 5,
+          "bathrooms": 2,
+          "lot_size": "3,650sqft lot",
+          "year_built": 1890,
+          "address": "1913 George St, Sioux City, IA 51103",
+          "garage": "No garage information available",
+          "heating_cooling": "Central air, Forced air",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Lisa Sissel",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "CENTURY 21 ProLink",
+        "brokerage_phone": "No brokerage phone available"
+      }
+    },
+    {
+      "property_details": {
+        "price": 164950,
+        "square_footage": 1798,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/0138cb3e6d94f918624fc6d3b0e02afel-m147190871rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/0138cb3e6d94f918624fc6d3b0e02afel-m147190871rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/0138cb3e6d94f918624fc6d3b0e02afel-m486684529rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/0138cb3e6d94f918624fc6d3b0e02afel-m621538239rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/0138cb3e6d94f918624fc6d3b0e02afel-m3392282844rd-w480_h360.webp",
+          "https://ap.rdcpix.com/0138cb3e6d94f918624fc6d3b0e02afel-m2359621615rd-w480_h360.webp",
+          "https://ap.rdcpix.com/0138cb3e6d94f918624fc6d3b0e02afel-m2236868809rd-w480_h360.webp",
+          "https://ap.rdcpix.com/0138cb3e6d94f918624fc6d3b0e02afel-m147190871rd-w960_h720.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 2,
+          "bathrooms": 3,
+          "lot_size": "0.37 acre lot",
+          "year_built": 1940,
+          "address": "3000 S Lakeport St, Sioux City, IA 51106",
+          "garage": "3 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Norma Karnes",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "LPT Realty, LLC",
+        "brokerage_phone": "No brokerage phone available"
+      }
+    },
+    {
+      "property_details": {
+        "price": 375000,
+        "square_footage": 3380,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/e769df59ff5eaa354242d79864b37da1l-b25579762rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/e769df59ff5eaa354242d79864b37da1l-b25579762rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/e769df59ff5eaa354242d79864b37da1l-b3419893898rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/e769df59ff5eaa354242d79864b37da1l-b772718587rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/e769df59ff5eaa354242d79864b37da1l-b1703148604rd-w480_h360.webp",
+          "https://ap.rdcpix.com/e769df59ff5eaa354242d79864b37da1l-b1923336516rd-w480_h360.webp",
+          "https://ap.rdcpix.com/e769df59ff5eaa354242d79864b37da1l-b2299988199rd-w480_h360.webp",
+          "https://ap.rdcpix.com/e769df59ff5eaa354242d79864b37da1l-b25579762rd-w960_h720.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 7,
+          "bathrooms": 4,
+          "lot_size": "0.55 acre lot",
+          "year_built": 1961,
+          "address": "306 Pelletier Dr, Sioux City, IA 51104",
+          "garage": "2 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "stainless steel appliances"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Tiffany Pech-williams",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "CENTURY 21 ProLink",
+        "brokerage_phone": "(712) 224-2300"
+      }
+    },
+    {
+      "property_details": {
+        "price": 299999,
+        "square_footage": 2498,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/01f77bb1a5a5cff2ce8e5ed86ac0ca9cl-m3178344458rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/01f77bb1a5a5cff2ce8e5ed86ac0ca9cl-m3178344458rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/01f77bb1a5a5cff2ce8e5ed86ac0ca9cl-m843754551rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/01f77bb1a5a5cff2ce8e5ed86ac0ca9cl-m3990521647rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/01f77bb1a5a5cff2ce8e5ed86ac0ca9cl-m843754551rd-w480_h360.webp",
+          "https://ap.rdcpix.com/01f77bb1a5a5cff2ce8e5ed86ac0ca9cl-m3772384940rd-w480_h360.webp",
+          "https://ap.rdcpix.com/01f77bb1a5a5cff2ce8e5ed86ac0ca9cl-m973605425rd-w480_h360.webp",
+          "https://ap.rdcpix.com/01f77bb1a5a5cff2ce8e5ed86ac0ca9cl-m3178344458rd-w960_h720.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 5,
+          "bathrooms": 3,
+          "lot_size": "9,148sqft lot",
+          "year_built": 1960,
+          "address": "3611 Cheyenne Blvd, Sioux City, IA 51104",
+          "garage": "2 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Veronica Boogerd",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Keller Williams Siouxland",
+        "brokerage_phone": "(712) 226-1900"
+      }
+    },
+    {
+      "property_details": {
+        "price": 329950,
+        "square_footage": 2484,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/6ececb76432aff44e20d5b9433a3341cl-m3615501190rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/6ececb76432aff44e20d5b9433a3341cl-m3615501190rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/6ececb76432aff44e20d5b9433a3341cl-m3165184136rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/6ececb76432aff44e20d5b9433a3341cl-m3223430845rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/6ececb76432aff44e20d5b9433a3341cl-m490705057rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/6ececb76432aff44e20d5b9433a3341cl-m1930012998rd-w1280_h960.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 4,
+          "bathrooms": 3,
+          "lot_size": "9,583sqft lot",
+          "year_built": 1980,
+          "address": "3607 Juniper Ct, Sioux City, IA 51106",
+          "garage": "2 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Jeff Nelson",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "United Real Estate Solutions",
+        "brokerage_phone": "(712) 226-6000"
+      }
+    },
+    {
+      "property_details": {
+        "price": 129999,
+        "square_footage": 1008,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/b04daea776f1f69958d58fcb34552338l-m2920960366rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/b04daea776f1f69958d58fcb34552338l-m2920960366rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/b04daea776f1f69958d58fcb34552338l-m2330569488rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/b04daea776f1f69958d58fcb34552338l-m3781626578rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/b04daea776f1f69958d58fcb34552338l-m2533095049rd-w480_h360.webp",
+          "https://ap.rdcpix.com/b04daea776f1f69958d58fcb34552338l-m3269843185rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 2,
+          "bathrooms": 1,
+          "lot_size": "6,970sqft lot",
+          "year_built": 1925,
+          "address": "2126 Kennedy Dr, Sioux City, IA 51104",
+          "garage": "1 Car",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Kathie Pfaffle",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Haus of Home",
+        "brokerage_phone": "No brokerage phone available"
+      }
+    },
+    {
+      "property_details": {
+        "price": 650000,
+        "square_footage": 4852,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/b3d35d01fe0fdf8ca3b80a5c90aa883al-m3699806977rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/b3d35d01fe0fdf8ca3b80a5c90aa883al-m3699806977rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/b3d35d01fe0fdf8ca3b80a5c90aa883al-m2182664915rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/b3d35d01fe0fdf8ca3b80a5c90aa883al-m211809394rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/b3d35d01fe0fdf8ca3b80a5c90aa883al-m2295740594rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/b3d35d01fe0fdf8ca3b80a5c90aa883al-m608312628rd-w1280_h960.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 5,
+          "bathrooms": 3,
+          "lot_size": "4.42 acre lot",
+          "year_built": 1983,
+          "address": "1621 Plum Creek Rd, Sioux City, IA 51103",
+          "garage": "3 Cars",
+          "heating_cooling": "Central air",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Joe Krage",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "United Real Estate Solutions",
+        "brokerage_phone": "(712) 226-6000"
+      }
+    },
+    {
+      "property_details": {
+        "price": 364900,
+        "square_footage": 3045,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/8fec9d5fd3e004dc56ebc5fec9570bccl-m1590932882rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/8fec9d5fd3e004dc56ebc5fec9570bccl-m1590932882rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/8fec9d5fd3e004dc56ebc5fec9570bccl-m3315411314rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/8fec9d5fd3e004dc56ebc5fec9570bccl-m3839259911rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/8fec9d5fd3e004dc56ebc5fec9570bccl-m2262970481rd-w480_h360.webp",
+          "https://ap.rdcpix.com/8fec9d5fd3e004dc56ebc5fec9570bccl-m4247620862rd-w480_h360.webp",
+          "https://ap.rdcpix.com/8fec9d5fd3e004dc56ebc5fec9570bccl-m1590932882rd-w960_h720.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 4,
+          "bathrooms": 3,
+          "lot_size": "0.35 acre lot",
+          "year_built": 1984,
+          "address": "4419 Cheyenne Blvd, Sioux City, IA 51104",
+          "garage": "3 Cars",
+          "heating_cooling": "Central air",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Aaron Bircher",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Keller Williams Siouxland",
+        "brokerage_phone": "(712) 226-1900"
+      }
+    },
+    {
+      "property_details": {
+        "price": 159950,
+        "square_footage": 816,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/5f3a596d2b15d04593de732f751ac5ddl-m2454859353rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/5f3a596d2b15d04593de732f751ac5ddl-m2454859353rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/5f3a596d2b15d04593de732f751ac5ddl-m3828750164rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/5f3a596d2b15d04593de732f751ac5ddl-m2063742491rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/5f3a596d2b15d04593de732f751ac5ddl-m1149155587rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 2,
+          "bathrooms": 2,
+          "lot_size": "7,500sqft lot",
+          "year_built": 1953,
+          "address": "4005 Ridge Ave, Sioux City, IA 51106",
+          "garage": "2 Cars",
+          "heating_cooling": "Central air",
+          "appliances": "stove"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Mark Vos",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Keller Williams Siouxland",
+        "brokerage_phone": "No brokerage phone available"
+      }
+    },
+    {
+      "property_details": {
+        "price": 650000,
+        "square_footage": 4044,
+        "property_type": "Single family",
+        "cover_image_url": "https://ap.rdcpix.com/c9a4a683ff487e649c9725eeb41b51f3l-m1158067137rd-w1280_h960.webp",
+        "gallery_image_urls": [
+          "https://ap.rdcpix.com/c9a4a683ff487e649c9725eeb41b51f3l-m1158067137rd-w1280_h960.webp",
+          "https://ap.rdcpix.com/c9a4a683ff487e649c9725eeb41b51f3l-m2979893820rd-w480_h360.webp",
+          "https://ap.rdcpix.com/c9a4a683ff487e649c9725eeb41b51f3l-m983061769rd-w480_h360.webp",
+          "https://ap.rdcpix.com/c9a4a683ff487e649c9725eeb41b51f3l-m3716736236rd-w480_h360.webp"
+        ],
+        "housing_specifications": {
+          "bedrooms": 3,
+          "bathrooms": 4,
+          "lot_size": "4.14 acre lot",
+          "year_built": 1984,
+          "address": "31847 W Loop Rd, Sioux City, IA 51108",
+          "garage": "4 Cars",
+          "heating_cooling": "No heating/cooling information available",
+          "appliances": "No appliance information available"
+        }
+      },
+      "listing_agent_contact": {
+        "agent_name": "Mark Vos",
+        "phone": "Contact brokerage for agent phone",
+        "brokerage": "Keller Williams Siouxland",
+        "brokerage_phone": "No brokerage phone available"
+      }
+    }
+  ]
+}

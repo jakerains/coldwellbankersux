@@ -1,3 +1,4 @@
+export { AboutBrokerage } from "./about-brokerage";
 export { StatsSection } from "./stats-section";
 export { WorkWithUsCTA } from "./work-with-us-cta";
 export { NeighborhoodsGrid } from "./neighborhoods-grid";
