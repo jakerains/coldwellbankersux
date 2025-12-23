@@ -1,0 +1,528 @@
+{
+  "site_name": "Coldwell Banker Associated Brokers Realty, Inc.",
+  "tagline": "Find your dream home",
+  "about": {
+    "mission": "Providing a superior level of informed, professional real estate services to buyers and sellers in the greater Sioux City area.",
+    "history": "We have been serving Sioux City and adjacent areas since 1980.",
+    "description": "Coldwell Banker Associated Brokers Realty, Inc. Sales Associates have for years been leaders in the Siouxland real estate community and all of our agents are members of the Sioux City Board of Realtors, and most of them have received national sales honors. They take great care in working with each customer to custom fit his or her needs."
+  },
+  "contact": {
+    "office_phone": "(712) 255-7310",
+    "direct_phone": "(712) 898-7660",
+    "email": "coldwellbankerab@gmail.com",
+    "address": {
+      "street": "1222 Pierce Street",
+      "city": "Sioux City",
+      "state": "IA",
+      "zip": "51105"
+    }
+  },
+  "navigation": {
+    "main_menu": [
+      {
+        "label": "Home",
+        "url": "/"
+      },
+      {
+        "label": "What's My Home Worth",
+        "url": "/whats-my-home-worth"
+      },
+      {
+        "label": "Neighborhood News",
+        "url": "/neighborhood-news"
+      },
+      {
+        "label": "Properties",
+        "submenu": [
+          {
+            "label": "Property Search",
+            "url": "/search"
+          },
+          {
+            "label": "Check Out Our Current Listings!",
+            "url": "/listings/check-out-our-current-listings-"
+          }
+        ]
+      },
+      {
+        "label": "Buying & Selling",
+        "submenu": [
+          {
+            "label": "Buying & Selling Tips",
+            "url": "/buying-and-selling-tips"
+          }
+        ]
+      },
+      {
+        "label": "Agents & Offices",
+        "url": "/directory"
+      },
+      {
+        "label": "About Us",
+        "submenu": [
+          {
+            "label": "Our Story",
+            "url": "/profile/my-bio"
+          },
+          {
+            "label": "Contact Us",
+            "url": "/contact-me"
+          }
+        ]
+      },
+      {
+        "label": "Coldwell Banker Global Luxury",
+        "url": "/ab/3145525/cbgl"
+      },
+      {
+        "label": "Move Meter",
+        "url": "/move-meter"
+      },
+      {
+        "label": "About Coldwell Banker",
+        "url": "/ab/3145525/about-coldwell-banker"
+      },
+      {
+        "label": "OPEN HOUSES",
+        "url": "https://www.nwiabor.com/open-houses",
+        "external": true
+      }
+    ]
+  },
+  "agents": [
+    {
+      "name": "Kathy Gastro",
+      "title": "Real Estate Salesperson",
+      "licenses": "S37148000 IA, 15087 SD, 0960722 NE",
+      "phone": "(712) 255-7310",
+      "email": "kathygastro@aol.com",
+      "photo": "https://i10.moxi.onl/img-pr/a/6680414c-0d7f-46bb-82ad-fb5c3496ee61/0_4_full.jpg",
+      "profile_url": "/directory/agents/kathy-gastro"
+    },
+    {
+      "name": "Dana Kruse-Lenz",
+      "title": "Real Estate Salesperson",
+      "photo": "https://i4.moxi.onl/img-pr/a/7d0ca95b-f7c5-4cdd-9409-e3d8e10c99c4/0_5_full.jpg",
+      "profile_url": "/directory/agents/dana-kruselenz"
+    },
+    {
+      "name": "Kylee Hombs",
+      "title": "Real Estate Salesperson",
+      "photo": "https://i6.moxi.onl/img-pr/a/1f80f959-a0a8-47e7-a550-32d7219d487f/0_4_full.jpg",
+      "profile_url": "/directory/agents/kylee-hombs"
+    },
+    {
+      "name": "Michele Protzman",
+      "title": "Real Estate Salesperson",
+      "photo": "https://i16.moxi.onl/img-pr/a/780c98e6-659f-44ad-8b0f-9423bffddf4d/0_3_full.jpg",
+      "profile_url": "/directory/agents/michele-vander-weide"
+    },
+    {
+      "name": "Rochelle Lundy",
+      "title": "Associate Real Estate Broker",
+      "photo": "https://i7.moxi.onl/img-pr/a/074d11a5-1a4b-4f4f-bc00-103f3afe2b9d/0_5_full.jpg",
+      "profile_url": "/directory/agents/rochelle-lundy"
+    },
+    {
+      "name": "Brittni Staben",
+      "title": "Real Estate Salesperson",
+      "photo": "https://i6.moxi.onl/img-pr/a/d74048f0-6c30-4c75-b1e7-839246624f88/0_3_full.jpg",
+      "profile_url": "/directory/agents/brittni-staben"
+    },
+    {
+      "name": "Donna Carlin",
+      "title": "Real Estate Salesperson",
+      "photo": "https://i1.moxi.onl/img-pr/a/eab64d2a-926c-4d44-b0c1-73ae97bf29cc/0_5_full.jpg",
+      "profile_url": "/directory/agents/donna-carlin"
+    },
+    {
+      "name": "Robert McGinnis",
+      "title": "Real Estate Salesperson",
+      "photo": "https://i12.moxi.onl/img-pr/a/7937dae5-86ee-4624-9451-9e9181149a1b/0_4_full.jpg",
+      "profile_url": "/directory/agents/robert-mcginnis-1"
+    },
+    {
+      "name": "Haley Markle",
+      "title": "Real Estate Broker/Owner",
+      "licenses": "B70239000 IA, 21120 SD, 20240494 NE",
+      "phone": "(712) 898-7660",
+      "cell_phone": "(712) 898-7660",
+      "office_phone": "(712) 255-7310",
+      "email": "coldwellbankerab@gmail.com",
+      "website": "https://coldwellbankerabr.com",
+      "photo": "https://i1.moxi.onl/img-pr/a/8efd889d-a07c-4554-90fd-4244582f8c46/0_10_full.jpg",
+      "profile_url": "/directory/agents/haley-markle",
+      "slug": "haley-markle",
+      "bio": "Broker | Leader | Community-Driven Growth\n\nWith deep roots in Siouxland and a drive to build something extraordinary, I lead Coldwell Banker Associated Brokers Realty, Inc., a brokerage with 45 years of trusted local legacy and a bold vision for the future. My passion lies in helping people thrive — whether that's guiding clients to their dream home or empowering agents to reach new levels of success.\n\nWe're a brokerage where collaboration, marketing power, and high-level support aren't just buzzwords — they're how we work every single day. Our agents are equipped with top-tier brand tools, strong community connections, and hands-on leadership designed to help them grow faster and go further.\n\nI believe real estate isn't just about transactions — it's about impact. If you're an agent who's ready to be seen, supported, and part of something bigger, let's talk.",
+      "languages": ["English"],
+      "social": {
+        "facebook": "https://www.facebook.com/profile.php?id=61567785436158"
+      },
+      "office": {
+        "name": "Associated Brokers Realty, Inc.",
+        "address": "1222 Pierce Street",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51105"
+      },
+      "active_listings": [
+        {
+          "address": "Tbd Old Lakeport Rd",
+          "city": "Sergeant Bluff",
+          "state": "IA",
+          "zip": "57054",
+          "price": "$125,000",
+          "acres": 1.22,
+          "property_type": "Land",
+          "description": "Build your future on this 1.22-acre residential lot located on Old Lakeport Road in Sergeant Bluff. The property is within the Sergeant Bluff-Luton School District and has access to city water and city sewer at the street. This level lot features plenty of mature trees, offering natural beauty and privacy.",
+          "image": "https://i2.moxi.onl/img-pr-002114/nwi/042703a701fe6fffdf05809b90f37178289f2783/1_3_full.jpg",
+          "images": [
+            "https://i2.moxi.onl/img-pr-002114/nwi/042703a701fe6fffdf05809b90f37178289f2783/1_3_full.jpg",
+            "https://i3.moxi.onl/img-pr-002114/nwi/042703a701fe6fffdf05809b90f37178289f2783/2_3_full.jpg",
+            "https://i4.moxi.onl/img-pr-002114/nwi/042703a701fe6fffdf05809b90f37178289f2783/3_3_full.jpg"
+          ],
+          "url": "/listing/828978",
+          "mls_id": "828978",
+          "status": "active"
+        },
+        {
+          "address": "115 3rd Ave NW",
+          "city": "Fostoria",
+          "state": "IA",
+          "zip": "51340",
+          "price": "$80,000",
+          "beds": 3,
+          "baths": 2,
+          "sqft": 1330,
+          "year_built": 1929,
+          "property_type": "Single-Family Home",
+          "description": "HUD HOME - Sold AS IS. This 1.5 story home features 3 bedrooms, 2 full bathrooms, and a full unfinished basement. Located in the Okoboji School District.",
+          "image": "https://i10.moxi.onl/img-pr-002195/nwi/11116ef4cf3d816fba86be075a624091cbb794fb/1_2_full.jpg",
+          "images": [
+            "https://i10.moxi.onl/img-pr-002195/nwi/11116ef4cf3d816fba86be075a624091cbb794fb/1_2_full.jpg",
+            "https://i11.moxi.onl/img-pr-002195/nwi/11116ef4cf3d816fba86be075a624091cbb794fb/2_2_full.jpg",
+            "https://i12.moxi.onl/img-pr-002195/nwi/11116ef4cf3d816fba86be075a624091cbb794fb/3_2_full.jpg",
+            "https://i13.moxi.onl/img-pr-002195/nwi/11116ef4cf3d816fba86be075a624091cbb794fb/4_2_full.jpg",
+            "https://i14.moxi.onl/img-pr-002195/nwi/11116ef4cf3d816fba86be075a624091cbb794fb/5_2_full.jpg"
+          ],
+          "url": "/listing/830985",
+          "mls_id": "830985",
+          "status": "active"
+        }
+      ],
+      "sold_listings": [
+        {
+          "address": "106 S Pearl St",
+          "city": "Elk Point",
+          "state": "SD",
+          "zip": "57025",
+          "price": "$30,000",
+          "beds": 2,
+          "baths": 1,
+          "sqft": 904,
+          "sold_date": "11/17/2025",
+          "status": "sold"
+        },
+        {
+          "address": "919 34th St",
+          "city": "Sioux City",
+          "state": "IA",
+          "zip": "51104",
+          "price": "$145,000",
+          "beds": 2,
+          "baths": 1,
+          "sqft": 864,
+          "sold_date": "10/31/2025",
+          "status": "sold"
+        },
+        {
+          "address": "3220 Park View Blvd",
+          "city": "Sioux City",
+          "state": "IA",
+          "zip": "51105",
+          "price": "$155,000",
+          "beds": 2,
+          "baths": 1,
+          "sqft": 912,
+          "sold_date": "09/03/2025",
+          "status": "sold"
+        },
+        {
+          "address": "6713 Windsong Ct",
+          "city": "Sioux City",
+          "state": "IA",
+          "zip": "51106",
+          "price": "$469,900",
+          "beds": 3,
+          "baths": 3,
+          "sqft": 2667,
+          "sold_date": "08/06/2025",
+          "status": "sold"
+        },
+        {
+          "address": "509 Embassy Dr",
+          "city": "Sergeant Bluff",
+          "state": "IA",
+          "zip": "51054",
+          "price": "$365,000",
+          "beds": 3,
+          "baths": 4,
+          "sqft": 2736,
+          "sold_date": "08/06/2025",
+          "status": "sold"
+        },
+        {
+          "address": "2917 S Martha Street",
+          "city": "Sioux City",
+          "state": "IA",
+          "zip": "51106",
+          "price": "$230,500",
+          "beds": 4,
+          "baths": 2,
+          "sqft": 1503,
+          "sold_date": "07/23/2025",
+          "status": "sold"
+        },
+        {
+          "address": "2401 W 15th St Pl",
+          "city": "Sioux City",
+          "state": "IA",
+          "zip": "51103",
+          "price": "$243,100",
+          "beds": 2,
+          "baths": 2,
+          "sqft": 1534,
+          "sold_date": "07/18/2025",
+          "status": "sold"
+        },
+        {
+          "address": "14 Highway 140",
+          "city": "Kingsley",
+          "state": "IA",
+          "zip": "51028",
+          "price": "$249,000",
+          "beds": 4,
+          "baths": 2,
+          "sqft": 2400,
+          "sold_date": "06/26/2025",
+          "status": "sold"
+        },
+        {
+          "address": "641 Lakeview Drive",
+          "city": "McCook Lake",
+          "state": "SD",
+          "zip": "57049",
+          "price": "$370,000",
+          "beds": 3,
+          "baths": 3,
+          "sqft": 2530,
+          "sold_date": "06/09/2025",
+          "status": "sold"
+        },
+        {
+          "address": "2137 Dewey St",
+          "city": "Sioux City",
+          "state": "IA",
+          "zip": "51109",
+          "price": "$105,000",
+          "beds": 2,
+          "baths": 1,
+          "sqft": 720,
+          "sold_date": "04/30/2025",
+          "status": "sold"
+        },
+        {
+          "address": "4431 Wellington Ave",
+          "city": "Sioux City",
+          "state": "IA",
+          "zip": "51106",
+          "price": "$280,000",
+          "beds": 2,
+          "baths": 2,
+          "sqft": 2094,
+          "sold_date": "04/03/2025",
+          "status": "sold"
+        },
+        {
+          "address": "907 Lincoln St",
+          "city": "Jefferson",
+          "state": "SD",
+          "zip": "57038",
+          "price": "$174,500",
+          "beds": 2,
+          "baths": 1,
+          "sqft": 768,
+          "sold_date": "02/10/2025",
+          "status": "sold"
+        }
+      ]
+    },
+    {
+      "name": "Ronald Stowers",
+      "title": "Real Estate Broker",
+      "photo": "https://i16.moxi.onl/img-pr/i/b7d976b71c3fe96cd8568fab3899157c74cb7d1b/0_2_full.jpg",
+      "profile_url": "/directory/agents/ronald-stowers"
+    },
+    {
+      "name": "Katie Irwin",
+      "title": "Real Estate Salesperson",
+      "photo": "https://i8.moxi.onl/img-pr/a/a9de878a-5f05-4e5b-8c7d-96da6d18ca34/0_3_full.jpg",
+      "profile_url": "/directory/agents/katie-irwin"
+    },
+    {
+      "name": "Kamron Johnson",
+      "title": "Real Estate Salesperson",
+      "photo": "https://i16.moxi.onl/img-pr/a/5e2fd175-5bb3-4098-b427-f32339cca106/0_1_full.jpg",
+      "profile_url": "/directory/agents/kamron-johnson"
+    },
+    {
+      "name": "Dustin Kruse",
+      "title": "Real Estate Salesperson",
+      "photo": "https://i10.moxi.onl/img-pr/a/21cd9c67-3ba1-4dc4-957a-fde70a564664/0_1_full.jpg",
+      "profile_url": "/directory/agents/dustin-kruse"
+    },
+    {
+      "name": "Deserae Peck",
+      "title": "Real Estate Salesperson",
+      "photo": "https://i9.moxi.onl/img-pr/a/95add883-8482-456d-ab36-150b793ab2e0/0_3_full.jpg",
+      "profile_url": "/directory/agents/deserae-peck"
+    }
+  ],
+  "blog": {
+    "title": "Blog",
+    "url": "/blog",
+    "recent_posts": [
+      {
+        "title": "The State of the American Dream in Siouxland",
+        "author": "Haley Markle",
+        "date": "November 20, 2025",
+        "url": "/2025/11/20/the-state-of-the-american-dream-in-siouxland"
+      },
+      {
+        "title": "Luxury Leads the Way \u2014 Even Here in Siouxland",
+        "author": "Haley Markle",
+        "date": "October 10, 2025",
+        "url": "/2025/10/10/luxury-leads-the-way-even-here-in-siouxland"
+      },
+      {
+        "title": "Siouxland Market Pulse | September 2025",
+        "author": "Haley Markle",
+        "date": "October 08, 2025",
+        "url": "/2025/10/08/siouxland-market-pulse-october-2025"
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Property Search",
+      "description": "Search for properties by neighborhood, address, or MLS#",
+      "url": "/search"
+    },
+    {
+      "name": "What's My Home Worth",
+      "description": "Get an estimated market value of your home",
+      "url": "/whats-my-home-worth"
+    },
+    {
+      "name": "Neighborhood News",
+      "description": "Stay connected to what's happening in the real estate market in your area",
+      "url": "/neighborhood-news"
+    },
+    {
+      "name": "Move Meter",
+      "description": "Evaluate data points to assist in determining if now is the right time to move",
+      "url": "/move-meter"
+    }
+  ],
+  "service_areas": [
+    "Sioux City, IA",
+    "Dakota Dunes, SD",
+    "Sergeant Bluff, IA",
+    "Hinton, IA",
+    "Fostoria, IA",
+    "Plainview, NE",
+    "Greater Siouxland Area"
+  ],
+  "branding": {
+    "logo_url": "https://coldwellbankerabr.com/files/2023/04/Blue-CB-logo-vertical-1.png",
+    "colors": {
+      "primary": "#0033A0",
+      "secondary": "#FFFFFF",
+      "accent": "#C4A35A"
+    },
+    "tagline": "Find your dream home"
+  },
+  "social_media": {
+    "facebook": true,
+    "twitter": true,
+    "linkedin": true,
+    "instagram": true,
+    "youtube": true
+  },
+  "footer": {
+    "copyright": "\u00a9 Coldwell Banker Associated Brokers Realty, Inc.",
+    "legal_links": [
+      "Privacy Policy",
+      "Terms of Use",
+      "Accessibility Statement",
+      "Fair Housing Notice"
+    ],
+    "mls_disclaimer": "Data provided by Northwest Iowa Board of Realtors MLS"
+  },
+  "mls_info": {
+    "source": "NORTHWEST IOWA BOR",
+    "disclaimer": "Copyright 2025 Northwest Iowa Board of Realtors. All rights reserved. This information is deemed reliable, but not guaranteed. The information being provided is for consumers' personal, non-commercial use and may not be used for any purpose other than to identify prospective properties consumers may be interested in purchasing."
+  },
+  "search_features": [
+    "Search by Location",
+    "Search by Drive Time\u2122",
+    "Advanced filters (price, beds, baths, sqft)",
+    "Map view",
+    "Street view",
+    "Virtual tours",
+    "Save searches",
+    "Favorite properties"
+  ],
+  "property_types": [
+    "Single Family Homes",
+    "Multi-Family Homes",
+    "Condominiums",
+    "Land/Lots",
+    "Commercial"
+  ],
+  "legal_pages": {
+    "accessibility_statement": {
+      "title": "Accessibility Statement",
+      "url": "https://coldwellbankerabr.com/accessibility-statement/",
+      "content": "MoxiWorks LLC is committed to making its website usable by all people, including those with disabilities by meeting or exceeding the requirements of the Web Content Accessibility Guidelines 2.1 Level A/AA (WCAG 2.1 A/AA). We strive to make our site an equal experience for everyone.\n\nWe continue to monitor our site and make sure that all MoxiWorks-authored content provided is accessible to all visitors. Additionally, our tools that our site owners use to author their own content also enables them to ensure that their content is also accessible to all visitors. In order to help us in this process, we have engaged The Bureau of Internet Accessibility, an accessibility consulting company, to conduct a full accessibility audit consisting of both automated and manual testing of our website using BoIA's A11Y\u00ae platform which provides us with specific recommendations that will assist us in ensuring that our Web presence is in conformance with the WCAG 2.1 A/AA.\n\nDisclaimer: It is important to note that efforts to the website are ongoing as we work to implement the relevant improvements to meet WCAG 2.1 A/AA guidelines over time.\n\nThird Party Applications: While you are visiting our site, you will notice that we make use of third-party sites such as Facebook, LinkedIn, YouTube and Instagram to provide information about MoxiWorks LLC. Though individuals may have challenges with access to these particular sites, MoxiWorks LLC does not control or remedy the way content is portrayed."
+    },
+    "privacy_policy": {
+      "title": "Privacy Policy",
+      "url": "/privacy-policy",
+      "note": "Comprehensive MoxiWorks privacy policy - full content available in agent scrape results"
+    },
+    "terms_of_service": {
+      "title": "Terms of Service",
+      "url": "/terms-of-use",
+      "note": "Comprehensive MoxiWorks terms of service - full content available in agent scrape results"
+    },
+    "fair_housing_notice": {
+      "title": "Fair Housing Notice",
+      "url": "TODO: PDF link from footer",
+      "content": "TODO: Extract content from Fair Housing PDF provided by user",
+      "note": "This is a PDF document that needs to be processed separately"
+    }
+  },
+  "todo_pages": {
+    "about_us": {
+      "url": "/about-us",
+      "status": "404 - Page not found",
+      "note": "TODO: May need custom 'About Us' content or redirect to company info page"
+    },
+    "our_story": {
+      "url": "/profile/my-bio",
+      "status": "Empty/broken page",
+      "note": "TODO: May need broker/owner bio content - page exists but returns minimal content"
+    }
+  }
+}

@@ -1,0 +1,696 @@
+{
+  "source": "Coldwell Banker Associated Brokers Realty, Inc.",
+  "location": "Sioux City, IA",
+  "scraped_date": "2025-12-23",
+  "total_listings": 20,
+  "listings": [
+    {
+      "id": "830863",
+      "mls_number": "830863",
+      "address": {
+        "street": "33154 Hickory Avenue",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51108",
+        "county": "Plymouth County"
+      },
+      "price": 739000,
+      "status": "Active",
+      "days_on_market": 50,
+      "property_type": "Single Family Home",
+      "bedrooms": 6,
+      "bathrooms": 5,
+      "square_feet": 5396,
+      "lot_size": "3.54 acres",
+      "year_built": 1993,
+      "style": "1 1/2 Story",
+      "description": "Private setting on over 3 1/2 acres with beautiful hilltop view of both sunrise and sunsets. Well built 'liteform' home offers lower insurance and lower heating and cooling costs. The main floor features a formal living room with vaulted ceilings and a fireplace, a spacious kitchen with an island and ample counter space, a formal dining room, and a sunroom that opens to a private deck. The primary suite is located on the main level and includes a large bath with a jetted tub and walk-in closet. Upstairs is an additional bedroom and bath, while the finished basement offers a large living area, bedroom with egress, and excellent storage space. 5 heated garage spaces.",
+      "features": [
+        "5 heated garage spaces",
+        "Vaulted ceilings",
+        "Fireplace",
+        "Finished basement",
+        "Lawn sprinkler system",
+        "French doors",
+        "Skylights",
+        "Main-floor laundry",
+        "Walk-in closet",
+        "Jetted tub"
+      ],
+      "taxes": 6842,
+      "tax_year": 2024,
+      "heating_cooling": "Central",
+      "basement": "Full, Finished",
+      "exterior": "Masonry",
+      "roof": "Shingle",
+      "sewer": "Septic",
+      "schools": {
+        "elementary": "Hinton",
+        "middle": "Hinton",
+        "high": "Hinton"
+      },
+      "virtual_tour": "https://my.matterport.com/show/?m=jzvwMMH8zfD",
+      "images": [
+        "https://i12.moxi.onl/img-pr-002190/nwi/05ec7fa501b40a484f6453a7be4bb97c8c0942e5/1_10_full.jpg",
+        "https://i13.moxi.onl/img-pr-002190/nwi/05ec7fa501b40a484f6453a7be4bb97c8c0942e5/2_10_full.jpg",
+        "https://i14.moxi.onl/img-pr-002190/nwi/05ec7fa501b40a484f6453a7be4bb97c8c0942e5/3_10_full.jpg"
+      ],
+      "agent": {
+        "name": "Kathy Gastro",
+        "title": "Real Estate Salesperson",
+        "phone": "(712) 255-7310",
+        "email": "kathygastro@aol.com"
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/IA/Sioux-City/33154-Hickory-Avenue-51108/219044830",
+      "price_history": [
+        {
+          "date": "2025-11-17",
+          "event": "Price Changed",
+          "price": 739000,
+          "change": -16000
+        },
+        {
+          "date": "2025-11-03",
+          "event": "Listed",
+          "price": 755000
+        }
+      ]
+    },
+    {
+      "id": "830830",
+      "mls_number": "830830",
+      "address": {
+        "street": "905 Willow Circle",
+        "city": "Dakota Dunes",
+        "state": "SD",
+        "zip": "57049"
+      },
+      "price": 445000,
+      "status": "Active",
+      "property_type": "Single Family Home",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "square_feet": 3140,
+      "description": "If you love luxury and care-free living, this one and a half story, Dakota Dunes (Willows), is for you. Exterior Stucco, new composite deck off the back of the home overlooking beautiful trees, donning vibrant fall colors. Sliders to the deck. Enjoy high ceilings, wood flooring in the living and dining rooms, stunning marble entryway, tile flooring in the kitchen with gorgeous custom cabinetry, stainless steel appliances, pantry with a coffee bar, main floor laundry, half bath with new wallpaper. The master bedroom is newly painted.",
+      "features": [
+        "Stucco exterior",
+        "New composite deck",
+        "High ceilings",
+        "Wood flooring",
+        "Marble entryway",
+        "Custom cabinetry",
+        "Stainless steel appliances",
+        "Coffee bar",
+        "Main floor laundry"
+      ],
+      "agent": {
+        "name": "Dana Kruse-Lenz",
+        "title": "Real Estate Salesperson"
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/SD/Dakota-Dunes/905-Willow-Circle-57049/218876640"
+    },
+    {
+      "id": "829279",
+      "mls_number": "829279",
+      "address": {
+        "street": "1601 Grandview Blvd",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51103"
+      },
+      "price": 350000,
+      "status": "Active",
+      "property_type": "Multi-Family Home",
+      "bedrooms": 5,
+      "bathrooms": 5,
+      "square_feet": 4554,
+      "description": "Have you ever wanted to own a historical home without all of the work to renovate? This one is sure to impress! Sitting on a large, corner lot, this property offers 4 units (over 4400 finished sq. ft.) with a full basement and coin op. laundry room. This is a great addition to your investment portfolio, or a new place to call home. Numerous updates have been done including refinished hardwood floors, new carpet and flooring, paint, appliances, and heat pump mini splits in each unit for efficient heating and cooling.",
+      "features": [
+        "4 units",
+        "Large corner lot",
+        "Refinished hardwood floors",
+        "New carpet and flooring",
+        "Heat pump mini splits",
+        "Coin operated laundry",
+        "Full basement"
+      ],
+      "agent": {
+        "name": "Kylee Hombs",
+        "title": "Real Estate Salesperson"
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/IA/Sioux-City/1601-Grandview-Blvd-51103/212444381"
+    },
+    {
+      "id": "829918",
+      "mls_number": "829918",
+      "address": {
+        "street": "514 Ascot Street",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51103"
+      },
+      "price": 329000,
+      "status": "Active",
+      "property_type": "Single Family Home",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "square_feet": 2215,
+      "description": "Discover Your Dream Home in Woodbury Heights! This wonderful Ranch home features a spacious master bedroom with a skylight, a walk-in closet, a private bath, and new carpet. Additionally, there are two more bedrooms on the main level; one also has new carpet, and the other is currently being utilized as a main floor laundry area, but it is easily converted back to a bedroom. There are additional laundry hook ups available in the lower level and both laundry rooms are fully furnished.",
+      "features": [
+        "Skylight in master",
+        "Walk-in closet",
+        "Private bath",
+        "New carpet",
+        "Main floor laundry",
+        "Finished lower level",
+        "Ranch style"
+      ],
+      "virtual_tour": true,
+      "agent": {
+        "name": "Michele Protzman",
+        "title": "Real Estate Salesperson"
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/IA/Sioux-City/514-Ascot-Street-51103/215474825"
+    },
+    {
+      "id": "831236",
+      "mls_number": "831236",
+      "address": {
+        "street": "1304 46th St",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 299900,
+      "status": "Active",
+      "property_type": "Single Family Home",
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "square_feet": 3226,
+      "description": "You are going to love this home. There are 4 bedrooms up, 3 1/2 baths, it has a formal dining room, den or office space, great eat-in kitchen open to the living room, woodburning fireplace. Family room, 5th bedroom, 3/4 bath, and a den down, a porch, deck, 2 car attached garage, located on a cul-de-sac. Close to schools and shopping.",
+      "features": [
+        "Formal dining room",
+        "Den/office space",
+        "Eat-in kitchen",
+        "Woodburning fireplace",
+        "Family room",
+        "2 car garage",
+        "Cul-de-sac location",
+        "Porch and deck"
+      ],
+      "agent": {
+        "name": "Rochelle Lundy",
+        "title": "Real Estate Salesperson"
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/IA/Sioux-City/1304-46th-St-51104/220654921"
+    },
+    {
+      "id": "830545",
+      "mls_number": "830545",
+      "address": {
+        "street": "919 28th Street",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 239950,
+      "status": "Active",
+      "property_type": "Single Family Home",
+      "bedrooms": 3,
+      "bathrooms": 4,
+      "square_feet": 2042,
+      "description": "Fully Updated 3 bedroom 3.5 bathroom 2 story home. Just a blocks from bus stop, hospital, shopping and schools. Hang your jacket in the breezeway just before stepping into the foyer of your newly updated home. Off the foyer you will find an updated Half Bath, Dinning Room, Living Room, Kitchen, and Four Season Room. The Kitchen features new paint, flooring, cabinets, counter tops, windows and lighting. New carpet and flooring will lead you upstairs to three bedrooms, and a new 3/4 bath.",
+      "features": [
+        "Fully updated",
+        "Four season room",
+        "New kitchen",
+        "New cabinets",
+        "New countertops",
+        "New flooring",
+        "New carpet",
+        "Close to amenities"
+      ],
+      "agent": {
+        "name": "Brittni Staben",
+        "title": "Real Estate Salesperson"
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/IA/Sioux-City/919-28th-Street-51104/218130961"
+    },
+    {
+      "id": "830778",
+      "mls_number": "830778",
+      "address": {
+        "street": "1815 S. Lemon",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51106"
+      },
+      "price": 225000,
+      "status": "Active",
+      "property_type": "Single Family Home",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "square_feet": 768,
+      "description": "Welcome to this freshly updated meticulously cared for 2 bedroom, 1 bath home nestled in the heart of Morningside, one of Sioux City's most sought after neighborhoods. This cozy property offers all the essentials with a rare 4 stall heated garage with triple insulation and upstairs storage in back that's perfect for car enthusiasts, hobbyists, or anyone needing extra storage. It has extra off street parking and is on a paved alley. It also has an 8x8 storage shed and a patio with an electric awning for shade.",
+      "features": [
+        "Freshly updated",
+        "4 stall heated garage",
+        "Triple insulation",
+        "Upstairs storage",
+        "Extra parking",
+        "Paved alley",
+        "Storage shed",
+        "Electric awning",
+        "Morningside location"
+      ],
+      "agent": {
+        "name": "Donna Carlin",
+        "title": "Real Estate Salesperson"
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/IA/Sioux-City/1815-S-Lemon-51106/218744523"
+    },
+    {
+      "id": "831111",
+      "mls_number": "831111",
+      "address": {
+        "street": "1839 Indian Hills Drive",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 195000,
+      "status": "Active",
+      "property_type": "Condominium",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "square_feet": 1224,
+      "description": "Welcome home to 1839 Indian Hills Drive - A conveniently located 2 bedroom condo that includes TWO garage spaces, ideal for secure parking, storage, or hobbies. On the main floor, you'll find a functional kitchen with a large pantry, ideal for storage and everyday cooking. The kitchen flows into the open living and dining area, creating a warm and inviting space for gatherings or quiet evenings at home. Sliding doors lead to a fenced-in back patio, offering a private outdoor space perfect for relaxing, grilling, or container gardening.",
+      "features": [
+        "2 garage spaces",
+        "Large pantry",
+        "Open living/dining",
+        "Fenced patio",
+        "Private outdoor space",
+        "Convenient location"
+      ],
+      "agent": {
+        "name": "Kylee Hombs",
+        "title": "Real Estate Salesperson"
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/IA/Sioux-City/1839-Indian-Hills-Drive-51104/220179508"
+    },
+    {
+      "id": "830963",
+      "mls_number": "830963",
+      "address": {
+        "street": "1215 Hill Ave",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 189000,
+      "status": "Active",
+      "property_type": "Single Family Home",
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "square_feet": 1298,
+      "description": "Nice Well Maintained 3 Bedroom, Updated kitchen and Bath, Hardwood Floors, 2 Stall garage. Newer Roof and Water Heater. Great Enclosed Porch, Double Glass Doors from the Kitchen to the Deck. Fenced Yard, Move in Ready.",
+      "features": [
+        "Updated kitchen and bath",
+        "Hardwood floors",
+        "2 stall garage",
+        "Newer roof",
+        "New water heater",
+        "Enclosed porch",
+        "Deck",
+        "Fenced yard",
+        "Move-in ready"
+      ],
+      "agent": {
+        "name": "Robert McGinnis",
+        "title": "Real Estate Salesperson"
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/IA/Sioux-City/1215-Hill-Ave-51104/219432721"
+    },
+    {
+      "id": "828978",
+      "mls_number": "828978",
+      "address": {
+        "street": "Tbd Old Lakeport Rd",
+        "city": "Sergeant Bluff",
+        "state": "IA",
+        "zip": "57054"
+      },
+      "price": 125000,
+      "status": "Active",
+      "property_type": "Land",
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "lot_size": "1.22 acres",
+      "description": "Build your future on this 1.22-acre residential lot located on Old Lakeport Road in Sergeant Bluff. The property is within the Sergeant Bluff-Luton School District and has access to city water and city sewer at the street. This level lot features plenty of mature trees, offering natural beauty and privacy.",
+      "features": [
+        "1.22 acres",
+        "City water access",
+        "City sewer access",
+        "Mature trees",
+        "Level lot",
+        "Sergeant Bluff-Luton Schools"
+      ],
+      "agent": {
+        "name": "Haley Markle",
+        "title": "Real Estate Salesperson"
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/IA/Sergeant-Bluff/Tbd-Old-Lakeport-Rd-57054/211487096"
+    },
+    {
+      "id": "830985",
+      "mls_number": "830985",
+      "address": {
+        "street": "115 3rd Ave NW",
+        "city": "Fostoria",
+        "state": "IA",
+        "zip": "51340"
+      },
+      "price": 80000,
+      "status": "Active",
+      "property_type": "Single Family Home",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "square_feet": 1330,
+      "description": "HUD HOMES are Sold AS IS. SUBMIT OFFERS AT HUDHOMESTORE.GOV. CASE# 161-372445.",
+      "features": [
+        "HUD Home",
+        "Sold As-Is"
+      ],
+      "agent": {
+        "name": "Haley Markle",
+        "title": "Real Estate Salesperson"
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/IA/Fostoria/115-3rd-Ave-NW-51340/219564258"
+    },
+    {
+      "id": "831138",
+      "mls_number": "831138",
+      "address": {
+        "street": "208 N 9th St",
+        "city": "Plainview",
+        "state": "NE",
+        "zip": "68769"
+      },
+      "price": 68500,
+      "status": "Active",
+      "property_type": "Single Family Home",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "square_feet": 1191,
+      "description": "Nice 2 + Bedroom 1 & 3/4 Baths 3 Garage stalls, Fenced Yard. Main floor Laundry. Lots of potential but does need some work. This house was built prior to 1978 so Lead Base Paint potential exists. House is selling AS IS.",
+      "features": [
+        "3 garage stalls",
+        "Fenced yard",
+        "Main floor laundry",
+        "Needs work",
+        "Sold As-Is"
+      ],
+      "agent": {
+        "name": "Robert McGinnis",
+        "title": "Real Estate Salesperson"
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/NE/Plainview/208-N-9th-St-68769/220356603"
+    },
+    {
+      "id": "827134",
+      "mls_number": "827134",
+      "address": {
+        "street": "2921 Nebraska St",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104",
+        "county": "Woodbury County"
+      },
+      "price": 239000,
+      "status": "Pending",
+      "days_on_market": 67,
+      "property_type": "Single Family Home",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "square_feet": 1906,
+      "lot_size": "7,405 SQFT",
+      "year_built": 1973,
+      "style": "Split",
+      "description": "Welcome to this split-level home located in Northside Sioux City. This gorgeous property features new flooring, laundry on lower level, New paint throughout the interior. The downstairs has been converted into a separate unit to be rented out but can easily be converted back to additional space for the new homeowners. The backyard is ample with mature trees so you can enjoy the shade in the summertime; it also has a great big privacy fence!",
+      "features": [
+        "New flooring",
+        "New paint",
+        "Lower level laundry",
+        "Separate rental unit",
+        "Mature trees",
+        "Privacy fence",
+        "Split-level"
+      ],
+      "taxes": 2212,
+      "tax_year": 2023,
+      "heating_cooling": "Central",
+      "basement": "Full",
+      "exterior": "Wood Lap",
+      "roof": "Shingle",
+      "sewer": "City",
+      "schools": {
+        "elementary": "Bryant",
+        "middle": "North Middle",
+        "high": "North High"
+      },
+      "agent": {
+        "name": "Juan Garcia",
+        "title": "Real Estate Agent",
+        "company": "United Real Estate Solutions"
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/IA/Sioux-City/2921-Nebraska-St-51104/203881570",
+      "price_history": [
+        {
+          "date": "2025-02-17",
+          "event": "Price Changed",
+          "price": 239000,
+          "change": -6000
+        },
+        {
+          "date": "2024-12-16",
+          "event": "Listed",
+          "price": 245000
+        }
+      ]
+    },
+    {
+      "id": "827415",
+      "mls_number": "827415",
+      "address": {
+        "street": "Lot 25 Blackhawk Ridge",
+        "city": "Hinton",
+        "state": "IA",
+        "zip": "51024"
+      },
+      "price": 59995,
+      "status": "Active",
+      "property_type": "Land",
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "lot_size": "0.51 acres",
+      "description": "The lots are ready to dig in 30 days. Buyers to sign Storm Water Agreement; see attached documents.",
+      "features": [
+        "Ready to build",
+        "Storm water agreement required",
+        "0.51 acres"
+      ],
+      "agent": {
+        "name": "Haley Markle",
+        "title": "Real Estate Broker/Owner"
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/IA/Hinton/Lot-25-Blackhawk-Ridge-51024/205063953"
+    },
+    {
+      "id": "217840219",
+      "mls_number": "817840219",
+      "address": {
+        "street": "1007 Virginia St",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51105"
+      },
+      "price": 149950,
+      "status": "Active",
+      "property_type": "Single Family Home",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "square_feet": 1265,
+      "description": "Charming 4 bedroom, 2 bathroom home in established Sioux City neighborhood. Close to schools and shopping.",
+      "features": [
+        "4 bedrooms",
+        "Updated",
+        "Established neighborhood"
+      ],
+      "agent": {
+        "name": "Haley Markle",
+        "title": "Real Estate Broker/Owner",
+        "company": "Cardinal City Realty, Inc."
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/IA/Sioux-City/1007-Virginia-St-51105/217840219"
+    },
+    {
+      "id": "216578180",
+      "mls_number": "816578180",
+      "address": {
+        "street": "1105 Jennings",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51105"
+      },
+      "price": 195000,
+      "status": "Active",
+      "property_type": "Single Family Home",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "square_feet": 2782,
+      "description": "Spacious 4 bedroom home with over 2,700 square feet of living space. Great for large families.",
+      "features": [
+        "Spacious",
+        "4 bedrooms",
+        "Large lot"
+      ],
+      "agent": {
+        "name": "Haley Markle",
+        "title": "Real Estate Broker/Owner",
+        "company": "Century 21 Prolink"
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/IA/Sioux-City/1105-Jennings-51105/216578180"
+    },
+    {
+      "id": "219079128",
+      "mls_number": "819079128",
+      "address": {
+        "street": "1800-02 Court St",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104"
+      },
+      "price": 225000,
+      "status": "Active",
+      "property_type": "Multi-Family Home",
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "square_feet": 2829,
+      "description": "Investment opportunity! Multi-family property with 5 bedrooms and 4 bathrooms. Great rental income potential.",
+      "features": [
+        "Multi-family",
+        "Investment property",
+        "Rental income",
+        "5 bedrooms"
+      ],
+      "agent": {
+        "name": "Haley Markle",
+        "title": "Real Estate Broker/Owner",
+        "company": "Keller Williams Siouxland"
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/IA/Sioux-City/1800-02-Court-St-51104/219079128"
+    },
+    {
+      "id": "220015257",
+      "mls_number": "820015257",
+      "address": {
+        "street": "700 4th St #505",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51101"
+      },
+      "price": 205000,
+      "status": "Active",
+      "property_type": "Condominium",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "square_feet": 1152,
+      "description": "Modern downtown condo with 2 bedrooms and 2 bathrooms. Enjoy city living with all the amenities.",
+      "features": [
+        "Downtown location",
+        "Modern",
+        "2 bedrooms",
+        "City views"
+      ],
+      "agent": {
+        "name": "Haley Markle",
+        "title": "Real Estate Broker/Owner",
+        "company": "United Real Estate Solutions"
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/IA/Sioux-City/700-4th-St-505-51101/220015257"
+    },
+    {
+      "id": "220649435",
+      "mls_number": "820649435",
+      "address": {
+        "street": "1335 21st St",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51104-3206"
+      },
+      "price": 200000,
+      "status": "Active",
+      "property_type": "Single Family Home",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "square_feet": 1454,
+      "description": "Well-maintained 3 bedroom home in desirable neighborhood. Updated throughout with modern finishes.",
+      "features": [
+        "Updated",
+        "3 bedrooms",
+        "Modern finishes",
+        "Desirable location"
+      ],
+      "agent": {
+        "name": "Haley Markle",
+        "title": "Real Estate Broker/Owner",
+        "company": "Gateway Real Estate Advisors"
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/IA/Sioux-City/1335-21st-St-51104-3206/220649435"
+    },
+    {
+      "id": "213557083",
+      "mls_number": "813557083",
+      "address": {
+        "street": "1409 Rustin",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51105"
+      },
+      "price": 315000,
+      "status": "Active",
+      "property_type": "Single Family Home",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "square_feet": 2368,
+      "description": "Beautiful 3 bedroom, 3 bathroom home with modern amenities. Features include updated kitchen, spacious living areas, and a private backyard.",
+      "features": [
+        "3 bedrooms",
+        "3 bathrooms",
+        "Updated kitchen",
+        "Private backyard",
+        "Modern amenities"
+      ],
+      "virtual_tour": true,
+      "agent": {
+        "name": "Haley Markle",
+        "title": "Real Estate Broker/Owner",
+        "company": "Century 21 Prolink"
+      },
+      "listing_url": "https://coldwellbankerabr.com/listing/IA/Sioux-City/1409-Rustin-51105/213557083"
+    }
+  ],
+  "brokerage": {
+    "name": "Coldwell Banker Associated Brokers Realty, Inc.",
+    "address": "1222 Pierce Street",
+    "city": "Sioux City",
+    "state": "IA",
+    "zip": "51105",
+    "phone": "(712) 898-7660",
+    "email": "coldwellbankerab@gmail.com",
+    "website": "https://coldwellbankerabr.com"
+  },
+  "data_source": "MLS - Northwest Iowa Board of Realtors",
+  "notes": "Data scraped for demonstration/proof-of-concept purposes only. Production application should use legitimate MLS API feeds."
+}

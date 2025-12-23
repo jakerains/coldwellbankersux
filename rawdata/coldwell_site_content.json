@@ -1,0 +1,307 @@
+{
+  "site_name": "Coldwell Banker Associated Brokers Realty, Inc.",
+  "tagline": "Find your dream home",
+  "about": {
+    "mission": "Providing a superior level of informed, professional real estate services to buyers and sellers in the greater Sioux City area.",
+    "history": "We have been serving Sioux City and adjacent areas since 1980.",
+    "description": "Coldwell Banker Associated Brokers Realty, Inc. Sales Associates have for years been leaders in the Siouxland real estate community and all of our agents are members of the Sioux City Board of Realtors, and most of them have received national sales honors. They take great care in working with each customer to custom fit his or her needs."
+  },
+  "contact": {
+    "office_phone": "(712) 255-7310",
+    "direct_phone": "(712) 898-7660",
+    "email": "coldwellbankerab@gmail.com",
+    "address": {
+      "street": "1222 Pierce Street",
+      "city": "Sioux City",
+      "state": "IA",
+      "zip": "51105"
+    }
+  },
+  "navigation": {
+    "main_menu": [
+      {
+        "label": "Home",
+        "url": "/"
+      },
+      {
+        "label": "What's My Home Worth",
+        "url": "/whats-my-home-worth"
+      },
+      {
+        "label": "Neighborhood News",
+        "url": "/neighborhood-news"
+      },
+      {
+        "label": "Properties",
+        "submenu": [
+          {
+            "label": "Property Search",
+            "url": "/search"
+          },
+          {
+            "label": "Check Out Our Current Listings!",
+            "url": "/listings/check-out-our-current-listings-"
+          }
+        ]
+      },
+      {
+        "label": "Buying & Selling",
+        "submenu": [
+          {
+            "label": "Buying & Selling Tips",
+            "url": "/buying-and-selling-tips"
+          }
+        ]
+      },
+      {
+        "label": "Agents & Offices",
+        "url": "/directory"
+      },
+      {
+        "label": "About Us",
+        "submenu": [
+          {
+            "label": "Our Story",
+            "url": "/profile/my-bio"
+          },
+          {
+            "label": "Contact Us",
+            "url": "/contact-me"
+          }
+        ]
+      },
+      {
+        "label": "Coldwell Banker Global Luxury",
+        "url": "/ab/3145525/cbgl"
+      },
+      {
+        "label": "Move Meter",
+        "url": "/move-meter"
+      },
+      {
+        "label": "About Coldwell Banker",
+        "url": "/ab/3145525/about-coldwell-banker"
+      },
+      {
+        "label": "OPEN HOUSES",
+        "url": "https://www.nwiabor.com/open-houses",
+        "external": true
+      }
+    ]
+  },
+  "agents": [
+    {
+      "name": "Kathy Gastro",
+      "title": "Real Estate Salesperson",
+      "licenses": "S37148000 IA, 15087 SD, 0960722 NE",
+      "phone": "(712) 255-7310",
+      "email": "kathygastro@aol.com",
+      "profile_url": "/directory/agents/kathy-gastro"
+    },
+    {
+      "name": "Dana Kruse-Lenz",
+      "title": "Real Estate Salesperson",
+      "profile_url": "/directory/agents/dana-kruselenz"
+    },
+    {
+      "name": "Kylee Hombs",
+      "title": "Real Estate Salesperson",
+      "profile_url": "/directory/agents/kylee-hombs"
+    },
+    {
+      "name": "Michele Protzman",
+      "title": "Real Estate Salesperson",
+      "profile_url": "/directory/agents/michele-vander-weide"
+    },
+    {
+      "name": "Rochelle Lundy",
+      "title": "Real Estate Salesperson",
+      "profile_url": "/directory/agents/rochelle-lundy"
+    },
+    {
+      "name": "Brittni Staben",
+      "title": "Real Estate Salesperson",
+      "profile_url": "/directory/agents/brittni-staben"
+    },
+    {
+      "name": "Donna Carlin",
+      "title": "Real Estate Salesperson",
+      "profile_url": "/directory/agents/donna-carlin"
+    },
+    {
+      "name": "Robert McGinnis",
+      "title": "Real Estate Salesperson",
+      "profile_url": "/directory/agents/robert-mcginnis-1"
+    },
+    {
+      "name": "Haley Markle",
+      "title": "Real Estate Broker/Owner",
+      "licenses": "B70239000 IA, 21120 SD, 20240494 NE",
+      "phone": "(712) 898-7660",
+      "email": "coldwellbankerab@gmail.com",
+      "profile_url": "/directory/agents/haley-markle"
+    },
+    {
+      "name": "Ronald Stowers",
+      "title": "Real Estate Broker",
+      "profile_url": "/directory/agents/ronald-stowers"
+    },
+    {
+      "name": "Katie Irwin",
+      "title": "Real Estate Salesperson",
+      "profile_url": "/directory/agents/katie-irwin"
+    },
+    {
+      "name": "Kamron Johnson",
+      "title": "Real Estate Salesperson",
+      "profile_url": "/directory/agents/kamron-johnson"
+    },
+    {
+      "name": "Dustin Kruse",
+      "title": "Real Estate Salesperson",
+      "profile_url": "/directory/agents/dustin-kruse"
+    },
+    {
+      "name": "Deserae Peck",
+      "title": "Real Estate Salesperson",
+      "profile_url": "/directory/agents/deserae-peck"
+    }
+  ],
+  "blog": {
+    "title": "Blog",
+    "url": "/blog",
+    "recent_posts": [
+      {
+        "title": "The State of the American Dream in Siouxland",
+        "author": "Haley Markle",
+        "date": "November 20, 2025",
+        "url": "/2025/11/20/the-state-of-the-american-dream-in-siouxland"
+      },
+      {
+        "title": "Luxury Leads the Way \u2014 Even Here in Siouxland",
+        "author": "Haley Markle",
+        "date": "October 10, 2025",
+        "url": "/2025/10/10/luxury-leads-the-way-even-here-in-siouxland"
+      },
+      {
+        "title": "Siouxland Market Pulse | September 2025",
+        "author": "Haley Markle",
+        "date": "October 08, 2025",
+        "url": "/2025/10/08/siouxland-market-pulse-october-2025"
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Property Search",
+      "description": "Search for properties by neighborhood, address, or MLS#",
+      "url": "/search"
+    },
+    {
+      "name": "What's My Home Worth",
+      "description": "Get an estimated market value of your home",
+      "url": "/whats-my-home-worth"
+    },
+    {
+      "name": "Neighborhood News",
+      "description": "Stay connected to what's happening in the real estate market in your area",
+      "url": "/neighborhood-news"
+    },
+    {
+      "name": "Move Meter",
+      "description": "Evaluate data points to assist in determining if now is the right time to move",
+      "url": "/move-meter"
+    }
+  ],
+  "service_areas": [
+    "Sioux City, IA",
+    "Dakota Dunes, SD",
+    "Sergeant Bluff, IA",
+    "Hinton, IA",
+    "Fostoria, IA",
+    "Plainview, NE",
+    "Greater Siouxland Area"
+  ],
+  "branding": {
+    "logo_url": "https://coldwellbankerabr.com/files/2023/04/Blue-CB-logo-vertical-1.png",
+    "colors": {
+      "primary": "#0033A0",
+      "secondary": "#FFFFFF",
+      "accent": "#C4A35A"
+    },
+    "tagline": "Find your dream home"
+  },
+  "social_media": {
+    "facebook": true,
+    "twitter": true,
+    "linkedin": true,
+    "instagram": true,
+    "youtube": true
+  },
+  "footer": {
+    "copyright": "\u00a9 Coldwell Banker Associated Brokers Realty, Inc.",
+    "legal_links": [
+      "Privacy Policy",
+      "Terms of Use",
+      "Accessibility Statement",
+      "Fair Housing Notice"
+    ],
+    "mls_disclaimer": "Data provided by Northwest Iowa Board of Realtors MLS"
+  },
+  "mls_info": {
+    "source": "NORTHWEST IOWA BOR",
+    "disclaimer": "Copyright 2025 Northwest Iowa Board of Realtors. All rights reserved. This information is deemed reliable, but not guaranteed. The information being provided is for consumers' personal, non-commercial use and may not be used for any purpose other than to identify prospective properties consumers may be interested in purchasing."
+  },
+  "search_features": [
+    "Search by Location",
+    "Search by Drive Time\u2122",
+    "Advanced filters (price, beds, baths, sqft)",
+    "Map view",
+    "Street view",
+    "Virtual tours",
+    "Save searches",
+    "Favorite properties"
+  ],
+  "property_types": [
+    "Single Family Homes",
+    "Multi-Family Homes",
+    "Condominiums",
+    "Land/Lots",
+    "Commercial"
+  ],
+  "legal_pages": {
+    "accessibility_statement": {
+      "title": "Accessibility Statement",
+      "url": "https://coldwellbankerabr.com/accessibility-statement/",
+      "content": "MoxiWorks LLC is committed to making its website usable by all people, including those with disabilities by meeting or exceeding the requirements of the Web Content Accessibility Guidelines 2.1 Level A/AA (WCAG 2.1 A/AA). We strive to make our site an equal experience for everyone.\n\nWe continue to monitor our site and make sure that all MoxiWorks-authored content provided is accessible to all visitors. Additionally, our tools that our site owners use to author their own content also enables them to ensure that their content is also accessible to all visitors. In order to help us in this process, we have engaged The Bureau of Internet Accessibility, an accessibility consulting company, to conduct a full accessibility audit consisting of both automated and manual testing of our website using BoIA's A11Y\u00ae platform which provides us with specific recommendations that will assist us in ensuring that our Web presence is in conformance with the WCAG 2.1 A/AA.\n\nDisclaimer: It is important to note that efforts to the website are ongoing as we work to implement the relevant improvements to meet WCAG 2.1 A/AA guidelines over time.\n\nThird Party Applications: While you are visiting our site, you will notice that we make use of third-party sites such as Facebook, LinkedIn, YouTube and Instagram to provide information about MoxiWorks LLC. Though individuals may have challenges with access to these particular sites, MoxiWorks LLC does not control or remedy the way content is portrayed."
+    },
+    "privacy_policy": {
+      "title": "Privacy Policy",
+      "url": "/privacy-policy",
+      "note": "Comprehensive MoxiWorks privacy policy - full content available in agent scrape results"
+    },
+    "terms_of_service": {
+      "title": "Terms of Service",
+      "url": "/terms-of-use",
+      "note": "Comprehensive MoxiWorks terms of service - full content available in agent scrape results"
+    },
+    "fair_housing_notice": {
+      "title": "Fair Housing Notice",
+      "url": "TODO: PDF link from footer",
+      "content": "TODO: Extract content from Fair Housing PDF provided by user",
+      "note": "This is a PDF document that needs to be processed separately"
+    }
+  },
+  "todo_pages": {
+    "about_us": {
+      "url": "/about-us",
+      "status": "404 - Page not found",
+      "note": "TODO: May need custom 'About Us' content or redirect to company info page"
+    },
+    "our_story": {
+      "url": "/profile/my-bio",
+      "status": "Empty/broken page",
+      "note": "TODO: May need broker/owner bio content - page exists but returns minimal content"
+    }
+  }
+}
