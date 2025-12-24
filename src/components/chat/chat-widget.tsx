@@ -79,8 +79,7 @@ export function ChatWidget() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ type: "spring", duration: 0.3 }}
-            className="fixed bottom-6 right-6 z-40 w-[380px] h-[550px] bg-white rounded-xl shadow-2xl flex flex-col overflow-hidden border border-gray-200"
-            style={{ maxHeight: "calc(100vh - 100px)" }}
+            className="fixed z-40 bg-white rounded-xl shadow-2xl flex flex-col overflow-hidden border border-gray-200 bottom-3 right-3 left-3 h-[calc(100vh-80px)] sm:bottom-6 sm:right-6 sm:left-auto sm:w-[380px] sm:h-[550px] sm:max-h-[calc(100vh-100px)]"
           >
             {/* Header */}
             <ChatHeader onClose={handleClose} />
@@ -107,19 +106,6 @@ export function ChatWidget() {
           </motion.div>
         )}
       </AnimatePresence>
-
-      {/* Mobile styles */}
-      <style jsx global>{`
-        @media (max-width: 640px) {
-          .fixed.bottom-6.right-6.z-40.w-\\[380px\\] {
-            width: calc(100vw - 24px);
-            right: 12px;
-            bottom: 12px;
-            height: calc(100vh - 80px);
-            max-height: none;
-          }
-        }
-      `}</style>
     </>
   );
 }
