@@ -146,8 +146,29 @@ function MessageBubble({
                 {isUser ? (
                   <p className="text-sm whitespace-pre-wrap">{textPart.text}</p>
                 ) : (
-                  <div className="text-sm prose prose-sm max-w-none prose-p:my-1 prose-ul:my-1 prose-ol:my-1 prose-li:my-0.5 prose-headings:my-2 prose-strong:text-gray-900">
-                    <ReactMarkdown>{textPart.text}</ReactMarkdown>
+                  <div className="text-sm prose prose-sm max-w-none prose-p:mb-6 prose-ul:my-3 prose-ol:my-3 prose-li:my-1 prose-headings:my-4 prose-strong:text-gray-900 prose-p:leading-relaxed [&>p:last-child]:mb-0">
+                    <ReactMarkdown
+                      components={{
+                        p: ({ node: _node, ...props }) => (
+                          <p className="mb-3 last:mb-0" {...props} />
+                        ),
+                        ul: ({ node: _node, ...props }) => (
+                          <ul className="my-3 list-disc pl-5" {...props} />
+                        ),
+                        ol: ({ node: _node, ...props }) => (
+                          <ol className="my-3 list-decimal pl-5" {...props} />
+                        ),
+                        li: ({ node: _node, ...props }) => (
+                          <li className="my-1" {...props} />
+                        ),
+                        strong: ({ node: _node, ...props }) => (
+                          <strong className="font-semibold text-gray-900" {...props} />
+                        ),
+                      }}
+                    >
+                      {/* Convert single line breaks to paragraph breaks for proper markdown rendering */}
+                      {textPart.text.replace(/(?<!\n)\n(?!\n)/g, "\n\n")}
+                    </ReactMarkdown>
                   </div>
                 )}
               </div>
