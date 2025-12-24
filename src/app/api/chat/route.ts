@@ -3,13 +3,7 @@ import { SYSTEM_PROMPT } from "@/lib/ai/system-prompt";
 import { aiTools } from "@/lib/ai/tools";
 
 export async function POST(req: Request) {
-  const { messages: uiMessages } = await req.json();
-
-  // Convert UI messages (with parts) to model messages (with content)
-  const modelMessages = await convertToModelMessages(
-    uiMessages as UIMessage[],
-    { tools: aiTools }
-  );
+  const { messages }: { messages: UIMessage[] } = await req.json();
 
   const result = streamText({
     // Using Gemini 3 Flash via Vercel AI Gateway
@@ -17,7 +11,7 @@ export async function POST(req: Request) {
     // OIDC authentication is automatic when deployed on Vercel
     model: "google/gemini-3-flash",
     system: SYSTEM_PROMPT,
-    messages: modelMessages,
+    messages: await convertToModelMessages(messages),
     tools: aiTools,
   });
 

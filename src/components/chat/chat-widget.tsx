@@ -27,10 +27,8 @@ export function ChatWidget() {
 
   const handleSubmit = useCallback(
     (content: string) => {
-      sendMessage({
-        role: "user",
-        parts: [{ type: "text", text: content }],
-      });
+      // AI SDK 6: sendMessage expects { text: string }, not full message
+      sendMessage({ text: content });
     },
     [sendMessage]
   );
