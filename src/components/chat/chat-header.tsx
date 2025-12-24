@@ -1,13 +1,15 @@
 "use client";
 
-import { X, Minimize2, Home } from "lucide-react";
+import { X, Minimize2, Maximize2, Home } from "lucide-react";
 
 interface ChatHeaderProps {
   onClose: () => void;
   onMinimize?: () => void;
+  onToggleFullscreen?: () => void;
+  isFullscreen?: boolean;
 }
 
-export function ChatHeader({ onClose, onMinimize }: ChatHeaderProps) {
+export function ChatHeader({ onClose, onMinimize, onToggleFullscreen, isFullscreen }: ChatHeaderProps) {
   return (
     <div className="bg-[#0033A0] text-white px-4 py-3 flex items-center justify-between rounded-t-xl">
       <div className="flex items-center gap-3">
@@ -20,13 +22,18 @@ export function ChatHeader({ onClose, onMinimize }: ChatHeaderProps) {
         </div>
       </div>
       <div className="flex items-center gap-1">
-        {onMinimize && (
+        {onToggleFullscreen && (
           <button
-            onClick={onMinimize}
+            onClick={onToggleFullscreen}
             className="p-1.5 hover:bg-white/10 rounded-lg transition-colors"
-            aria-label="Minimize chat"
+            aria-label={isFullscreen ? "Exit fullscreen" : "Fullscreen"}
+            title={isFullscreen ? "Exit fullscreen" : "Fullscreen"}
           >
-            <Minimize2 className="w-4 h-4" />
+            {isFullscreen ? (
+              <Minimize2 className="w-4 h-4" />
+            ) : (
+              <Maximize2 className="w-4 h-4" />
+            )}
           </button>
         )}
         <button

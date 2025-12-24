@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import type { UIMessage } from "@ai-sdk/react";
 import { User, Bot, Loader2 } from "lucide-react";
+import ReactMarkdown from "react-markdown";
 import { ListingCardCompact } from "./listing-card";
 
 interface ChatMessagesProps {
@@ -113,7 +114,13 @@ function MessageBubble({ message }: { message: UIMessage }) {
                 : "bg-gray-100 text-gray-900 rounded-tl-none"
             }`}
           >
-            <p className="text-sm whitespace-pre-wrap">{textContent}</p>
+            {isUser ? (
+              <p className="text-sm whitespace-pre-wrap">{textContent}</p>
+            ) : (
+              <div className="text-sm prose prose-sm max-w-none prose-p:my-1 prose-ul:my-1 prose-ol:my-1 prose-li:my-0.5 prose-headings:my-2 prose-strong:text-gray-900">
+                <ReactMarkdown>{textContent}</ReactMarkdown>
+              </div>
+            )}
           </div>
         )}
 

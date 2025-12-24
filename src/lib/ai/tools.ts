@@ -182,7 +182,7 @@ export const getAgentContact = tool({
 });
 
 export const getAreaInfo = tool({
-  description: `Get information about the Sioux City, Iowa area including neighborhoods, schools, and local amenities. Use when users ask about the area, schools, or community features.`,
+  description: `Get information about the Sioux City, Iowa area including neighborhoods, schools, market trends, cost of living, and local amenities. Use when users ask about the area, schools, or community features.`,
   inputSchema: areaInfoSchema,
   execute: async ({ topic }) => {
     const cities = getUniqueCities();
@@ -192,29 +192,42 @@ export const getAreaInfo = tool({
     const info: Record<string, object> = {
       neighborhoods: {
         overview:
-          "Sioux City and the surrounding Siouxland area offers diverse neighborhoods from historic districts to new developments.",
+          "Sioux City offers diverse neighborhoods catering to different lifestyles and budgets, from established historic areas to newer developments.",
         coveredAreas: cities,
         highlights: [
-          "Morningside - Historic charm with mature trees and walkable streets",
-          "Northside - Family-friendly with excellent schools",
-          "South Sioux City - Growing community in Nebraska with new construction",
-          "Dakota Dunes - Upscale development with golf course and river views",
-          "Le Mars - The Ice Cream Capital of the World, quiet small-town living",
+          "**Morningside & Leeds** - Mix of single-family homes and townhouses, attracting families and professionals seeking community-oriented environments",
+          "**West Side & Riverside** - Established homes with mature landscaping and convenient access to local amenities",
+          "**The Heights & Indian Hills** - Higher-end properties with proximity to newer developments and recreation facilities",
+          "**Country Club area** - Upscale neighborhood with golf course access",
+          "**Dakota Dunes** - Upscale development with golf course and Missouri River views",
+          "**South Sioux City** - Growing Nebraska community with new construction options",
+          "**Le Mars** - The Ice Cream Capital of the World, quiet small-town living 25 minutes away",
         ],
       },
       schools: {
         overview:
-          "The area is served by several school districts including Sioux City Community School District, South Sioux City Community Schools, and several private schools.",
+          "Sioux City offers quality K-12 education with schools rated between 6/10 and 8/10 on GreatSchools.",
         publicDistricts: [
           "Sioux City Community School District",
           "South Sioux City Community Schools",
           "Le Mars Community School District",
           "Sergeant Bluff-Luton CSD",
         ],
+        topRatedSchools: [
+          "Dakota City Elementary - 8/10 rating",
+          "Perry Creek Elementary - 7/10 rating",
+        ],
         note: "Each listing includes information about nearby schools. Ask about a specific property to see its assigned schools.",
       },
       market: {
-        overview: "The Siouxland real estate market offers excellent value compared to national averages.",
+        overview:
+          "The Sioux City housing market is competitive yet affordable, with median prices 52% below the national average.",
+        stats: {
+          medianSalePrice: "$209,000",
+          pricePerSqFt: "$135 (up 8% year-over-year)",
+          daysOnMarket: "22-24 days average",
+          saleToListRatio: "96.5% (some homes sell above list)",
+        },
         currentPriceRange: {
           min: priceRange.min,
           max: priceRange.max,
@@ -222,25 +235,43 @@ export const getAreaInfo = tool({
         },
         areasServed: cities,
         marketTrends: [
-          "Steady appreciation in established neighborhoods",
+          "Steady 2.5% year-over-year price appreciation",
+          "High demand with homes selling in under a month",
           "New construction in suburban areas",
           "Strong rental market near colleges",
           "Growing demand for homes with acreage",
         ],
+        outlook:
+          "Market expected to continue gradual appreciation through 2025 due to steady demand, economic stability, and lower cost of living.",
       },
       general: {
         overview:
-          "Sioux City is a tri-state metro area where Iowa, Nebraska, and South Dakota meet along the Missouri River.",
+          "Sioux City is a tri-state metro area where Iowa, Nebraska, and South Dakota meet along the Missouri River. Known for affordability, diverse economy, and quality of life.",
         population: "Approximately 85,000 in Sioux City, 145,000 in metro area",
+        costOfLiving:
+          "13% lower than the national average - housing, transportation, groceries, and healthcare are all more affordable here.",
         economy:
-          "Major employers include Tyson Foods, MercyOne, UnityPoint Health, and various manufacturing companies.",
+          "Diversified economy with major employers in healthcare (MercyOne Siouxland Medical Center, UnityPoint), manufacturing, agriculture (Tyson Foods), and energy (MidAmerican Energy).",
         recreation: [
-          "Missouri River access for boating and fishing",
-          "Stone State Park and multiple city parks",
-          "Orpheum Theatre and entertainment district",
-          "Sioux City Art Center",
+          "Missouri River riverfront trails, boating, and fishing",
+          "Stone State Park and numerous city parks",
+          "Orpheum Theatre and downtown entertainment district",
+          "Sioux City Art Center and local museums",
           "Dorothy Pecaut Nature Center",
+          "Annual festivals, farmers markets, and community events",
+          "Local dining scene with locally-owned restaurants",
         ],
+        climate: {
+          highlights: "Four seasons with minimal natural disaster risk",
+          wildfireRisk: "Less than 1%",
+          severeWindRisk: "Low",
+        },
+        transportation: {
+          note: "Car-dependent community with good road infrastructure",
+          walkScore: 23,
+          transitScore: 36,
+          bikeScore: 36,
+        },
         brokerage: {
           name: brokerage.name,
           contact: brokerage.phone,

@@ -11,6 +11,7 @@ import { ChatInput } from "./chat-input";
 
 export function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   // Create transport with API endpoint
   const transport = useMemo(
@@ -35,6 +36,7 @@ export function ChatWidget() {
 
   const handleClose = useCallback(() => {
     setIsOpen(false);
+    setIsFullscreen(false);
   }, []);
 
   const handleOpen = useCallback(() => {
@@ -44,6 +46,10 @@ export function ChatWidget() {
   const handleReset = useCallback(() => {
     setMessages([]);
   }, [setMessages]);
+
+  const handleToggleFullscreen = useCallback(() => {
+    setIsFullscreen((prev) => !prev);
+  }, []);
 
   return (
     <>
@@ -77,10 +83,18 @@ export function ChatWidget() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ type: "spring", duration: 0.3 }}
-            className="fixed z-40 bg-white rounded-xl shadow-2xl flex flex-col overflow-hidden border border-gray-200 bottom-3 right-3 left-3 h-[calc(100vh-80px)] sm:bottom-6 sm:right-6 sm:left-auto sm:w-[380px] sm:h-[550px] sm:max-h-[calc(100vh-100px)]"
+            className={`fixed z-40 bg-white shadow-2xl flex flex-col overflow-hidden border border-gray-200 ${
+              isFullscreen
+                ? "inset-0 rounded-none"
+                : "rounded-xl bottom-3 right-3 left-3 h-[calc(100vh-80px)] sm:bottom-6 sm:right-6 sm:left-auto sm:w-[380px] sm:h-[550px] sm:max-h-[calc(100vh-100px)]"
+            }`}
           >
             {/* Header */}
-            <ChatHeader onClose={handleClose} />
+            <ChatHeader
+              onClose={handleClose}
+              onToggleFullscreen={handleToggleFullscreen}
+              isFullscreen={isFullscreen}
+            />
 
             {/* Messages */}
             <ChatMessages messages={messages} isLoading={isLoading} />
