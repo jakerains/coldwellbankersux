@@ -26,6 +26,10 @@ pnpm install
 pnpm add <package>      # Add a new package
 ```
 
+## Workflow Rules
+
+**IMPORTANT: Only commit and push when explicitly asked by the user.** Do not automatically commit or push after completing work. Wait for the user to test changes first and request a commit/push.
+
 ## Architecture
 
 ### Data Layer (No Database)

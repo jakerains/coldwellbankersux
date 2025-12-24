@@ -45,9 +45,10 @@ export function ExternalListingCard({ listing, onClick }: ExternalListingProps) 
       onClick={onClick}
       className="w-full flex gap-3 p-2 bg-white rounded-lg border border-gray-200 hover:border-[#C4A35A] transition-colors text-left"
     >
-      {/* Thumbnail */}
+      {/* Thumbnail - using img for external URLs from various real estate sites */}
       <div className="relative w-16 h-16 flex-shrink-0 bg-gray-100 rounded overflow-hidden">
         {showImage ? (
+          // eslint-disable-next-line @next/next/no-img-element
           <img
             src={validImageUrl}
             alt={listing.address || listing.title}

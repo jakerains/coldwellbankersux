@@ -3,9 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
-import { Menu, X, Phone, ChevronDown } from "lucide-react";
-import { motion, AnimatePresence } from "motion/react";
+import { useState, useEffect, useSyncExternalStore } from "react";
+import { Menu, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -47,16 +46,16 @@ const navigation = [
   { label: "Home Valuation", href: "/home-valuation" },
 ];
 
+// Hydration-safe mount detection using useSyncExternalStore
+const emptySubscribe = () => () => {};
+const getSnapshot = () => true;
+const getServerSnapshot = () => false;
+
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMounted, setIsMounted] = useState(false);
+  const isMounted = useSyncExternalStore(emptySubscribe, getSnapshot, getServerSnapshot);
   const pathname = usePathname();
-
-  // Prevent hydration mismatch with Radix UI components
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
 
   // Only use transparent header on home page (which has a dark hero)
   const isHomePage = pathname === "/";

@@ -1,15 +1,16 @@
 "use client";
 
-import { X, Minimize2, Maximize2, Home } from "lucide-react";
+import { X, Minimize2, Maximize2, Home, RotateCcw } from "lucide-react";
 
 interface ChatHeaderProps {
   onClose: () => void;
-  onMinimize?: () => void;
   onToggleFullscreen?: () => void;
+  onReset?: () => void;
   isFullscreen?: boolean;
+  hasMessages?: boolean;
 }
 
-export function ChatHeader({ onClose, onMinimize, onToggleFullscreen, isFullscreen }: ChatHeaderProps) {
+export function ChatHeader({ onClose, onToggleFullscreen, onReset, isFullscreen, hasMessages }: ChatHeaderProps) {
   return (
     <div className="bg-[#0033A0] text-white px-4 py-3 flex items-center justify-between rounded-t-xl">
       <div className="flex items-center gap-3">
@@ -22,6 +23,16 @@ export function ChatHeader({ onClose, onMinimize, onToggleFullscreen, isFullscre
         </div>
       </div>
       <div className="flex items-center gap-1">
+        {onReset && hasMessages && (
+          <button
+            onClick={onReset}
+            className="p-1.5 hover:bg-white/10 rounded-lg transition-colors"
+            aria-label="Start new conversation"
+            title="Start new conversation"
+          >
+            <RotateCcw className="w-4 h-4" />
+          </button>
+        )}
         {onToggleFullscreen && (
           <button
             onClick={onToggleFullscreen}

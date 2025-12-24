@@ -32,7 +32,7 @@ export default function HomePage() {
         <div className="container relative z-10 mx-auto px-4 pt-20 text-center text-white">
           {/* Premium Badge */}
           <p className="mb-6 text-sm font-medium uppercase tracking-[0.3em] text-white/70">
-            Siouxland's Premier Real Estate
+            Siouxland&apos;s Premier Real Estate
           </p>
 
           <h1 className="mb-6 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl xl:text-7xl">

@@ -10,7 +10,6 @@ import type { Listing } from "@/lib/types";
 import {
   formatPrice,
   formatSquareFeet,
-  formatShortAddress,
   getStatusColor,
 } from "@/lib/utils/formatters";
 

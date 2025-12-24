@@ -454,140 +454,6 @@ const propertyExtractionSchema = {
   required: ["listings"],
 };
 
-export const searchExternalListings = tool({
-  description: `Search for additional property listings when local inventory doesn't have what the user wants. Use this when:
-- Local search returned 0 or very few results
-- User asks for specific property types we don't have (waterfront, luxury, acreage, historic, hot tub, pool)
-- User wants to see more options on the market
-- User is looking in areas outside our typical coverage
-
-Returns listings in the same format as local listings for uniform display.`,
-  inputSchema: searchExternalListingsSchema,
-  execute: async ({ query, location }) => {
-    const searchLocation = location || "Sioux City Iowa";
-    const fullQuery = `${query} ${searchLocation} home for sale`;
-
-    // Check if Firecrawl is configured
-    const firecrawl = getFirecrawl();
-    if (!firecrawl) {
-      return {
-        success: false,
-        totalFound: 0,
-        listings: [],
-      };
-    }
-
-    try {
-      console.log("[Firecrawl] Starting search for:", fullQuery);
-
-      // Step 1: Search to find relevant listing URLs
-      const searchResults = await firecrawl.search(fullQuery, {
-        limit: 5,
-        scrapeOptions: {
-          formats: ["markdown"],
-          onlyMainContent: true,
-        },
-      });
-
-      // Get URLs and content from search results - response has `web` property
-      const webResults = searchResults?.web || [];
-      console.log("[Firecrawl] Found", webResults.length, "search results");
-
-      if (webResults.length === 0) {
-        console.log("[Firecrawl] No results found in search");
-        return { success: true, totalFound: 0, listings: [] };
-      }
-
-      // Step 2: Scrape each result page with JSON format for structured extraction
-      const listings: StructuredListing[] = [];
-
-      for (const result of webResults.slice(0, 3)) {
-        // Limit to 3 pages for speed
-        // Type guard: check if result has url property
-        const url = "url" in result && typeof result.url === "string" ? result.url : null;
-        if (!url) continue;
-
-        try {
-          console.log("[Firecrawl] Scraping with JSON extraction:", url);
-
-          // Use scrape with JSON format for synchronous LLM extraction
-          // Format must be an array of objects: [{ type: 'json', prompt, schema }]
-          const scrapeResult = await firecrawl.scrape(url, {
-            formats: [
-              {
-                type: "json",
-                prompt:
-                  "Extract all real estate property listings visible on this page. For each listing, get the full address, price, bedrooms, bathrooms, square footage, year built if available, a brief description, and the main image URL. Ignore navigation, ads, and UI elements. Only include actual property listings.",
-                schema: propertyExtractionSchema,
-              },
-            ],
-          });
-
-          console.log("[Firecrawl] Scrape result keys:", Object.keys(scrapeResult || {}));
-          console.log("[Firecrawl] Full scrape result:", JSON.stringify(scrapeResult, null, 2).slice(0, 2000));
-
-          // Get extracted JSON data - check various possible locations
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          const scrapeData = scrapeResult as any;
-          const jsonData = (scrapeData?.json || scrapeData?.data?.json || scrapeData?.extract) as { listings?: unknown[] } | undefined;
-          const pageListings = jsonData?.listings || [];
-
-          console.log("[Firecrawl] JSON data:", JSON.stringify(jsonData, null, 2).slice(0, 1000));
-          console.log("[Firecrawl] Found", pageListings.length, "listings on page");
-
-          for (const item of pageListings) {
-            if (!item || typeof item !== "object") continue;
-            const data = item as Record<string, unknown>;
-
-            // Extract images array if present
-            const extractedImages = Array.isArray(data.images)
-              ? data.images.filter((img): img is string => typeof img === "string")
-              : [];
-
-            // Validate and sanitize the extracted data
-            const listing = sanitizeListingData({
-              title: typeof data.address === "string" ? data.address : "Property Listing",
-              address: typeof data.address === "string" ? data.address : "",
-              price: typeof data.price === "string" ? data.price : "Contact for Price",
-              bedrooms: typeof data.bedrooms === "number" ? data.bedrooms : undefined,
-              bathrooms: typeof data.bathrooms === "number" ? data.bathrooms : undefined,
-              squareFeet: typeof data.squareFeet === "number" ? data.squareFeet : undefined,
-              yearBuilt: typeof data.yearBuilt === "number" ? data.yearBuilt : undefined,
-              propertyType: "Single Family Home",
-              description: typeof data.description === "string" ? data.description : "",
-              imageUrl: typeof data.imageUrl === "string" ? data.imageUrl : undefined,
-              images: extractedImages.length > 0 ? extractedImages : undefined,
-            });
-
-            // Only include if we have a real address (not UI garbage)
-            if (listing.address && listing.address.length > 10 && /\d/.test(listing.address)) {
-              listings.push(listing);
-              console.log("[Firecrawl] Added listing:", listing.address, "-", listing.price);
-            }
-          }
-        } catch (scrapeError) {
-          console.error("[Firecrawl] Error scraping URL:", url, scrapeError);
-          // Continue with other URLs
-        }
-      }
-
-      console.log("[Firecrawl] Returning", listings.length, "validated listings total");
-      return {
-        success: true,
-        totalFound: listings.length,
-        listings,
-      };
-    } catch (error) {
-      console.error("[Firecrawl] Error:", error);
-      return {
-        success: false,
-        totalFound: 0,
-        listings: [],
-      };
-    }
-  },
-});
-
 // Type for structured listing from external search
 interface StructuredListing {
   title: string;
@@ -637,29 +503,22 @@ function sanitizeListingData(data: StructuredListing): StructuredListing {
     }
   }
 
-  // Clean up description - remove markdown artifacts, URLs, and excessive whitespace
+  // Clean up description
   if (result.description) {
     result.description = result.description
-      // Remove markdown links [text](url)
       .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-      // Remove bare URLs
       .replace(/https?:\/\/[^\s)]+/g, "")
-      // Remove markdown formatting
       .replace(/[*_#`]/g, "")
-      // Remove excessive whitespace
       .replace(/\s+/g, " ")
-      // Trim
       .trim()
-      // Truncate to reasonable length
       .slice(0, 500);
 
-    // If description looks like garbage (too short or has weird characters), clear it
     if (result.description.length < 20 || /^[^a-zA-Z]*$/.test(result.description)) {
       result.description = "";
     }
   }
 
-  // Clean up address - remove markdown and extra formatting
+  // Clean up address
   if (result.address) {
     result.address = result.address
       .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
@@ -671,12 +530,10 @@ function sanitizeListingData(data: StructuredListing): StructuredListing {
 
   // Validate image URL
   if (result.imageUrl) {
-    // Filter out placeholder/spacer images
     const invalidPatterns = ["spacer.gif", "pixel.gif", "1x1", "blank.png", "placeholder", "no-image"];
     if (invalidPatterns.some((p) => result.imageUrl?.toLowerCase().includes(p))) {
       result.imageUrl = undefined;
     }
-    // Must be a valid URL
     if (result.imageUrl && !result.imageUrl.startsWith("http")) {
       result.imageUrl = undefined;
     }
@@ -688,12 +545,9 @@ function sanitizeListingData(data: StructuredListing): StructuredListing {
     result.images = result.images
       .filter((url): url is string => typeof url === "string" && url.startsWith("http"))
       .filter((url) => !invalidPatterns.some((p) => url.toLowerCase().includes(p)))
-      // Remove duplicates
       .filter((url, index, arr) => arr.indexOf(url) === index)
-      // Limit to 20 images max
       .slice(0, 20);
 
-    // If we have images but no main imageUrl, use the first one
     if (!result.imageUrl && result.images.length > 0) {
       result.imageUrl = result.images[0];
     }
@@ -701,6 +555,154 @@ function sanitizeListingData(data: StructuredListing): StructuredListing {
 
   return result;
 }
+
+// Helper: scrape a single URL with timeout
+async function scrapeWithTimeout(
+  firecrawl: Firecrawl,
+  url: string,
+  timeoutMs: number = 15000
+): Promise<StructuredListing[]> {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), timeoutMs);
+
+  try {
+    console.log("[Firecrawl] Scraping:", url);
+
+    // Use scrape with JSON format for LLM extraction
+    // Add maxAge for caching (5 minutes) to speed up repeat queries
+    const scrapeResult = await firecrawl.scrape(url, {
+      formats: [
+        {
+          type: "json",
+          prompt:
+            "Extract all real estate property listings visible on this page. For each listing, get the full address, price, bedrooms, bathrooms, square footage, year built if available, a brief description, and the main image URL. Only include actual property listings.",
+          schema: propertyExtractionSchema,
+        },
+      ],
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    } as any);
+
+    clearTimeout(timeout);
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const scrapeData = scrapeResult as any;
+    const jsonData = (scrapeData?.json || scrapeData?.data?.json || scrapeData?.extract) as { listings?: unknown[] } | undefined;
+    const pageListings = jsonData?.listings || [];
+
+    console.log("[Firecrawl] Found", pageListings.length, "listings on page");
+
+    const listings: StructuredListing[] = [];
+    for (const item of pageListings) {
+      if (!item || typeof item !== "object") continue;
+      const data = item as Record<string, unknown>;
+
+      const extractedImages = Array.isArray(data.images)
+        ? data.images.filter((img): img is string => typeof img === "string")
+        : [];
+
+      const listing = sanitizeListingData({
+        title: typeof data.address === "string" ? data.address : "Property Listing",
+        address: typeof data.address === "string" ? data.address : "",
+        price: typeof data.price === "string" ? data.price : "Contact for Price",
+        bedrooms: typeof data.bedrooms === "number" ? data.bedrooms : undefined,
+        bathrooms: typeof data.bathrooms === "number" ? data.bathrooms : undefined,
+        squareFeet: typeof data.squareFeet === "number" ? data.squareFeet : undefined,
+        yearBuilt: typeof data.yearBuilt === "number" ? data.yearBuilt : undefined,
+        propertyType: "Single Family Home",
+        description: typeof data.description === "string" ? data.description : "",
+        imageUrl: typeof data.imageUrl === "string" ? data.imageUrl : undefined,
+        images: extractedImages.length > 0 ? extractedImages : undefined,
+      });
+
+      if (listing.address && listing.address.length > 10 && /\d/.test(listing.address)) {
+        listings.push(listing);
+        console.log("[Firecrawl] Added:", listing.address, "-", listing.price);
+      }
+    }
+
+    return listings;
+  } catch (error) {
+    clearTimeout(timeout);
+    if ((error as Error).name === "AbortError") {
+      console.log("[Firecrawl] Scrape timed out for:", url);
+    } else {
+      console.error("[Firecrawl] Scrape error:", url, error);
+    }
+    return [];
+  }
+}
+
+export const searchExternalListings = tool({
+  description: `Search for additional property listings when local inventory doesn't have what the user wants. Use this when:
+- Local search returned 0 or very few results
+- User asks for specific property types we don't have (waterfront, luxury, acreage, historic, hot tub, pool)
+- User wants to see more options on the market
+- User is looking in areas outside our typical coverage
+
+Returns listings in the same format as local listings for uniform display.`,
+  inputSchema: searchExternalListingsSchema,
+  execute: async ({ query, location }) => {
+    const searchLocation = location || "Sioux City Iowa";
+    const fullQuery = `${query} ${searchLocation} home for sale`;
+
+    const firecrawl = getFirecrawl();
+    if (!firecrawl) {
+      return { success: false, totalFound: 0, listings: [] };
+    }
+
+    try {
+      console.log("[Firecrawl] Starting search for:", fullQuery);
+
+      // Step 1: Search to find relevant listing URLs
+      const searchResults = await firecrawl.search(fullQuery, {
+        limit: 5,
+        scrapeOptions: {
+          formats: ["markdown"],
+          onlyMainContent: true,
+        },
+      });
+
+      const webResults = searchResults?.web || [];
+      console.log("[Firecrawl] Found", webResults.length, "search results");
+
+      if (webResults.length === 0) {
+        return { success: true, totalFound: 0, listings: [] };
+      }
+
+      // Step 2: Get URLs to scrape (limit to 2 for speed)
+      const urlsToScrape: string[] = [];
+      for (const result of webResults.slice(0, 2)) {
+        const url = "url" in result && typeof result.url === "string" ? result.url : null;
+        if (url) urlsToScrape.push(url);
+      }
+
+      // Step 3: Scrape URLs IN PARALLEL with timeout (much faster!)
+      console.log("[Firecrawl] Scraping", urlsToScrape.length, "URLs in parallel");
+      const scrapePromises = urlsToScrape.map((url) => scrapeWithTimeout(firecrawl, url, 20000));
+      const results = await Promise.all(scrapePromises);
+
+      // Flatten and dedupe by address
+      const allListings = results.flat();
+      const seen = new Set<string>();
+      const listings = allListings.filter((listing) => {
+        const key = listing.address.toLowerCase().replace(/\s+/g, "");
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      });
+
+      console.log("[Firecrawl] Returning", listings.length, "unique listings");
+      return {
+        success: true,
+        totalFound: listings.length,
+        listings,
+      };
+    } catch (error) {
+      console.error("[Firecrawl] Error:", error);
+      return { success: false, totalFound: 0, listings: [] };
+    }
+  },
+});
 
 // Schema for local area research
 const researchLocalAreaSchema = z.object({

@@ -154,7 +154,9 @@ export function ChatWidget() {
             <ChatHeader
               onClose={handleClose}
               onToggleFullscreen={handleToggleFullscreen}
+              onReset={handleReset}
               isFullscreen={isFullscreen}
+              hasMessages={messages.length > 0}
             />
 
             {/* Messages */}
@@ -172,16 +174,6 @@ export function ChatWidget() {
               isLoading={isLoading}
               placeholder="Ask about homes, neighborhoods..."
             />
-
-            {/* Reset button (hidden but accessible) */}
-            {messages.length > 0 && (
-              <button
-                onClick={handleReset}
-                className="absolute bottom-[70px] left-1/2 -translate-x-1/2 text-xs text-gray-400 hover:text-gray-600 underline"
-              >
-                Start new conversation
-              </button>
-            )}
           </motion.div>
         )}
       </AnimatePresence>

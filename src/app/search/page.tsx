@@ -1,7 +1,6 @@
 import { Suspense } from "react";
 import { Metadata } from "next";
 import { filterListings, sortListings, SortOption } from "@/lib/data/listings";
-import { PropertyGrid } from "@/components/property";
 import { PropertyType, ListingStatus } from "@/lib/types/listing";
 import { Skeleton } from "@/components/ui/skeleton";
 import { SearchPageContent } from "./search-content";

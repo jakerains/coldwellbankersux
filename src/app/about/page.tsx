@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Award, Users, Home, TrendingUp, Heart, Shield } from "lucide-react";
-import { getAbout, getServiceAreas, getSiteName } from "@/lib/data/site-content";
+import { getAbout, getServiceAreas } from "@/lib/data/site-content";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -42,7 +42,6 @@ const values = [
 export default function AboutPage() {
   const about = getAbout();
   const serviceAreas = getServiceAreas();
-  const siteName = getSiteName();
 
   return (
     <div>
