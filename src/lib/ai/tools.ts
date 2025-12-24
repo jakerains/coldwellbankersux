@@ -702,6 +702,109 @@ function sanitizeListingData(data: StructuredListing): StructuredListing {
   return result;
 }
 
+// Schema for local area research
+const researchLocalAreaSchema = z.object({
+  query: z
+    .string()
+    .describe(
+      "What to research about the Sioux City area, e.g. 'best restaurants near Morningside', 'parks and recreation', 'upcoming events'"
+    ),
+  topic: z
+    .enum(["dining", "recreation", "events", "shopping", "healthcare", "education", "transportation", "other"])
+    .describe("Category of the research query"),
+});
+
+export const researchLocalArea = tool({
+  description: `Research information about the Sioux City, Iowa area that isn't in our hardcoded knowledge base. Use this when users ask about:
+- Local restaurants, cafes, bars
+- Parks, trails, outdoor activities
+- Community events, festivals
+- Shopping centers, stores
+- Healthcare facilities, gyms
+- Transportation options
+- Other local amenities
+
+IMPORTANT: Only use this for Sioux City/Siouxland area questions. Do NOT use for general knowledge questions unrelated to the local area.`,
+  inputSchema: researchLocalAreaSchema,
+  execute: async ({ query, topic }) => {
+    const firecrawl = getFirecrawl();
+    if (!firecrawl) {
+      return {
+        success: false,
+        message: "Research service unavailable. Please contact our office for local recommendations.",
+        results: [],
+      };
+    }
+
+    try {
+      // Build a focused search query for the Sioux City area
+      const searchQuery = `${query} Sioux City Iowa ${topic !== "other" ? topic : ""}`.trim();
+      console.log("[Firecrawl] Area research query:", searchQuery);
+
+      const searchResults = await firecrawl.search(searchQuery, {
+        limit: 5,
+        scrapeOptions: {
+          formats: ["markdown"],
+          onlyMainContent: true,
+        },
+      });
+
+      const webResults = searchResults?.web || [];
+      console.log("[Firecrawl] Area research found", webResults.length, "results");
+
+      if (webResults.length === 0) {
+        return {
+          success: true,
+          message: "I couldn't find specific information about that. Our agents are locals and can provide personalized recommendations when you connect with them!",
+          results: [],
+        };
+      }
+
+      // Extract relevant snippets from results
+      const results: { title: string; snippet: string; url?: string }[] = [];
+
+      for (const result of webResults.slice(0, 3)) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const r = result as any;
+        if (r.title && r.description) {
+          results.push({
+            title: r.title,
+            snippet: r.description?.slice(0, 300) || "",
+            url: r.url,
+          });
+        } else if (r.markdown) {
+          // Extract a summary from markdown content
+          const content = r.markdown.slice(0, 500).replace(/[#*_\[\]()]/g, "").trim();
+          if (content.length > 50) {
+            results.push({
+              title: r.title || "Local Information",
+              snippet: content,
+            });
+          }
+        }
+      }
+
+      return {
+        success: true,
+        topic,
+        query,
+        message: results.length > 0
+          ? "Here's what I found about the Sioux City area:"
+          : "I found some general information but nothing specific. Our local agents can help with personalized recommendations!",
+        results,
+        note: "This information is sourced from web search and may not be exhaustive. Our agents live in the area and can provide personal recommendations!",
+      };
+    } catch (error) {
+      console.error("[Firecrawl] Area research error:", error);
+      return {
+        success: false,
+        message: "I had trouble researching that. Feel free to ask our agents - they know the area well!",
+        results: [],
+      };
+    }
+  },
+});
+
 // Export all tools as an object for use in the API route
 export const aiTools = {
   searchListings,
@@ -710,4 +813,5 @@ export const aiTools = {
   getAreaInfo,
   initiateContact,
   searchExternalListings,
+  researchLocalArea,
 };
