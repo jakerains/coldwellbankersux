@@ -27,6 +27,52 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "ap.rdcpix.com",
       },
+      // External real estate listing images
+      {
+        protocol: "https",
+        hostname: "ssl.cdn-redfin.com",
+      },
+      {
+        protocol: "https",
+        hostname: "*.zillowstatic.com",
+      },
+      {
+        protocol: "https",
+        hostname: "photos.zillowstatic.com",
+      },
+      {
+        protocol: "https",
+        hostname: "*.rdcpix.com",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+      // Additional real estate domains for Firecrawl results
+      {
+        protocol: "https",
+        hostname: "www.homes.com",
+      },
+      {
+        protocol: "https",
+        hostname: "*.homes.com",
+      },
+      {
+        protocol: "https",
+        hostname: "*.realtor.com",
+      },
+      {
+        protocol: "https",
+        hostname: "ar.rdcpix.com",
+      },
+      {
+        protocol: "https",
+        hostname: "*.trulia.com",
+      },
+      {
+        protocol: "https",
+        hostname: "*.redfin.com",
+      },
     ],
   },
 };

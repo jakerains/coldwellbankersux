@@ -1,0 +1,713 @@
+import { tool } from "ai";
+import { z } from "zod";
+import Firecrawl from "@mendable/firecrawl-js";
+import {
+  filterListings,
+  getListingById,
+  getUniqueCities,
+  getPriceRange,
+  getBrokerage,
+} from "@/lib/data/listings";
+import type { Listing } from "@/lib/types";
+
+// Lazy initialization of Firecrawl client
+let firecrawlClient: Firecrawl | null = null;
+
+function getFirecrawl(): Firecrawl | null {
+  if (!firecrawlClient && process.env.FIRECRAWL_API_KEY) {
+    firecrawlClient = new Firecrawl({ apiKey: process.env.FIRECRAWL_API_KEY });
+    console.log("[Firecrawl] Client initialized");
+  }
+  return firecrawlClient;
+}
+
+// Helper to format a listing for AI response
+function formatListingPreview(listing: Listing) {
+  return {
+    id: listing.id,
+    address: `${listing.address.street}, ${listing.address.city}, ${listing.address.state}`,
+    price: listing.price,
+    priceFormatted: new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+      maximumFractionDigits: 0,
+    }).format(listing.price),
+    bedrooms: listing.bedrooms,
+    bathrooms: listing.bathrooms,
+    squareFeet: listing.square_feet,
+    propertyType: listing.property_type,
+    status: listing.status,
+    mainImage: listing.images?.[0] || null,
+    hasVirtualTour: !!listing.virtual_tour && typeof listing.virtual_tour === "string",
+  };
+}
+
+// Helper to format full listing details
+function formatListingDetails(listing: Listing) {
+  return {
+    ...formatListingPreview(listing),
+    description: listing.description,
+    features: listing.features,
+    yearBuilt: listing.year_built,
+    lotSize: listing.lot_size,
+    style: listing.style,
+    basement: listing.basement,
+    heatingCooling: listing.heating_cooling,
+    schools: listing.schools,
+    virtualTourUrl: typeof listing.virtual_tour === "string" ? listing.virtual_tour : null,
+    images: listing.images || [],
+    agent: {
+      name: listing.agent.name,
+      title: listing.agent.title,
+      phone: listing.agent.phone,
+      email: listing.agent.email,
+      company: listing.agent.company,
+    },
+    mlsNumber: listing.mls_number,
+    daysOnMarket: listing.days_on_market,
+  };
+}
+
+// Input schemas
+const searchListingsSchema = z.object({
+  minPrice: z.number().optional().describe("Minimum price in dollars"),
+  maxPrice: z.number().optional().describe("Maximum price in dollars"),
+  minBeds: z.number().optional().describe("Minimum number of bedrooms"),
+  maxBeds: z.number().optional().describe("Maximum number of bedrooms"),
+  minBaths: z.number().optional().describe("Minimum number of bathrooms"),
+  maxBaths: z.number().optional().describe("Maximum number of bathrooms"),
+  propertyType: z
+    .enum(["Single Family Home", "Multi-Family Home", "Condominium", "Land"])
+    .optional()
+    .describe("Type of property"),
+  city: z.string().optional().describe("City name to filter by"),
+  search: z
+    .string()
+    .optional()
+    .describe("General search term for address, features, or description"),
+});
+
+const listingIdSchema = z.object({
+  listingId: z.string().describe("The ID of the listing"),
+});
+
+const areaInfoSchema = z.object({
+  topic: z
+    .enum(["neighborhoods", "schools", "market", "general"])
+    .describe("The topic to get information about"),
+});
+
+const initiateContactSchema = z.object({
+  listingId: z.string().optional().describe("The ID of a specific listing, if applicable"),
+  intent: z
+    .enum(["viewing", "general_inquiry", "selling", "buying"])
+    .describe("What the user wants to do"),
+});
+
+export const searchListings = tool({
+  description: `Search for property listings based on user criteria. Use this when users describe what they're looking for in a home. Returns up to 5 matching properties with basic info.`,
+  inputSchema: searchListingsSchema,
+  execute: async (params) => {
+    const results = filterListings({
+      minPrice: params.minPrice,
+      maxPrice: params.maxPrice,
+      minBeds: params.minBeds,
+      maxBeds: params.maxBeds,
+      minBaths: params.minBaths,
+      maxBaths: params.maxBaths,
+      propertyType: params.propertyType,
+      city: params.city,
+      search: params.search,
+      status: "Active", // Only show active listings
+    });
+
+    // Limit to 5 results
+    const limitedResults = results.slice(0, 5);
+
+    return {
+      totalFound: results.length,
+      showing: limitedResults.length,
+      hasMore: results.length > 5,
+      listings: limitedResults.map(formatListingPreview),
+      availableCities: getUniqueCities(),
+      priceRange: getPriceRange(),
+    };
+  },
+});
+
+export const getListingDetails = tool({
+  description: `Get detailed information about a specific property listing. Use when a user wants to know more about a particular property.`,
+  inputSchema: listingIdSchema,
+  execute: async ({ listingId }) => {
+    const listing = getListingById(listingId);
+
+    if (!listing) {
+      return {
+        found: false,
+        error: "Listing not found. It may have been sold or removed.",
+      };
+    }
+
+    return {
+      found: true,
+      listing: formatListingDetails(listing),
+    };
+  },
+});
+
+export const getAgentContact = tool({
+  description: `Get the contact information for a listing's agent. Use when a user wants to schedule a viewing or contact an agent.`,
+  inputSchema: listingIdSchema,
+  execute: async ({ listingId }) => {
+    const listing = getListingById(listingId);
+
+    if (!listing) {
+      return {
+        found: false,
+        error: "Listing not found.",
+      };
+    }
+
+    const brokerage = getBrokerage();
+
+    return {
+      found: true,
+      agent: {
+        name: listing.agent.name,
+        title: listing.agent.title,
+        phone: listing.agent.phone,
+        email: listing.agent.email,
+        company: listing.agent.company || brokerage.name,
+      },
+      property: {
+        address: `${listing.address.street}, ${listing.address.city}`,
+        mlsNumber: listing.mls_number,
+      },
+      brokerage: {
+        name: brokerage.name,
+        phone: brokerage.phone,
+        email: brokerage.email,
+      },
+      suggestion: `To schedule a viewing, you can call ${listing.agent.name} directly at ${listing.agent.phone || brokerage.phone} or email ${listing.agent.email || brokerage.email}. Mention you're interested in MLS# ${listing.mls_number}.`,
+    };
+  },
+});
+
+export const getAreaInfo = tool({
+  description: `Get information about the Sioux City, Iowa area including neighborhoods, schools, market trends, cost of living, and local amenities. Use when users ask about the area, schools, or community features.`,
+  inputSchema: areaInfoSchema,
+  execute: async ({ topic }) => {
+    const cities = getUniqueCities();
+    const priceRange = getPriceRange();
+    const brokerage = getBrokerage();
+
+    const info: Record<string, object> = {
+      neighborhoods: {
+        overview:
+          "Sioux City offers diverse neighborhoods catering to different lifestyles and budgets, from established historic areas to newer developments.",
+        coveredAreas: cities,
+        highlights: [
+          "**Morningside & Leeds** - Mix of single-family homes and townhouses, attracting families and professionals seeking community-oriented environments",
+          "**West Side & Riverside** - Established homes with mature landscaping and convenient access to local amenities",
+          "**The Heights & Indian Hills** - Higher-end properties with proximity to newer developments and recreation facilities",
+          "**Country Club area** - Upscale neighborhood with golf course access",
+          "**Dakota Dunes** - Upscale development with golf course and Missouri River views",
+          "**South Sioux City** - Growing Nebraska community with new construction options",
+          "**Le Mars** - The Ice Cream Capital of the World, quiet small-town living 25 minutes away",
+        ],
+      },
+      schools: {
+        overview:
+          "Sioux City offers quality K-12 education with schools rated between 6/10 and 8/10 on GreatSchools.",
+        publicDistricts: [
+          "Sioux City Community School District",
+          "South Sioux City Community Schools",
+          "Le Mars Community School District",
+          "Sergeant Bluff-Luton CSD",
+        ],
+        topRatedSchools: [
+          "Dakota City Elementary - 8/10 rating",
+          "Perry Creek Elementary - 7/10 rating",
+        ],
+        note: "Each listing includes information about nearby schools. Ask about a specific property to see its assigned schools.",
+      },
+      market: {
+        overview:
+          "The Sioux City housing market is competitive yet affordable, with median prices 52% below the national average.",
+        stats: {
+          medianSalePrice: "$209,000",
+          pricePerSqFt: "$135 (up 8% year-over-year)",
+          daysOnMarket: "22-24 days average",
+          saleToListRatio: "96.5% (some homes sell above list)",
+        },
+        currentPriceRange: {
+          min: priceRange.min,
+          max: priceRange.max,
+          formatted: `$${(priceRange.min / 1000).toFixed(0)}K - $${(priceRange.max / 1000).toFixed(0)}K`,
+        },
+        areasServed: cities,
+        marketTrends: [
+          "Steady 2.5% year-over-year price appreciation",
+          "High demand with homes selling in under a month",
+          "New construction in suburban areas",
+          "Strong rental market near colleges",
+          "Growing demand for homes with acreage",
+        ],
+        outlook:
+          "Market expected to continue gradual appreciation through 2025 due to steady demand, economic stability, and lower cost of living.",
+      },
+      general: {
+        overview:
+          "Sioux City is a tri-state metro area where Iowa, Nebraska, and South Dakota meet along the Missouri River. Known for affordability, diverse economy, and quality of life.",
+        population: "Approximately 85,000 in Sioux City, 145,000 in metro area",
+        costOfLiving:
+          "13% lower than the national average - housing, transportation, groceries, and healthcare are all more affordable here.",
+        economy:
+          "Diversified economy with major employers in healthcare (MercyOne Siouxland Medical Center, UnityPoint), manufacturing, agriculture (Tyson Foods), and energy (MidAmerican Energy).",
+        recreation: [
+          "Missouri River riverfront trails, boating, and fishing",
+          "Stone State Park and numerous city parks",
+          "Orpheum Theatre and downtown entertainment district",
+          "Sioux City Art Center and local museums",
+          "Dorothy Pecaut Nature Center",
+          "Annual festivals, farmers markets, and community events",
+          "Local dining scene with locally-owned restaurants",
+        ],
+        climate: {
+          highlights: "Four seasons with minimal natural disaster risk",
+          wildfireRisk: "Less than 1%",
+          severeWindRisk: "Low",
+        },
+        transportation: {
+          note: "Car-dependent community with good road infrastructure",
+          walkScore: 23,
+          transitScore: 36,
+          bikeScore: 36,
+        },
+        brokerage: {
+          name: brokerage.name,
+          contact: brokerage.phone,
+        },
+      },
+    };
+
+    return info[topic] || info.general;
+  },
+});
+
+export const initiateContact = tool({
+  description: `Generate contact information and next steps for scheduling a property viewing. Use when users express they want to see a property or contact someone about it.`,
+  inputSchema: initiateContactSchema,
+  execute: async ({ listingId, intent }) => {
+    const brokerage = getBrokerage();
+    let listing = null;
+
+    if (listingId) {
+      listing = getListingById(listingId);
+    }
+
+    const response: {
+      intent: string;
+      nextSteps: string[];
+      contacts: {
+        type: string;
+        name: string;
+        phone?: string;
+        email?: string;
+      }[];
+      listingInfo?: {
+        address: string;
+        mlsNumber: string;
+      };
+    } = {
+      intent,
+      nextSteps: [],
+      contacts: [],
+    };
+
+    if (listing) {
+      response.listingInfo = {
+        address: `${listing.address.street}, ${listing.address.city}`,
+        mlsNumber: listing.mls_number,
+      };
+
+      response.contacts.push({
+        type: "Listing Agent",
+        name: listing.agent.name,
+        phone: listing.agent.phone,
+        email: listing.agent.email,
+      });
+    }
+
+    response.contacts.push({
+      type: "Brokerage Office",
+      name: brokerage.name,
+      phone: brokerage.phone,
+      email: brokerage.email,
+    });
+
+    switch (intent) {
+      case "viewing":
+        response.nextSteps = [
+          `Call the listing agent${listing ? ` (${listing.agent.name})` : ""} to schedule a showing`,
+          `Have MLS# ${listing?.mls_number || "ready"} when you call`,
+          "Prepare any questions about the property",
+          "Consider getting pre-approved for financing before viewing",
+        ];
+        break;
+      case "selling":
+        response.nextSteps = [
+          "Contact our office for a free home valuation",
+          "We'll discuss your timeline and goals",
+          "Get tips on preparing your home for sale",
+          "Review our marketing strategy",
+        ];
+        break;
+      case "buying":
+        response.nextSteps = [
+          "Get pre-approved for a mortgage to know your budget",
+          "Make a list of must-haves vs nice-to-haves",
+          "Contact an agent to start your home search",
+          "We can set up alerts for new listings matching your criteria",
+        ];
+        break;
+      default:
+        response.nextSteps = [
+          "Call or email us with your questions",
+          "We're happy to help with any real estate needs",
+          "No obligation - just friendly, expert advice",
+        ];
+    }
+
+    return response;
+  },
+});
+
+// Schema for external listings search
+const searchExternalListingsSchema = z.object({
+  query: z
+    .string()
+    .describe(
+      "Search query for real estate listings, e.g. 'waterfront homes Sioux City Iowa' or '3 bedroom house under 300k'"
+    ),
+  location: z
+    .string()
+    .optional()
+    .describe("City or area to focus the search on, defaults to Sioux City area"),
+});
+
+// JSON Schema for property extraction (used with Firecrawl scrape)
+const propertyExtractionSchema = {
+  type: "object",
+  properties: {
+    listings: {
+      type: "array",
+      description: "Array of real estate property listings found on the page",
+      items: {
+        type: "object",
+        properties: {
+          address: {
+            type: "string",
+            description: "Full street address including city and state (e.g., '123 Main St, Sioux City, IA 51104')",
+          },
+          price: {
+            type: "string",
+            description: "Listing price with dollar sign (e.g., '$350,000')",
+          },
+          bedrooms: {
+            type: "number",
+            description: "Number of bedrooms",
+          },
+          bathrooms: {
+            type: "number",
+            description: "Number of bathrooms (can include .5 for half baths)",
+          },
+          squareFeet: {
+            type: "number",
+            description: "Total square footage of the property",
+          },
+          yearBuilt: {
+            type: "number",
+            description: "Year the property was built (e.g., 1985)",
+          },
+          description: {
+            type: "string",
+            description: "Brief description of the property features and amenities",
+          },
+          imageUrl: {
+            type: "string",
+            description: "URL of the main property photo",
+          },
+          images: {
+            type: "array",
+            description: "Array of all property photo URLs found on the page (gallery images, thumbnails, etc.)",
+            items: {
+              type: "string",
+              description: "URL of a property photo",
+            },
+          },
+        },
+        required: ["address"],
+      },
+    },
+  },
+  required: ["listings"],
+};
+
+export const searchExternalListings = tool({
+  description: `Search for additional property listings when local inventory doesn't have what the user wants. Use this when:
+- Local search returned 0 or very few results
+- User asks for specific property types we don't have (waterfront, luxury, acreage, historic, hot tub, pool)
+- User wants to see more options on the market
+- User is looking in areas outside our typical coverage
+
+Returns listings in the same format as local listings for uniform display.`,
+  inputSchema: searchExternalListingsSchema,
+  execute: async ({ query, location }) => {
+    const searchLocation = location || "Sioux City Iowa";
+    const fullQuery = `${query} ${searchLocation} home for sale`;
+
+    // Check if Firecrawl is configured
+    const firecrawl = getFirecrawl();
+    if (!firecrawl) {
+      return {
+        success: false,
+        totalFound: 0,
+        listings: [],
+      };
+    }
+
+    try {
+      console.log("[Firecrawl] Starting search for:", fullQuery);
+
+      // Step 1: Search to find relevant listing URLs
+      const searchResults = await firecrawl.search(fullQuery, {
+        limit: 5,
+        scrapeOptions: {
+          formats: ["markdown"],
+          onlyMainContent: true,
+        },
+      });
+
+      // Get URLs and content from search results - response has `web` property
+      const webResults = searchResults?.web || [];
+      console.log("[Firecrawl] Found", webResults.length, "search results");
+
+      if (webResults.length === 0) {
+        console.log("[Firecrawl] No results found in search");
+        return { success: true, totalFound: 0, listings: [] };
+      }
+
+      // Step 2: Scrape each result page with JSON format for structured extraction
+      const listings: StructuredListing[] = [];
+
+      for (const result of webResults.slice(0, 3)) {
+        // Limit to 3 pages for speed
+        // Type guard: check if result has url property
+        const url = "url" in result && typeof result.url === "string" ? result.url : null;
+        if (!url) continue;
+
+        try {
+          console.log("[Firecrawl] Scraping with JSON extraction:", url);
+
+          // Use scrape with JSON format for synchronous LLM extraction
+          // Format must be an array of objects: [{ type: 'json', prompt, schema }]
+          const scrapeResult = await firecrawl.scrape(url, {
+            formats: [
+              {
+                type: "json",
+                prompt:
+                  "Extract all real estate property listings visible on this page. For each listing, get the full address, price, bedrooms, bathrooms, square footage, year built if available, a brief description, and the main image URL. Ignore navigation, ads, and UI elements. Only include actual property listings.",
+                schema: propertyExtractionSchema,
+              },
+            ],
+          });
+
+          console.log("[Firecrawl] Scrape result keys:", Object.keys(scrapeResult || {}));
+          console.log("[Firecrawl] Full scrape result:", JSON.stringify(scrapeResult, null, 2).slice(0, 2000));
+
+          // Get extracted JSON data - check various possible locations
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          const scrapeData = scrapeResult as any;
+          const jsonData = (scrapeData?.json || scrapeData?.data?.json || scrapeData?.extract) as { listings?: unknown[] } | undefined;
+          const pageListings = jsonData?.listings || [];
+
+          console.log("[Firecrawl] JSON data:", JSON.stringify(jsonData, null, 2).slice(0, 1000));
+          console.log("[Firecrawl] Found", pageListings.length, "listings on page");
+
+          for (const item of pageListings) {
+            if (!item || typeof item !== "object") continue;
+            const data = item as Record<string, unknown>;
+
+            // Extract images array if present
+            const extractedImages = Array.isArray(data.images)
+              ? data.images.filter((img): img is string => typeof img === "string")
+              : [];
+
+            // Validate and sanitize the extracted data
+            const listing = sanitizeListingData({
+              title: typeof data.address === "string" ? data.address : "Property Listing",
+              address: typeof data.address === "string" ? data.address : "",
+              price: typeof data.price === "string" ? data.price : "Contact for Price",
+              bedrooms: typeof data.bedrooms === "number" ? data.bedrooms : undefined,
+              bathrooms: typeof data.bathrooms === "number" ? data.bathrooms : undefined,
+              squareFeet: typeof data.squareFeet === "number" ? data.squareFeet : undefined,
+              yearBuilt: typeof data.yearBuilt === "number" ? data.yearBuilt : undefined,
+              propertyType: "Single Family Home",
+              description: typeof data.description === "string" ? data.description : "",
+              imageUrl: typeof data.imageUrl === "string" ? data.imageUrl : undefined,
+              images: extractedImages.length > 0 ? extractedImages : undefined,
+            });
+
+            // Only include if we have a real address (not UI garbage)
+            if (listing.address && listing.address.length > 10 && /\d/.test(listing.address)) {
+              listings.push(listing);
+              console.log("[Firecrawl] Added listing:", listing.address, "-", listing.price);
+            }
+          }
+        } catch (scrapeError) {
+          console.error("[Firecrawl] Error scraping URL:", url, scrapeError);
+          // Continue with other URLs
+        }
+      }
+
+      console.log("[Firecrawl] Returning", listings.length, "validated listings total");
+      return {
+        success: true,
+        totalFound: listings.length,
+        listings,
+      };
+    } catch (error) {
+      console.error("[Firecrawl] Error:", error);
+      return {
+        success: false,
+        totalFound: 0,
+        listings: [],
+      };
+    }
+  },
+});
+
+// Type for structured listing from external search
+interface StructuredListing {
+  title: string;
+  address: string;
+  price: string;
+  bedrooms?: number;
+  bathrooms?: number;
+  squareFeet?: number;
+  yearBuilt?: number;
+  propertyType?: string;
+  description: string;
+  imageUrl?: string;
+  images?: string[]; // Array of gallery image URLs
+  _sourceUrl?: string; // Internal use only - for agent handoff
+}
+
+// Sanitize and validate listing data to catch extraction errors
+function sanitizeListingData(data: StructuredListing): StructuredListing {
+  const result = { ...data };
+
+  // Validate bedrooms (should be 1-15, anything else is likely an extraction error)
+  if (result.bedrooms !== undefined) {
+    if (result.bedrooms < 1 || result.bedrooms > 15) {
+      result.bedrooms = undefined;
+    }
+  }
+
+  // Validate bathrooms (should be 0.5-10)
+  if (result.bathrooms !== undefined) {
+    if (result.bathrooms < 0.5 || result.bathrooms > 10) {
+      result.bathrooms = undefined;
+    }
+  }
+
+  // Validate square feet (should be 100-50000)
+  if (result.squareFeet !== undefined) {
+    if (result.squareFeet < 100 || result.squareFeet > 50000) {
+      result.squareFeet = undefined;
+    }
+  }
+
+  // Validate year built (should be 1800-current year)
+  if (result.yearBuilt !== undefined) {
+    const currentYear = new Date().getFullYear();
+    if (result.yearBuilt < 1800 || result.yearBuilt > currentYear + 2) {
+      result.yearBuilt = undefined;
+    }
+  }
+
+  // Clean up description - remove markdown artifacts, URLs, and excessive whitespace
+  if (result.description) {
+    result.description = result.description
+      // Remove markdown links [text](url)
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+      // Remove bare URLs
+      .replace(/https?:\/\/[^\s)]+/g, "")
+      // Remove markdown formatting
+      .replace(/[*_#`]/g, "")
+      // Remove excessive whitespace
+      .replace(/\s+/g, " ")
+      // Trim
+      .trim()
+      // Truncate to reasonable length
+      .slice(0, 500);
+
+    // If description looks like garbage (too short or has weird characters), clear it
+    if (result.description.length < 20 || /^[^a-zA-Z]*$/.test(result.description)) {
+      result.description = "";
+    }
+  }
+
+  // Clean up address - remove markdown and extra formatting
+  if (result.address) {
+    result.address = result.address
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+      .replace(/https?:\/\/[^\s]+/g, "")
+      .replace(/[*_#`]/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  // Validate image URL
+  if (result.imageUrl) {
+    // Filter out placeholder/spacer images
+    const invalidPatterns = ["spacer.gif", "pixel.gif", "1x1", "blank.png", "placeholder", "no-image"];
+    if (invalidPatterns.some((p) => result.imageUrl?.toLowerCase().includes(p))) {
+      result.imageUrl = undefined;
+    }
+    // Must be a valid URL
+    if (result.imageUrl && !result.imageUrl.startsWith("http")) {
+      result.imageUrl = undefined;
+    }
+  }
+
+  // Validate and clean images array
+  if (result.images && Array.isArray(result.images)) {
+    const invalidPatterns = ["spacer.gif", "pixel.gif", "1x1", "blank.png", "placeholder", "no-image", "icon", "logo", "avatar"];
+    result.images = result.images
+      .filter((url): url is string => typeof url === "string" && url.startsWith("http"))
+      .filter((url) => !invalidPatterns.some((p) => url.toLowerCase().includes(p)))
+      // Remove duplicates
+      .filter((url, index, arr) => arr.indexOf(url) === index)
+      // Limit to 20 images max
+      .slice(0, 20);
+
+    // If we have images but no main imageUrl, use the first one
+    if (!result.imageUrl && result.images.length > 0) {
+      result.imageUrl = result.images[0];
+    }
+  }
+
+  return result;
+}
+
+// Export all tools as an object for use in the API route
+export const aiTools = {
+  searchListings,
+  getListingDetails,
+  getAgentContact,
+  getAreaInfo,
+  initiateContact,
+  searchExternalListings,
+};

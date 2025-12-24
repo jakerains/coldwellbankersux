@@ -50,7 +50,13 @@ const navigation = [
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const pathname = usePathname();
+
+  // Prevent hydration mismatch with Radix UI components
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   // Only use transparent header on home page (which has a dark hero)
   const isHomePage = pathname === "/";
@@ -109,56 +115,58 @@ export function Header() {
           />
         </Link>
 
-        {/* Desktop Navigation */}
-        <NavigationMenu className="hidden lg:flex">
-          <NavigationMenuList>
-            {navigation.map((item) =>
-              item.submenu ? (
-                <NavigationMenuItem key={item.label}>
-                  <NavigationMenuTrigger
-                    className={cn(
-                      "bg-transparent transition-colors duration-300",
-                      useTransparentHeader && "text-white hover:text-white/80 data-[state=open]:text-white"
-                    )}
-                  >
-                    {item.label}
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-[200px] gap-1 p-2">
-                      {item.submenu.map((subItem) => (
-                        <li key={subItem.label}>
-                          <NavigationMenuLink asChild>
-                            <Link
-                              href={subItem.href}
-                              className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                            >
-                              {subItem.label}
-                            </Link>
-                          </NavigationMenuLink>
-                        </li>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              ) : (
-                <NavigationMenuItem key={item.label}>
-                  <NavigationMenuLink asChild>
-                    <Link
-                      href={item.href}
+        {/* Desktop Navigation - only render after mount to prevent Radix hydration mismatch */}
+        {isMounted && (
+          <NavigationMenu className="hidden lg:flex">
+            <NavigationMenuList>
+              {navigation.map((item) =>
+                item.submenu ? (
+                  <NavigationMenuItem key={item.label}>
+                    <NavigationMenuTrigger
                       className={cn(
-                        navigationMenuTriggerStyle(),
                         "bg-transparent transition-colors duration-300",
-                        useTransparentHeader && "text-white hover:text-white/80"
+                        useTransparentHeader && "text-white hover:text-white/80 data-[state=open]:text-white"
                       )}
                     >
                       {item.label}
-                    </Link>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-              )
-            )}
-          </NavigationMenuList>
-        </NavigationMenu>
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <ul className="grid w-[200px] gap-1 p-2">
+                        {item.submenu.map((subItem) => (
+                          <li key={subItem.label}>
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href={subItem.href}
+                                className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              >
+                                {subItem.label}
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        ))}
+                      </ul>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                ) : (
+                  <NavigationMenuItem key={item.label}>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href={item.href}
+                        className={cn(
+                          navigationMenuTriggerStyle(),
+                          "bg-transparent transition-colors duration-300",
+                          useTransparentHeader && "text-white hover:text-white/80"
+                        )}
+                      >
+                        {item.label}
+                      </Link>
+                    </NavigationMenuLink>
+                  </NavigationMenuItem>
+                )
+              )}
+            </NavigationMenuList>
+          </NavigationMenu>
+        )}
 
         {/* Right side: Phone & CTA */}
         <div className="hidden items-center gap-6 lg:flex">
@@ -186,66 +194,68 @@ export function Header() {
           </Button>
         </div>
 
-        {/* Mobile Menu */}
-        <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
-          <SheetTrigger asChild className="lg:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              className={cn(
-                "transition-colors duration-300",
-                useTransparentHeader && "text-white hover:text-white hover:bg-white/10"
-              )}
-            >
-              <Menu className="h-6 w-6" />
-              <span className="sr-only">Open menu</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-            <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
-            <nav className="flex flex-col gap-4 pt-8">
-              {navigation.map((item) => (
-                <div key={item.label}>
-                  <Link
-                    href={item.href}
-                    className="text-lg font-medium hover:text-primary"
-                    onClick={() => setMobileMenuOpen(false)}
+        {/* Mobile Menu - only render after mount to prevent Radix hydration mismatch */}
+        {isMounted && (
+          <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+            <SheetTrigger asChild className="lg:hidden">
+              <Button
+                variant="ghost"
+                size="icon"
+                className={cn(
+                  "transition-colors duration-300",
+                  useTransparentHeader && "text-white hover:text-white hover:bg-white/10"
+                )}
+              >
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Open menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+              <nav className="flex flex-col gap-4 pt-8">
+                {navigation.map((item) => (
+                  <div key={item.label}>
+                    <Link
+                      href={item.href}
+                      className="text-lg font-medium hover:text-primary"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                    {item.submenu && (
+                      <div className="ml-4 mt-2 flex flex-col gap-2">
+                        {item.submenu.map((subItem) => (
+                          <Link
+                            key={subItem.label}
+                            href={subItem.href}
+                            className="text-muted-foreground hover:text-primary"
+                            onClick={() => setMobileMenuOpen(false)}
+                          >
+                            {subItem.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
+                <div className="mt-6 border-t pt-6">
+                  <a
+                    href="tel:7122557310"
+                    className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
                   >
-                    {item.label}
-                  </Link>
-                  {item.submenu && (
-                    <div className="ml-4 mt-2 flex flex-col gap-2">
-                      {item.submenu.map((subItem) => (
-                        <Link
-                          key={subItem.label}
-                          href={subItem.href}
-                          className="text-muted-foreground hover:text-primary"
-                          onClick={() => setMobileMenuOpen(false)}
-                        >
-                          {subItem.label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
+                    <Phone className="h-4 w-4" />
+                    (712) 255-7310
+                  </a>
+                  <Button asChild className="mt-4 w-full">
+                    <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
+                      Contact Us
+                    </Link>
+                  </Button>
                 </div>
-              ))}
-              <div className="mt-6 border-t pt-6">
-                <a
-                  href="tel:7122557310"
-                  className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
-                >
-                  <Phone className="h-4 w-4" />
-                  (712) 255-7310
-                </a>
-                <Button asChild className="mt-4 w-full">
-                  <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
-                    Contact Us
-                  </Link>
-                </Button>
-              </div>
-            </nav>
-          </SheetContent>
-        </Sheet>
+              </nav>
+            </SheetContent>
+          </Sheet>
+        )}
       </div>
     </header>
   );
