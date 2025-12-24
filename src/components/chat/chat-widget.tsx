@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback, useMemo } from "react";
+import { useRouter } from "next/navigation";
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport } from "ai";
 import { motion, AnimatePresence } from "motion/react";
@@ -10,6 +11,7 @@ import { ChatMessages } from "./chat-messages";
 import { ChatInput } from "./chat-input";
 
 export function ChatWidget() {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
@@ -32,6 +34,65 @@ export function ChatWidget() {
       sendMessage({ text: content });
     },
     [sendMessage]
+  );
+
+  const handlePropertyClick = useCallback(
+    (property: unknown) => {
+      const prop = property as {
+        id?: string;
+        address?: string;
+        price?: string;
+        beds?: number;
+        baths?: number;
+        sqft?: number;
+        imageUrl?: string | null;
+        propertyType?: string;
+        description?: string;
+        title?: string;
+        yearBuilt?: number;
+        images?: string[];
+      };
+
+      // Exit fullscreen mode so user can see the property detail page
+      setIsFullscreen(false);
+
+      // Build a detailed message with property info so AI can give specific facts
+      const details = [
+        prop.beds && `${prop.beds} bedrooms`,
+        prop.baths && `${prop.baths} bathrooms`,
+        prop.sqft && `${prop.sqft.toLocaleString()} sq ft`,
+        prop.propertyType && prop.propertyType,
+      ].filter(Boolean).join(", ");
+
+      const followUpMessage = `I'm viewing the property at ${prop.address} - ${prop.price}. Property details: ${details || "not specified"}. ${prop.description ? `Description: ${prop.description}` : ""}`;
+      sendMessage({ text: followUpMessage });
+
+      // If it's a local listing (has an ID that's not "ext-"), navigate to listing page
+      if (prop.id && !prop.id.startsWith("ext-")) {
+        router.push(`/listing/${prop.id}`);
+        return;
+      }
+
+      // For external listings, encode the data and navigate to the external listing page
+      const listingData = {
+        address: prop.address || "Property",
+        price: prop.price || "Contact for Price",
+        bedrooms: prop.beds,
+        bathrooms: prop.baths,
+        squareFeet: prop.sqft,
+        imageUrl: prop.imageUrl,
+        propertyType: prop.propertyType,
+        description: prop.description,
+        title: prop.title,
+        yearBuilt: prop.yearBuilt,
+        images: prop.images,
+      };
+
+      // Encode the data as base64 for URL safety
+      const encodedData = btoa(encodeURIComponent(JSON.stringify(listingData)));
+      router.push(`/listing/external?data=${encodedData}`);
+    },
+    [sendMessage, router]
   );
 
   const handleClose = useCallback(() => {
@@ -100,7 +161,9 @@ export function ChatWidget() {
             <ChatMessages
               messages={messages}
               isLoading={isLoading}
+              isFullscreen={isFullscreen}
               onSuggestionClick={handleSubmit}
+              onPropertyClick={handlePropertyClick}
             />
 
             {/* Input */}

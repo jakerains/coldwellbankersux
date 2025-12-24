@@ -1,5 +1,6 @@
 import { tool } from "ai";
 import { z } from "zod";
+import Firecrawl from "@mendable/firecrawl-js";
 import {
   filterListings,
   getListingById,
@@ -8,6 +9,17 @@ import {
   getBrokerage,
 } from "@/lib/data/listings";
 import type { Listing } from "@/lib/types";
+
+// Lazy initialization of Firecrawl client
+let firecrawlClient: Firecrawl | null = null;
+
+function getFirecrawl(): Firecrawl | null {
+  if (!firecrawlClient && process.env.FIRECRAWL_API_KEY) {
+    firecrawlClient = new Firecrawl({ apiKey: process.env.FIRECRAWL_API_KEY });
+    console.log("[Firecrawl] Client initialized");
+  }
+  return firecrawlClient;
+}
 
 // Helper to format a listing for AI response
 function formatListingPreview(listing: Listing) {
@@ -371,6 +383,325 @@ export const initiateContact = tool({
   },
 });
 
+// Schema for external listings search
+const searchExternalListingsSchema = z.object({
+  query: z
+    .string()
+    .describe(
+      "Search query for real estate listings, e.g. 'waterfront homes Sioux City Iowa' or '3 bedroom house under 300k'"
+    ),
+  location: z
+    .string()
+    .optional()
+    .describe("City or area to focus the search on, defaults to Sioux City area"),
+});
+
+// JSON Schema for property extraction (used with Firecrawl scrape)
+const propertyExtractionSchema = {
+  type: "object",
+  properties: {
+    listings: {
+      type: "array",
+      description: "Array of real estate property listings found on the page",
+      items: {
+        type: "object",
+        properties: {
+          address: {
+            type: "string",
+            description: "Full street address including city and state (e.g., '123 Main St, Sioux City, IA 51104')",
+          },
+          price: {
+            type: "string",
+            description: "Listing price with dollar sign (e.g., '$350,000')",
+          },
+          bedrooms: {
+            type: "number",
+            description: "Number of bedrooms",
+          },
+          bathrooms: {
+            type: "number",
+            description: "Number of bathrooms (can include .5 for half baths)",
+          },
+          squareFeet: {
+            type: "number",
+            description: "Total square footage of the property",
+          },
+          yearBuilt: {
+            type: "number",
+            description: "Year the property was built (e.g., 1985)",
+          },
+          description: {
+            type: "string",
+            description: "Brief description of the property features and amenities",
+          },
+          imageUrl: {
+            type: "string",
+            description: "URL of the main property photo",
+          },
+          images: {
+            type: "array",
+            description: "Array of all property photo URLs found on the page (gallery images, thumbnails, etc.)",
+            items: {
+              type: "string",
+              description: "URL of a property photo",
+            },
+          },
+        },
+        required: ["address"],
+      },
+    },
+  },
+  required: ["listings"],
+};
+
+export const searchExternalListings = tool({
+  description: `Search for additional property listings when local inventory doesn't have what the user wants. Use this when:
+- Local search returned 0 or very few results
+- User asks for specific property types we don't have (waterfront, luxury, acreage, historic, hot tub, pool)
+- User wants to see more options on the market
+- User is looking in areas outside our typical coverage
+
+Returns listings in the same format as local listings for uniform display.`,
+  inputSchema: searchExternalListingsSchema,
+  execute: async ({ query, location }) => {
+    const searchLocation = location || "Sioux City Iowa";
+    const fullQuery = `${query} ${searchLocation} home for sale`;
+
+    // Check if Firecrawl is configured
+    const firecrawl = getFirecrawl();
+    if (!firecrawl) {
+      return {
+        success: false,
+        totalFound: 0,
+        listings: [],
+      };
+    }
+
+    try {
+      console.log("[Firecrawl] Starting search for:", fullQuery);
+
+      // Step 1: Search to find relevant listing URLs
+      const searchResults = await firecrawl.search(fullQuery, {
+        limit: 5,
+        scrapeOptions: {
+          formats: ["markdown"],
+          onlyMainContent: true,
+        },
+      });
+
+      // Get URLs and content from search results - response has `web` property
+      const webResults = searchResults?.web || [];
+      console.log("[Firecrawl] Found", webResults.length, "search results");
+
+      if (webResults.length === 0) {
+        console.log("[Firecrawl] No results found in search");
+        return { success: true, totalFound: 0, listings: [] };
+      }
+
+      // Step 2: Scrape each result page with JSON format for structured extraction
+      const listings: StructuredListing[] = [];
+
+      for (const result of webResults.slice(0, 3)) {
+        // Limit to 3 pages for speed
+        // Type guard: check if result has url property
+        const url = "url" in result && typeof result.url === "string" ? result.url : null;
+        if (!url) continue;
+
+        try {
+          console.log("[Firecrawl] Scraping with JSON extraction:", url);
+
+          // Use scrape with JSON format for synchronous LLM extraction
+          // Format must be an array of objects: [{ type: 'json', prompt, schema }]
+          const scrapeResult = await firecrawl.scrape(url, {
+            formats: [
+              {
+                type: "json",
+                prompt:
+                  "Extract all real estate property listings visible on this page. For each listing, get the full address, price, bedrooms, bathrooms, square footage, year built if available, a brief description, and the main image URL. Ignore navigation, ads, and UI elements. Only include actual property listings.",
+                schema: propertyExtractionSchema,
+              },
+            ],
+          });
+
+          console.log("[Firecrawl] Scrape result keys:", Object.keys(scrapeResult || {}));
+          console.log("[Firecrawl] Full scrape result:", JSON.stringify(scrapeResult, null, 2).slice(0, 2000));
+
+          // Get extracted JSON data - check various possible locations
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          const scrapeData = scrapeResult as any;
+          const jsonData = (scrapeData?.json || scrapeData?.data?.json || scrapeData?.extract) as { listings?: unknown[] } | undefined;
+          const pageListings = jsonData?.listings || [];
+
+          console.log("[Firecrawl] JSON data:", JSON.stringify(jsonData, null, 2).slice(0, 1000));
+          console.log("[Firecrawl] Found", pageListings.length, "listings on page");
+
+          for (const item of pageListings) {
+            if (!item || typeof item !== "object") continue;
+            const data = item as Record<string, unknown>;
+
+            // Extract images array if present
+            const extractedImages = Array.isArray(data.images)
+              ? data.images.filter((img): img is string => typeof img === "string")
+              : [];
+
+            // Validate and sanitize the extracted data
+            const listing = sanitizeListingData({
+              title: typeof data.address === "string" ? data.address : "Property Listing",
+              address: typeof data.address === "string" ? data.address : "",
+              price: typeof data.price === "string" ? data.price : "Contact for Price",
+              bedrooms: typeof data.bedrooms === "number" ? data.bedrooms : undefined,
+              bathrooms: typeof data.bathrooms === "number" ? data.bathrooms : undefined,
+              squareFeet: typeof data.squareFeet === "number" ? data.squareFeet : undefined,
+              yearBuilt: typeof data.yearBuilt === "number" ? data.yearBuilt : undefined,
+              propertyType: "Single Family Home",
+              description: typeof data.description === "string" ? data.description : "",
+              imageUrl: typeof data.imageUrl === "string" ? data.imageUrl : undefined,
+              images: extractedImages.length > 0 ? extractedImages : undefined,
+            });
+
+            // Only include if we have a real address (not UI garbage)
+            if (listing.address && listing.address.length > 10 && /\d/.test(listing.address)) {
+              listings.push(listing);
+              console.log("[Firecrawl] Added listing:", listing.address, "-", listing.price);
+            }
+          }
+        } catch (scrapeError) {
+          console.error("[Firecrawl] Error scraping URL:", url, scrapeError);
+          // Continue with other URLs
+        }
+      }
+
+      console.log("[Firecrawl] Returning", listings.length, "validated listings total");
+      return {
+        success: true,
+        totalFound: listings.length,
+        listings,
+      };
+    } catch (error) {
+      console.error("[Firecrawl] Error:", error);
+      return {
+        success: false,
+        totalFound: 0,
+        listings: [],
+      };
+    }
+  },
+});
+
+// Type for structured listing from external search
+interface StructuredListing {
+  title: string;
+  address: string;
+  price: string;
+  bedrooms?: number;
+  bathrooms?: number;
+  squareFeet?: number;
+  yearBuilt?: number;
+  propertyType?: string;
+  description: string;
+  imageUrl?: string;
+  images?: string[]; // Array of gallery image URLs
+  _sourceUrl?: string; // Internal use only - for agent handoff
+}
+
+// Sanitize and validate listing data to catch extraction errors
+function sanitizeListingData(data: StructuredListing): StructuredListing {
+  const result = { ...data };
+
+  // Validate bedrooms (should be 1-15, anything else is likely an extraction error)
+  if (result.bedrooms !== undefined) {
+    if (result.bedrooms < 1 || result.bedrooms > 15) {
+      result.bedrooms = undefined;
+    }
+  }
+
+  // Validate bathrooms (should be 0.5-10)
+  if (result.bathrooms !== undefined) {
+    if (result.bathrooms < 0.5 || result.bathrooms > 10) {
+      result.bathrooms = undefined;
+    }
+  }
+
+  // Validate square feet (should be 100-50000)
+  if (result.squareFeet !== undefined) {
+    if (result.squareFeet < 100 || result.squareFeet > 50000) {
+      result.squareFeet = undefined;
+    }
+  }
+
+  // Validate year built (should be 1800-current year)
+  if (result.yearBuilt !== undefined) {
+    const currentYear = new Date().getFullYear();
+    if (result.yearBuilt < 1800 || result.yearBuilt > currentYear + 2) {
+      result.yearBuilt = undefined;
+    }
+  }
+
+  // Clean up description - remove markdown artifacts, URLs, and excessive whitespace
+  if (result.description) {
+    result.description = result.description
+      // Remove markdown links [text](url)
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+      // Remove bare URLs
+      .replace(/https?:\/\/[^\s)]+/g, "")
+      // Remove markdown formatting
+      .replace(/[*_#`]/g, "")
+      // Remove excessive whitespace
+      .replace(/\s+/g, " ")
+      // Trim
+      .trim()
+      // Truncate to reasonable length
+      .slice(0, 500);
+
+    // If description looks like garbage (too short or has weird characters), clear it
+    if (result.description.length < 20 || /^[^a-zA-Z]*$/.test(result.description)) {
+      result.description = "";
+    }
+  }
+
+  // Clean up address - remove markdown and extra formatting
+  if (result.address) {
+    result.address = result.address
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+      .replace(/https?:\/\/[^\s]+/g, "")
+      .replace(/[*_#`]/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  // Validate image URL
+  if (result.imageUrl) {
+    // Filter out placeholder/spacer images
+    const invalidPatterns = ["spacer.gif", "pixel.gif", "1x1", "blank.png", "placeholder", "no-image"];
+    if (invalidPatterns.some((p) => result.imageUrl?.toLowerCase().includes(p))) {
+      result.imageUrl = undefined;
+    }
+    // Must be a valid URL
+    if (result.imageUrl && !result.imageUrl.startsWith("http")) {
+      result.imageUrl = undefined;
+    }
+  }
+
+  // Validate and clean images array
+  if (result.images && Array.isArray(result.images)) {
+    const invalidPatterns = ["spacer.gif", "pixel.gif", "1x1", "blank.png", "placeholder", "no-image", "icon", "logo", "avatar"];
+    result.images = result.images
+      .filter((url): url is string => typeof url === "string" && url.startsWith("http"))
+      .filter((url) => !invalidPatterns.some((p) => url.toLowerCase().includes(p)))
+      // Remove duplicates
+      .filter((url, index, arr) => arr.indexOf(url) === index)
+      // Limit to 20 images max
+      .slice(0, 20);
+
+    // If we have images but no main imageUrl, use the first one
+    if (!result.imageUrl && result.images.length > 0) {
+      result.imageUrl = result.images[0];
+    }
+  }
+
+  return result;
+}
+
 // Export all tools as an object for use in the API route
 export const aiTools = {
   searchListings,
@@ -378,4 +709,5 @@ export const aiTools = {
   getAgentContact,
   getAreaInfo,
   initiateContact,
+  searchExternalListings,
 };
