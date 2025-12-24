@@ -9,9 +9,10 @@ import { ListingCardCompact } from "./listing-card";
 interface ChatMessagesProps {
   messages: UIMessage[];
   isLoading?: boolean;
+  onSuggestionClick?: (suggestion: string) => void;
 }
 
-export function ChatMessages({ messages, isLoading }: ChatMessagesProps) {
+export function ChatMessages({ messages, isLoading, onSuggestionClick }: ChatMessagesProps) {
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   // Auto-scroll to bottom when new messages arrive
@@ -42,12 +43,13 @@ export function ChatMessages({ messages, isLoading }: ChatMessagesProps) {
                 "What's available under $350k?",
                 "Tell me about Sioux City",
               ].map((suggestion) => (
-                <span
+                <button
                   key={suggestion}
-                  className="px-3 py-1 text-xs bg-gray-100 text-gray-600 rounded-full"
+                  onClick={() => onSuggestionClick?.(suggestion)}
+                  className="px-3 py-1 text-xs bg-gray-100 text-gray-600 rounded-full hover:bg-[#C4A35A] hover:text-white transition-colors cursor-pointer"
                 >
                   {suggestion}
-                </span>
+                </button>
               ))}
             </div>
           </div>

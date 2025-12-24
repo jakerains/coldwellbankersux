@@ -85,7 +85,7 @@ export function ChatWidget() {
             transition={{ type: "spring", duration: 0.3 }}
             className={`fixed z-40 bg-white shadow-2xl flex flex-col overflow-hidden border border-gray-200 ${
               isFullscreen
-                ? "inset-0 rounded-none"
+                ? "top-[72px] left-0 right-0 bottom-0 rounded-none"
                 : "rounded-xl bottom-3 right-3 left-3 h-[calc(100vh-80px)] sm:bottom-6 sm:right-6 sm:left-auto sm:w-[380px] sm:h-[550px] sm:max-h-[calc(100vh-100px)]"
             }`}
           >
@@ -97,7 +97,11 @@ export function ChatWidget() {
             />
 
             {/* Messages */}
-            <ChatMessages messages={messages} isLoading={isLoading} />
+            <ChatMessages
+              messages={messages}
+              isLoading={isLoading}
+              onSuggestionClick={handleSubmit}
+            />
 
             {/* Input */}
             <ChatInput
